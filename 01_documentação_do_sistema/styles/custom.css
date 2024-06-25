@@ -1,0 +1,9 @@
+.baixar-pdf{
+    background-color: transparent;
+    border: none;
+    background: url('../imgs/btns/bt_pdf.png');
+    background-size: cover;
+    width: 254px;
+    height: 87px;
+    color: transparent;
+}

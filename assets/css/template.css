@@ -244,6 +244,10 @@ tbody td:first-child{border-left: 0;}
     transform: unset;
 }
 
+.custom-bullet {
+    list-style-image: url("../images/marcador.png");
+}
+
 /*estilo de botão padrão*/
 .botao{
     border-radius: 25px;
