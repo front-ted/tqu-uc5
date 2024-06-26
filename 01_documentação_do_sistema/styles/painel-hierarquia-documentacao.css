@@ -1,0 +1,23 @@
+.painelHierarquiaDocumentacao{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+}
+
+.btn-painelHierarquia{
+    border: none;
+    background: transparent;
+    color: transparent;
+    width: fit-content;
+    padding: 0;
+}
+
+.titulo-botao-painel02{
+    display: none;
+}
+
+.btn-painelHierarquia:hover{
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1.9));
+}

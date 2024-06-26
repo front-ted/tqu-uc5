@@ -1,9 +1,40 @@
-.baixar-pdf{
-    background-color: transparent;
+.btn-download {
     border: none;
-    background: url('../imgs/btns/bt_pdf.png');
-    background-size: cover;
-    width: 254px;
-    height: 87px;
-    color: transparent;
+    background: transparent;
+    background-color: transparent;
+    width: fit-content;
+    color: transparent;   
+    margin: auto;
+}
+
+.img-sombra:hover{
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1.9));
+}
+
+.pdf{
+    width: fit-content;
+    margin: auto;
+}
+
+.custom-check-bullet {
+    list-style-image: url("../imgs/marker02.png");
+    padding-left: 5rem;
+}
+
+.btn-mcdonalds{
+    background: url('../imgs/btns/bt_mc.png');
+    height: 228px;
+    width: 300px;
+    border: none;
+    margin: auto;
+}
+
+.btn-mcdonalds:hover{
+    transform: scale(1.1);
+    transition:  transform 0.5s ease;
+}
+
+.mcdonalds{
+    display: flex;
+    align-items: center;
 }

@@ -27,11 +27,21 @@
     <!-- Estilos do template -->
     <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../assets/css/template.css">
+    <!-- Estilos da pagina -->
     <link rel="stylesheet" href="styles/custom.css">
-    <link rel="stylesheet" href="styles/painel01.css">
-  
+    <link rel="stylesheet" href="styles/painel-beneficios-documentacao.css">
+    <link rel="stylesheet" href="styles/painel-hierarquia-documentacao.css">
+    <link rel="stylesheet" href="styles/painel-padronizacao.css">
+    <link rel="stylesheet" href="styles/painel-hamburguerias.css">
+
+
+
+
+    
+
+
   </head>
-  <body>
+  <body class="bg-claro">
     <!-- Preloader OBRIGATÓRIO -->
     <div class="preloader">
       <div class="anim"></div>
@@ -216,9 +226,11 @@
               Veja o exemplo de uma instrução de trabalho para o preparo de um café: 
             </p>
 
-            <a href="pdf/pdf01.pdf" target="_blank" >
-              <button class="baixar-pdf mb-5">baixar pdf </button>
-            </a>
+            <div class="btn-download mb-5">
+              <a href="pdf/pdf01.pdf" target="_blank">
+                <img src="imgs/btns/bt_pdf.png" alt="" srcset="" class="img-fluid img-sombra">
+              </a>
+            </div>            
 
             <div class="visually-hidden">
               <p class="acessivel no-print ">
@@ -282,9 +294,6 @@
             </div>
             </div>
 
-           
-
-
           </div>
 
           <div id="finalidadeDocumentacaoSGQ">
@@ -321,13 +330,12 @@
               Adotar a prática de documentação padrão para a realização das atividades traz vários benefícios. 
             </p>
 
-            <div class="no-print " aria-hidden="true">
-              <p class="no-print">
+            <!-- <div class="no-print " aria-hidden="true">
+              <p>
                 Clique ou toque para visualizar o conteúdo. 
               </p>
 
               <div class="painel-beneficios-documentacao">
-
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
 
                   <li class="nav-item" role="presentation">
@@ -343,34 +351,27 @@
                   </li>
 
                   <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao btn-padronizacao-qualidade"></button>
+                    <button class="btn-painel-beneficios-documentacao btn-padronizacao-qualidade" id="padronizacao-tab" data-bs-toggle="tab" data-bs-target="#padronizacao-qualidade" type="button" role="tab" aria-controls="padronizacao" aria-selected="false"></button>
                   </li>
 
                   <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao btn-reducao-riscos"></button>
+                    <button class="btn-painel-beneficios-documentacao btn-reducao-riscos" id="reducao-tab" data-bs-toggle="tab" data-bs-target="#reducao-riscos" type="button" role="tab" aria-controls="reducao" aria-selected="false"></button>
                   </li>
 
                   <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao btn-melhoria-continua"></button>
+                    <button class="btn-painel-beneficios-documentacao btn-facilitacao-auditoria" id="facilitacao-tab" data-bs-toggle="tab" data-bs-target="#facilitacao-auditoria" type="button" role="tab" aria-controls="facilitacao" aria-selected="false"></button>
+                  </li> 
+
+                  <li class="nav-item" role="presentation">
+                    <button class="btn-painel-beneficios-documentacao btn-melhoria-continua" id="melhoria-tab" data-bs-toggle="tab" data-bs-target="#melhoria-continua" type="button" role="tab" aria-controls="melhoria" aria-selected="false"></button>
                   </li>
 
                   <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao  btn-facilitacao-auditoria"></button>
-                  </li>           
-
-                  <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao btn-melhoria-continua"></button>
+                    <button class="btn-painel-beneficios-documentacao btn-facilitacao-comunicacao" id="facilitacao-tab" data-bs-toggle="tab" data-bs-target="#facilitacao-comunicacao" type="button" role="tab" aria-controls="facilitacao" aria-selected="false"></button>
                   </li>
-
-                  <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao btn-facilitacao-comunicacao"></button>
-                  </li>
-
-              </ul>
-              
-
-
+                </ul>            
               </div>
+
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="clareza-consistencia" role="tabpanel" aria-labelledby="clareza-tab">
                   <h5>Clareza e consistência</h5>
@@ -393,25 +394,927 @@
                   </p>
                 </div>
 
-                <div class="tab-pane fade" id="eficiencia-produtividade" role="tabpanel" aria-labelledby="eficiencia-tab">
+                <div class="tab-pane fade" id="padronizacao-qualidade" role="tabpanel" aria-labelledby="padronizacao-tab">
                   <h5>Padronização de qualidade</h5>
                   <p>
-                    Com procedimentos documentados, os colaboradores podem realizar tarefas de forma mais eficiente, uma vez que não precisam gastar tempo descobrindo como fazer algo toda vez que é necessário. Isso aumenta a produtividade e reduz e erros e falhas, levando à eliminação de desperdícios, sejam eles de tempo, sejam de energia ou materiais, além de liberar tempo da operação para a realização de outras atividades.
+                    A documentação-padrão pode incluir diretrizes de qualidade que ajudam a garantir que todas as atividades sejam realizadas de acordo com os padrões estabelecidos. Isso é fundamental para garantir a consistência e a qualidade do produto ou serviço prestado, mantendo a eficácia do SGQ. 
+                  </p>
+                </div>
+
+                <div class="tab-pane fade" id="reducao-riscos" role="tabpanel" aria-labelledby="reducao-tab">
+                  <h5>Redução de riscos</h5>
+                  <p>
+                    Ao documentar procedimentos, as organizações podem identificar e mitigar potenciais riscos operacionais. Isso inclui questões de conformidade regulatória, segurança da informação e outras preocupações relacionadas à gestão de riscos. 
+                  </p>
+                </div>
+
+                <div class="tab-pane fade" id="facilitacao-auditoria" role="tabpanel" aria-labelledby="facilitacao-tab">
+                  <h5>Facilitação da auditoria e do cumprimento de regulamentos</h5>
+                  <p>
+                    A documentação adequada pode facilitar processos de auditoria interna e externa, bem como garantir conformidade com regulamentos governamentais e do setor. Essa prática é essencial para empresas que precisam demonstrar conformidade com padrões específicos. 
+                  </p>
+                </div>
+
+                <div class="tab-pane fade" id="melhoria-continua" role="tabpanel" aria-labelledby="facilitacao-tab">
+                  <h5>Melhoria contínua</h5>
+                  <p>
+                    Ao documentar processos e procedimentos, as organizações têm uma base sólida para análise e melhoria contínua. A documentação permite identificar áreas de ineficiência ou oportunidades de otimização, sendo de grande relevância para estabelecer, implementar e manter de forma eficaz um SGQ, contribuindo para a evolução constante das operações. 
+                  </p>
+                </div>
+
+                <div class="tab-pane fade" id="facilitacao-comunicacao" role="tabpanel" aria-labelledby="facilitacao-tab">
+                  <h5>Facilitação da comunicação</h5>
+                  <p>
+                    A documentação clara e acessível serve de ferramenta de comunicação eficaz dentro e fora da organização. Isso ajuda a alinhar expectativas, coordenar esforços entre equipes e facilitar a colaboração em projetos.
                   </p>
                 </div>
 
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">eficiencia produtividade</div>
+              </div>
+            </div> -->
+
+            <div class="acessivel no-print visually-hidden">
+
+              <h4>Clareza e consistência</h4> 
+
+              <p>
+                A documentação-padrão garante que todos os envolvidos compreendem claramente os procedimentos e processos a serem seguidos. Isso promove consistência nas operações, reduzindo a chance de erros e mal-entendidos.
+              </p> 
+
+              <h4>Transferência de conhecimento </h4>
+
+              <p>
+                Documentar procedimentos permite que o conhecimento seja compartilhado de forma eficaz entre membros da equipe e ao longo do tempo. Isso é especialmente útil em empresas onde a rotatividade de funcionários é alta ou em projetos de longo prazo.
+              </p>  
+
+              <h4>Eficiência e produtividade</h4> 
+
+              <p>
+                Com procedimentos documentados, os colaboradores podem realizar tarefas de forma mais eficiente, uma vez que não precisam gastar tempo descobrindo como fazer algo toda vez que é necessário. Isso aumenta a produtividade e reduz e erros e falhas, levando à eliminação de desperdícios, sejam eles de tempo, sejam de energia ou materiais, além de liberar tempo da operação para a realização de outras atividades.
+              </p> 
+
+              <h4>Padronização de qualidade</h4> 
+
+              <p>
+                A documentação-padrão pode incluir diretrizes de qualidade que ajudam a garantir que todas as atividades sejam realizadas de acordo com os padrões estabelecidos. Isso é fundamental para garantir a consistência e a qualidade do produto ou serviço prestado, mantendo a eficácia do SGQ.
+              </p>  
+
+              <h4>Redução de riscos</h4> 
+
+              <p>
+                Ao documentar procedimentos, as organizações podem identificar e mitigar potenciais riscos operacionais. Isso inclui questões de conformidade regulatória, segurança da informação e outras preocupações relacionadas à gestão de riscos.
+              </p> 
+
+              <h4>Facilitação da auditoria e do cumprimento de regulamentos</h4> 
+
+              <p>
+                A documentação adequada pode facilitar processos de auditoria interna e externa, bem como garantir conformidade com regulamentos governamentais e do setor. Essa prática é essencial para empresas que precisam demonstrar conformidade com padrões específicos.
+              </p> 
+
+              <h4>Melhoria contínua</h4> 
+
+              <p>
+                Ao documentar processos e procedimentos, as organizações têm uma base sólida para análise e melhoria contínua. A documentação permite identificar áreas de ineficiência ou oportunidades de otimização, sendo de grande relevância para estabelecer, implementar e manter de forma eficaz um SGQ, contribuindo para a evolução constante das operações.
+              </p>
+
+              <h4>Facilitação da comunicação </h4>
+
+              <p>
+                A documentação clara e acessível serve de ferramenta de comunicação eficaz dentro e fora da organização. Isso ajuda a alinhar expectativas, coordenar esforços entre equipes e facilitar a colaboração em projetos.
+              </p>
+
+            </div>
+
+            <p>
+              A adoção de práticas de documentação-padrão melhora significativamente a eficiência operacional, a qualidade do trabalho, a conformidade regulatória e a capacidade de adaptação e crescimento das organizações.
+            </p>
+
+            <div class="grafismo">
+              <div class="destaque icone refletir borda-colorida">
+                Entenda esses benefícios em um caso prático. Imagine o seguinte cenário: 
+              </div>
+            </div>
+
+            <p>
+              Um cliente leva seu carro para a oficina com um problema no sistema de freios. O mecânico encarregado de lidar com o veículo não está disponível no momento, então outro mecânico precisa assumir o trabalho. Algumas considerações podem ser feitas: 
+            </p>
+
+            <p>
+              Se a oficina tem documentação-padrão que descreve os procedimentos de diagnóstico para sistemas de freios, o mecânico substituto pode consultar esses documentos para seguir uma abordagem sistemática na identificação do problema, economizando tempo e garantindo que nada seja esquecido. 
+            </p>
+
+            <p>
+              Uma vez que o problema tenha sido diagnosticado, a documentação-padrão pode fornecer instruções detalhadas sobre como realizar os reparos necessários. Isso inclui informações sobre as ferramentas e peças necessárias, os passos específicos a serem seguidos e quaisquer precauções de segurança a serem observadas. 
+            </p>
+
+            <p>
+              Após concluir os reparos, a documentação-padrão pode incluir procedimentos para testar e verificar se o sistema de freios está funcionando corretamente. Isso pode envolver testes de frenagem em estradas seguras ou em uma pista de testes apropriada, seguindo um protocolo específico. 
+            </p>
+
+            <p>
+              Uma vez que o trabalho tenha sido concluído com sucesso, a documentação-padrão pode orientar o mecânico a preencher corretamente o registro de serviço do veículo. Isso inclui detalhes sobre o trabalho realizado, as peças substituídas, as horas de trabalho etc. Esse registro é importante para garantir a transparência com o cliente e para manter um histórico preciso de manutenção do veículo. 
+            </p>
+
+            <p>
+              A documentação-padrão pode incluir informações sobre regulamentações de segurança e ambientais relevantes para o trabalho realizado. Isso garante que a oficina esteja em conformidade com as normas legais e éticas aplicáveis. 
+            </p>
+
+            <p>
+              Veja, na sequência, como a documentação do SGQ contribui para a melhoria contínua. 
+            </p>
+
+            <h4>Como a documentação do SGQ contribui para a melhoria contínua</h4>
+
+            <p>
+              A documentação do SGQ não apenas estabelece diretrizes claras para operações, mas também desempenha um papel fundamental na promoção da melhoria contínua dentro da organização. Ao registrar e formalizar as práticas de gestão da qualidade, o SGQ proporciona à organização uma base sólida para identificar áreas de oportunidade, resolver problemas e otimizar continuamente seus processos, contribuindo, assim, para a excelência operacional e a satisfação dos seus clientes e das partes interessadas. 
+            </p>
+
+            <p>
+              Existem diversas formas pelas quais a documentação-padrão pode contribuir com melhorias. Veja quais são elas. 
+            </p>
+
+            <div class="no-print  mb-5" aria-hidden="true">
+
+              <p>
+                Clique ou toque para visualizar o conteúdo.
+              </p>
+            
+              <div class="accordion" id="accordionDocumentacaoPadrao">
+            
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Registro de processos e procedimentos  
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionDocumentacaoPadrao">
+                        <div class="accordion-body">
+                            <p>
+                              A documentação do SGQ inclui descrições detalhadas dos processos e procedimentos operacionais. Esses registros permitem que a organização avalie e analise como as tarefas são realizadas atualmente, identificando áreas de ineficiência ou oportunidades de melhoria. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Identificação de não conformidades 
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionDocumentacaoPadrao">
+                        <div class="accordion-body">
+                            <p>
+                              Por meio do registro de incidentes de não conformidade, como falhas de produto, reclamações de clientes ou desvios de processo, a documentação do SGQ permite que a organização identifique áreas em que as práticas atuais não atendem aos padrões de qualidade estabelecidos. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Análise de causa raiz  
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionDocumentacaoPadrao">
+                        <div class="accordion-body">
+                            <p>
+                              A documentação facilita a realização de análises de causa raiz para identificar as razões por trás de problemas de qualidade ou não conformidades. Isso ajuda a abordar as questões fundamentais que contribuem para problemas recorrentes, permitindo que a organização implemente soluções eficazes e preventivas. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading4">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        Definição de metas e objetivos 
+                      </button>
+                  </h2>
+                  <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionDocumentacaoPadrao">
+                    <div class="accordion-body">
+                        <p>
+                          A organização pode estabelecer metas e objetivos claros relacionados à qualidade, alinhados com sua visão e estratégia. Essas metas servem de referência para avaliar o desempenho atual e definir direções para melhorias futuras em seus processos, produtos e serviços. 
+                        </p>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading5">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        Desempenho de processos 
+                      </button>
+                  </h2>
+                  <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionDocumentacaoPadrao">
+                    <div class="accordion-body">
+                        <p>
+                          A documentação fornece uma base para avaliar o desempenho da organização em relação aos padrões de qualidade estabelecidos. Isso inclui a análise de indicadores-chave de desempenho, ou me inglês <i>key performance indicators</i> (KPIs), e outras métricas relevantes para monitorar o progresso em direção às metas de qualidade.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading6">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        <i>Feedback</i> dos clientes  
+                      </button>
+                  </h2>
+                  <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionDocumentacaoPadrao">
+                    <div class="accordion-body">
+                        <p>
+                          Por meio do <i>feedback</i> de clientes, como pesquisas de satisfação ou registros de reclamações, a documentação-padrão do SGQ permite que a organização colete e analise as opiniões dos clientes de forma sistemática. Isso fornece <i>insights</i> valiosos sobre como os produtos ou serviços estão sendo percebidos e onde as melhorias podem ser realizadas. 
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading7">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        Melhoria contínua documentada
+                      </button>
+                  </h2>
+                  <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionDocumentacaoPadrao">
+                    <div class="accordion-body">
+                        <p>
+                          O SGQ documenta formalmente as atividades relacionadas à melhoria contínua, incluindo planos de ação, implementações de mudanças e avaliações de eficácia. Isso garante que o processo de melhoria seja estruturado, rastreável e integrado às práticas operacionais da organização.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            
+            </div>
+
+            <div class="acessivel print visually-hidden">
+              <h4>Registro de processos e procedimentos</h4>
+
+              <p>
+                A documentação do SGQ inclui descrições detalhadas dos processos e procedimentos operacionais. Esses registros permitem que a organização avalie e analise como as tarefas são realizadas atualmente, identificando áreas de ineficiência ou oportunidades de melhoria. 
+              </p>             
+
+              <h4>Identificação de não conformidades</h4> 
+
+              <p>
+                Por meio do registro de incidentes de não conformidade, como falhas de produto, reclamações de clientes ou desvios de processo, a documentação do SGQ permite que a organização identifique áreas em que as práticas atuais não atendem aos padrões de qualidade estabelecidos.
+              </p>               
+
+              <h4>Análise de causa raiz</h4> 
+
+              <p>A documentação facilita a realização de análises de causa raiz para identificar as razões por trás de problemas de qualidade ou não conformidades. Isso ajuda a abordar as questões fundamentais que contribuem para problemas recorrentes, permitindo que a organização implemente soluções eficazes e preventivas. </p>              
+
+              <h4>Definição de metas e objetivos</h4> 
+
+              <p>A organização pode estabelecer metas e objetivos claros relacionados à qualidade, alinhados com sua visão e estratégia. Essas metas servem de referência para avaliar o desempenho atual e definir direções para melhorias futuras em seus processos, produtos e serviços.</p>             
+
+              <h4>Desempenho de processos </h4>
+
+              <p>A documentação fornece uma base para avaliar o desempenho da organização em relação aos padrões de qualidade estabelecidos. Isso inclui a análise de indicadores-chave de desempenho, ou me inglês key performance indicators (KPIs), e outras métricas relevantes para monitorar o progresso em direção às metas de qualidade. </p>             
+
+              <h4>Feedback dos clientes </h4>
+
+              <p>Por meio do feedback de clientes, como pesquisas de satisfação ou registros de reclamações, a documentação-padrão do SGQ permite que a organização colete e analise as opiniões dos clientes de forma sistemática. Isso fornece insights valiosos sobre como os produtos ou serviços estão sendo percebidos e onde as melhorias podem ser realizadas. </p>              
+
+              <h4>Melhoria contínua documentada </h4>
+
+              <p>O SGQ documenta formalmente as atividades relacionadas à melhoria contínua, incluindo planos de ação, implementações de mudanças e avaliações de eficácia. Isso garante que o processo de melhoria seja estruturado, rastreável e integrado às práticas operacionais da organização. </p>
+            </div>
+
+            <p>
+              Mas como isso funciona na prática? 
+            </p>
+
+            <div class="grafismo">
+              <div class="destaque icone refletir borda-colorida mt-0">
+                <p>
+                  Considere um exemplo de uma academia: 
+                </p>
+
+                <p>
+                  Para se manter competitiva no mercado, a academia decide melhorar seus processos e inovar. Quais são os pontos que ela precisa avaliar para melhorar seus serviços prestados?  
+                </p>
+              </div>
+            </div>
+
+            <p>
+              A academia pode criar manuais detalhados que descrevam as diferentes etapas de suas operações diárias, desde o agendamento de aulas até a manutenção das instalações. Esses documentos estabelecem diretrizes claras para garantir a consistência e a eficiência em todas as operações. 
+            </p>
+
+            <p>
+              Além disso, é adequado documentar os procedimentos de segurança e saúde ocupacional. Isso inclui protocolos de emergência, orientações para limpeza e desinfecção, bem como instruções para o uso seguro dos equipamentos de exercício. Essa documentação visa garantir um ambiente seguro tanto para os clientes quanto para os funcionários. 
+            </p>
+
+            <p>
+              Outro aspecto importante é manter registros atualizados do treinamento e da certificação dos instrutores e funcionários. Isso garante que todos tenham as habilidades e os conhecimentos necessários para oferecer um serviço de qualidade aos clientes. 
+            </p>
+
+            <p>
+              A avaliação da satisfação do cliente também é essencial. A academia pode conduzir pesquisas regulares para obter <i>feedback</i> sobre seus serviços e suas instalações. A documentação desses resultados permite identificar áreas de melhoria e implementar planos de ação para atender às expectativas dos clientes de forma mais eficaz. 
+            </p>
+
+            <p>
+              Além disso, é importante documentar os procedimentos para relatar e resolver não conformidades, como reclamações de clientes ou problemas de manutenção em equipamentos. Essa documentação permite aprender com os problemas passados e implementar melhorias futuras; por exemplo, a necessidade de melhorar a limpeza das instalações e a qualidade do atendimento aos clientes. 
+            </p>
+
+            <p>
+              Uma revisão constante de suas práticas por meio da revisão de procedimentos é importante, pois dessa forma é possível buscar maneiras de aprimorar ainda mais a qualidade de seus serviços e garantir a satisfação contínua dos clientes. 
+            </p>
+
+            <p>
+              Uma academia também precisa olhar e monitorar regularmente seus indicadores-chave de desempenho, como taxa de retenção de clientes, taxa de ocupação de aulas etc. Esses dados são registrados e analisados para avaliar o desempenho da academia e identificar áreas de oportunidade para melhoria.  
+            </p>
+
+            <p>
+              Ao implementar e manter essa documentação do SGQ, a academia estabelecerá uma base sólida para a melhoria contínua de seus serviços e processos. Isso não apenas aumenta a satisfação dos clientes, mas também promove a eficiência operacional e a excelência em todas as áreas de sua operação.  
+            </p>
+
+            <p>
+              Mas qual é a estrutura da documentação do SGQ? É o que você verá no próximo tópico. 
+            </p>
+
+            <p>
+              Que tal praticar mais o que você viu até agora a respeito da documentação do SGQ? 
+            </p>
+
+            <div class="box-atividade">
+              <p class="titulo-ativ"><strong>Verdadeiro ou falso</strong></p>
+              
+              <div class="esquemaDaBru verdadeiro-falso">
+                  <p class="enunciado" tabindex="0">1) A documentação do SGQ não oferece nenhum benefício tangível para a organização além de atender aos requisitos de auditoria.</p>
+                  <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                      <button class="alt-e botao hvr-grow-shadow">Verdadeiro</button>
+                      <button class="alt-c botao hvr-grow-shadow">Falso</button>
+                  </div>
+                  <div class="feedbacks">
+                      <p class="f-positivo"><i
+                              class="fas fa-check"></i>Parabéns! Você foi muito bem na escolha desta alternativa.</p>
+                      <p class="f-negativo"><i
+                              class="fas fa-times"></i>Ops! Parece que você escolheu a opção errada. Criar documentação em um SGQ traz muitos benefícios e não serve somente para atender a requisitos.</p>
+                  </div>
+              </div>
+              <div class="esquemaDaBru verdadeiro-falso">
+                  <p class="enunciado" tabindex="0">2) A documentação do SGQ pode simplificar a identificação de áreas de melhoria contínua ao documentar processos, procedimentos e padrões de qualidade.</p>
+                  <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                      <button class="alt-c botao hvr-grow-shadow">Verdadeiro</button>
+                      <button class="alt-e botao hvr-grow-shadow">Falso</button>
+                  </div>
+                  <div class="feedbacks">
+                      <p class="f-positivo"><i
+                              class="fas fa-check"></i> Parabéns! Você foi muito bem na escolha desta alternativa.</p>
+                      <p class="f-negativo"><i
+                              class="fas fa-times"></i> Ops! Parece que você escolheu a opção errada. Criar documentação em um SGQ traz muitos benefícios.</p>
+                  </div>
+              </div>
+              <div class="esquemaDaBru verdadeiro-falso">
+                <p class="enunciado" tabindex="0">3) A documentação do SGQ não desempenha nenhum papel na melhoria da satisfação do cliente, pois os clientes raramente têm acesso a essa documentação.</p>
+                <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                    <button class="alt-e botao hvr-grow-shadow">Verdadeiro</button>
+                    <button class="alt-c botao hvr-grow-shadow">Falso</button>
+                </div>
+                <div class="feedbacks">
+                    <p class="f-positivo"><i
+                            class="fas fa-check"></i> Parabéns! Você foi muito bem na escolha desta alternativa.</p>
+                    <p class="f-negativo"><i
+                            class="fas fa-times"></i> Ops! Parece que você escolheu a opção errada. Independentemente de o cliente ter acesso ou não a uma documentação, ela contribui para a execução correta de tarefas, o que consequentemente contribui para a satisfação de clientes.</p>
+                </div>
+            </div>
             </div>
 
 
-
-            </div>
           </div>
 
+          <div id="estruturaDocumentacaoSGQ">
+
+            <h3>Estrutura da documentação do SGQ</h3>
+
+            <p>
+              Um SGQ não é apenas uma abordagem estratégica para gerenciar e melhorar a qualidade, mas também é uma fonte vital de documentação que sustenta todas as operações e os processos dentro de uma empresa. Essa documentação não é apenas uma formalidade; é o alicerce sobre o qual são construídas a eficiência, a confiabilidade e a reputação da empresa. Nesse contexto, serão explorados os componentes essenciais da documentação-padrão do SGQ e seu papel fundamental na condução da excelência operacional e na busca contínua pela melhoria da qualidade. 
+            </p>
+
+            <div class="grafismo">
+              <div class="destaque borda-colorida">
+                A documentação do SGQ é composta de diversos elementos que ajudam a descrever, implementar, monitorar e melhorar continuamente os processos e os procedimentos relacionados à qualidade em uma organização, embora a extensão e o detalhamento de cada um desses componentes possam variar dependendo do tamanho, da complexidade e da natureza das operações da empresa. 
+              </div>
+            </div>
+
+            <h4>Hierarquia e inter-relação entre os diferentes tipos de documentos</h4>
+
+            <p>
+              A norma NBR ISO 9001 não requer uma hierarquia de informação documentada, e isso demonstra a liberdade que as empresas têm de organizar a sua documentação da melhor forma. Existem inúmeros benefícios em organizar de maneira clara e coerente a documentação do SGQ. A ISO tanto acredita nisso que fez a ISO 10013, na qual se encontra uma sugestão de hierarquia de documentos para o SGQ. Ainda nesta unidade curricular, você poderá aprofundar seu conhecimento, pois o assunto será abordado em detalhes. 
+            </p>
+
+            <p>
+              Na figura, veja um exemplo de hierarquia da documentação de um SGQ. Ao clicar em cada campo, você verá o conceito de cada um. 
+            </p>
+
+            <p class="no-print">Clique ou toque para acessar o conteúdo.</p>
+
+            <div class="painelHierarquiaDocumentacao no-print" aria-hidden="true">
 
 
+              <button class="btn-painelHierarquia" data-bs-toggle="popover" title="Manuais" data-bs-content="No topo da pirâmide, há o manual da qualidade. Com a nova versão da NBR ISO 9001, esse documento não é obrigatório, mas ainda é muito utilizado pelas empresas, pois as informações nele contidas fornecem uma visão geral do SGQ, incluindo sua estrutura, seu escopo, suas políticas, seus procedimentos e suas responsabilidades. Ele serve de ponto central de referência para todos os documentos relacionados à qualidade.">
+                <span class="titulo-botao-painel02">Manuais</span>
+                <img src="imgs/painel02/bt01.png" class="img-fluid" alt="" srcset="">
+              </button>
+
+              <button class=" btn-painelHierarquia" data-bs-toggle="popover" title="Procedimentos" data-bs-content="Os procedimentos operacionais descrevem a orientação dos processos existentes. Isso inclui procedimentos para os mais diferentes processos definidos pela empresa ou aqueles requeridos por normas.">
+                <span class="titulo-botao-painel02">Procedimentos</span>
+                <img src="imgs/painel02/bt02.png" class="img-fluid" alt="" srcset="">
+              </button>
+
+              <button class=" btn-painelHierarquia" data-bs-toggle="popover" title="Instruções de trabalho" data-bs-content="As instruções de trabalho fornecem orientações detalhadas sobre como as tarefas devem ser executadas de forma específica e de maneira consistente, conforme os padrões de qualidade estabelecidos. Elas são mais detalhadas e podem incluir fluxogramas, listas, tabelas, imagens e outros recursos visuais.">
+                <span class="titulo-botao-painel02">Instruções de trabalho</span>
+                <img src="imgs/painel02/bt03.png" class="img-fluid" alt="" srcset="">
+              </button>
+
+              <button class=" btn-painelHierarquia" data-bs-toggle="popover" title="Registros" data-bs-content="Os registros são documentos que evidenciam a conformidade com os requisitos do SGQ. Isso pode incluir registros de treinamentos, de manutenção de equipamentos, de não conformidades, de auditoria, entre outros.">
+                <span class="titulo-botao-painel02">Registros</span>
+                <img src="imgs/painel02/bt04.png" class="img-fluid" alt="" srcset="">
+              </button>
+
+              <button class=" btn-painelHierarquia" data-bs-toggle="popover" title="Documentos de origem externa" data-bs-content="A documentação do SGQ também inclui referência a documentos externos, como normas e padrões relevantes que a organização deve cumprir. Isso pode incluir normas nacionais e internacionais de qualidade, regulamentos governamentais, requisitos do cliente, alvarás, procedimento de terceiros, entre outros. ">
+                <span class="titulo-botao-painel02">Documentos de origem externa</span>
+                <img src="imgs/painel02/bt05.png" class="img-fluid" alt="" srcset="">
+              </button>
+            </div>
+            <figcaption class="figure-caption text-center mt-2 mb-5">
+              Hierarquia da documentação do SGQ <br>
+              Fonte: Senac EAD (2024)                            
+            </figcaption>
+
+            <p class="acessivel no-print visually-hidden">
+              A imagem representa um diagrama triangular dividido em cinco seções horizontais, cada uma com um rótulo diferente. Na primeira seção no topo do triângulo há a escrita manuais. Abaixo, a segunda seção, procedimentos. Na sequência, instruções de trabalho. Abaixo, registros. E a última seção, na base do triângulo, documentos de origem externa. Cada seção tem uma cor diferente, variando do mais claro no topo para o mais escuro na base. Essas seções representam diferentes tipos de documentos ou informações relacionadas a processos ou gestão.
+            </p>
+
+            <div class="acessivel print visually-hidden">
+              <h4>Manuais</h4> 
+
+              <p>No topo da pirâmide, há o manual da qualidade. Com a nova versão da NBR ISO 9001, esse documento não é obrigatório, mas ainda é muito utilizado pelas empresas, pois as informações nele contidas fornecem uma visão geral do SGQ, incluindo sua estrutura, seu escopo, suas políticas, seus procedimentos e suas responsabilidades. Ele serve de ponto central de referência para todos os documentos relacionados à qualidade. </p>
+
+              <h4>Procedimentos</h4> 
+
+              <p>Os procedimentos operacionais descrevem a orientação dos processos existentes. Isso inclui procedimentos para os mais diferentes processos definidos pela empresa ou aqueles requeridos por normas. </p>            
+
+              <h4>Instruções de trabalho </h4>
+
+              <p>As instruções de trabalho fornecem orientações detalhadas sobre como as tarefas devem ser executadas de forma específica e de maneira consistente, conforme os padrões de qualidade estabelecidos. Elas são mais detalhadas e podem incluir fluxogramas, listas, tabelas, imagens e outros recursos visuais. </p>            
+
+              <h4>Registros</h4> 
+
+              <p>Os registros são documentos que evidenciam a conformidade com os requisitos do SGQ. Isso pode incluir registros de treinamentos, de manutenção de equipamentos, de não conformidades, de auditoria, entre outros. </p>            
+
+              <h4>Documentos de origem externa </h4>
+
+              <p>A documentação do SGQ também inclui referência a documentos externos, como normas e padrões relevantes que a organização deve cumprir. Isso pode incluir normas nacionais e internacionais de qualidade, regulamentos governamentais, requisitos do cliente, alvarás, procedimento de terceiros, entre outros. </p>
+            </div>
+
+            <p>
+              A construção de cada tipo e modelo de documentação você poderá conferir ainda nesta unidade curricular. À medida que são explorados os componentes essenciais da documentação-padrão do SGQ, torna-se evidente que a organização e a clareza na estrutura dessa documentação são vitais para o sucesso do sistema. Contudo, não basta apenas identificar e compreender esses elementos; é igualmente importante assegurar que eles seguem um padrão consistente e uniforme. 
+            </p>
+
+            <p>
+              A padronização na documentação do SGQ desempenha um papel importantíssimo na garantia da integridade e eficácia das informações, proporcionando um alicerce sólido para a gestão da qualidade. Nesse contexto, serão examinadas a importância dessa padronização e a forma como ela contribui para a coerência e a eficiência das operações dentro de uma organização. 
+            </p>
+
+            <p>
+              Que tal praticar o que você viu até agora a respeito da hierarquia da documentação do SGQ? 
+            </p>
+
+            <div class="box-atividade">
+              <p class="titulo-ativ"><strong>Verdadeiro ou falso</strong></p>
+              
+              <div class="esquemaDaBru verdadeiro-falso">
+                  <p class="enunciado" tabindex="0">1) A política da qualidade é o documento mais detalhado e abrangente na hierarquia da documentação do SGQ.</p>
+                  <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                      <button class="alt-e botao hvr-grow-shadow">Verdadeiro</button>
+                      <button class="alt-c botao hvr-grow-shadow">Falso</button>
+                  </div>
+                  <div class="feedbacks">
+                      <p class="f-positivo"><i
+                              class="fas fa-check"></i>Parabéns! Você foi muito bem na escolha desta alternativa.</p>
+                      <p class="f-negativo"><i
+                              class="fas fa-times"></i>Ops! Parece que você escolheu a opção errada. Os procedimentos operacionais são documentos de nível mais baixo na hierarquia da documentação do SGQ em comparação com os manuais da qualidade, nos quais as políticas encontram-se descritas. Tente novamente! </p>
+                  </div>
+              </div>
+              <div class="esquemaDaBru verdadeiro-falso">
+                  <p class="enunciado" tabindex="0">2) Os procedimentos operacionais são documentos de nível mais baixo na hierarquia da documentação do SGQ em comparação com os manuais da qualidade.</p>
+                  <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                      <button class="alt-c botao hvr-grow-shadow">Verdadeiro</button>
+                      <button class="alt-e botao hvr-grow-shadow">Falso</button>
+                  </div>
+                  <div class="feedbacks">
+                      <p class="f-positivo"><i
+                              class="fas fa-check"></i> Parabéns! Você foi muito bem na escolha desta alternativa.</p>
+                      <p class="f-negativo"><i
+                              class="fas fa-times"></i> Ops! Parece que você escolheu a opção errada. Os manuais estão no topo da hierarquia de documentos, seguidos dos procedimentos, logo mais abaixo. Tente novamente!</p>
+                  </div>
+              </div>
+              <div class="esquemaDaBru verdadeiro-falso">
+                <p class="enunciado" tabindex="0">3) Os registros de qualidade são documentos obrigatórios na hierarquia da documentação do SGQ, mas não precisam ser mantidos atualizados regularmente.</p>
+                <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                    <button class="alt-e botao hvr-grow-shadow">Verdadeiro</button>
+                    <button class="alt-c botao hvr-grow-shadow">Falso</button>
+                </div>
+                <div class="feedbacks">
+                    <p class="f-positivo"><i
+                            class="fas fa-check"></i> Parabéns! Você foi muito bem na escolha desta alternativa.</p>
+                    <p class="f-negativo"><i
+                            class="fas fa-times"></i> Ops! Parece que você escolheu a opção errada. Os registros são um tipo de documento e precisam estar atualizados. Tente novamente!</p>
+                </div>
+            </div>
+            </div>
+
+          </div>
+
+          <div id="padronizacaoDocumentacaoSGQ">
+
+            <h3>Padronização da documentação do SGQ</h3>
+
+            <h4>Importância da padronização na documentação do SGQ</h4>
+
+            <p>
+              A padronização na documentação do SGQ é essencial para garantir a consistência, a clareza e a eficácia das informações dentro de uma organização. Essa padronização refere-se à prática de estabelecer e manter um conjunto consistente de documentos que descrevem os processos, os procedimentos, as políticas e os requisitos relacionados à gestão da qualidade em uma organização. Esses documentos são desenvolvidos para garantir que todas as atividades relacionadas à qualidade sejam executadas de maneira consistente e eficaz em toda a organização. Veja algumas vantagens da padronização. 
+            </p>
 
 
+            <div class="no-print" aria-hidden="true">
+              <p>Clique ou toque para visualizar o conteúdo.</p>
+
+              <div class="painel-padronizacao mb-5">
+
+                <button class=" btn-painel-padronizacao btn-consistencia" data-bs-toggle="modal" data-bs-target="#modal-consistencia">Consistência e uniformidade</button>
+
+                
+                <button class=" btn-painel-padronizacao btn-conformidade" data-bs-toggle="modal" data-bs-target="#modal-conformidade"><span>Conformidade com normas e regulamentos</span> </button>
+
+                <button class=" btn-painel-padronizacao btn-treinamento" data-bs-toggle="modal" data-bs-target="#modal-treinamento"><span>Facilidade de treinamento e comunicação</span> </button>
+
+                <button class=" btn-painel-padronizacao btn-melhoria"  data-bs-toggle="modal" data-bs-target="#modal-melhoria"><span>Facilitação da melhoria contínua</span> </button>
+
+              </div>
+
+              <div class="modal fade" id="modal-consistencia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Consistência e uniformidade</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                              A padronização garante que os processos sejam executados de maneira consistente em toda a organização. Isso minimiza variações indesejadas, erros e inconsistências, além de promover uma cultura organizacional coerente, em que todos estão alinhados com os mesmos padrões de qualidade. Com isso, as chances de haver não conformidades são minimizadas, o que contribui para a qualidade dos processos e produtos. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modal-conformidade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Conformidade com normas e regulamentos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                              A padronização ajuda as organizações a cumprirem os requisitos relevantes, garantindo que a documentação atenda aos padrões estabelecidos por clientes, normas ou legislações.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modal-treinamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Facilidade de treinamento e comunicação</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                              Documentos padronizados tornam mais fáceis as tarefas de treinar novos funcionários e integrá-los rapidamente aos processos organizacionais. Esses documentos fornecem um ponto de referência claro para entender as práticas e os procedimentos da empresa, reduzindo o tempo de adaptação e aumentando a produtividade. Além disso, todos os funcionários têm acesso a informações consistentes e atualizadas sobre os processos de qualidade. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modal-melhoria" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Facilitação da melhoria contínua </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                              Com uma base sólida de documentação padronizada, é mais fácil identificar áreas de melhoria e implementar mudanças eficazes. A padronização permite uma análise consistente dos processos, facilitando a identificação de oportunidades de otimização e a implementação de medidas corretivas e preventivas. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="acessivel print visually-hidden">
+              <h4>Consistência e uniformidade </h4>
+
+              <p>A padronização garante que os processos sejam executados de maneira consistente em toda a organização. Isso minimiza variações indesejadas, erros e inconsistências, além de promover uma cultura organizacional coerente, em que todos estão alinhados com os mesmos padrões de qualidade. Com isso, as chances de haver não conformidades são minimizadas, o que contribui para a qualidade dos processos e produtos. </p>
+
+              <h4>Conformidade com normas e regulamentos </h4>
+
+              <p>A padronização ajuda as organizações a cumprirem os requisitos relevantes, garantindo que a documentação atenda aos padrões estabelecidos por clientes, normas ou legislações.  </p>
+
+              <h4>Facilidade de treinamento e comunicação </h4>
+
+              <p>Documentos padronizados tornam mais fáceis as tarefas de treinar novos funcionários e integrá-los rapidamente aos processos organizacionais. Esses documentos fornecem um ponto de referência claro para entender as práticas e os procedimentos da empresa, reduzindo o tempo de adaptação e aumentando a produtividade. Além disso, todos os funcionários têm acesso a informações consistentes e atualizadas sobre os processos de qualidade. </p>
+
+              <h4>Facilitação da melhoria contínua </h4>
+
+              <p>Com uma base sólida de documentação padronizada, é mais fácil identificar áreas de melhoria e implementar mudanças eficazes. A padronização permite uma análise consistente dos processos, facilitando a identificação de oportunidades de otimização e a implementação de medidas corretivas e preventivas. </p>
+            </div>
+
+            <p>
+              Porém, é importante destacar que os documentos do SGQ não devem ser meramente burocráticos. Eles precisam ser elaborados da forma certa e com o proposito certo, para tornarem-se instrumentos que facilitam a execução do trabalho. Dessa forma, torna-se mais simples assegurar a conformidade do produto ou serviço e identificar oportunidades de aprimoramento nos processos. 
+            </p>
+
+            <div class="grafismo">
+              <div class="destaque borda-colorida icone atividade">
+                <p><strong>Mas como isso funciona na prática?</strong></p>
+                <p>
+                  Agora, você “mergulhará” na história de duas hamburguerias para entender como a padronização se traduz em sucesso no mundo real. 
+                </p>
+
+              </div>
+            </div>
+
+            <p class="no-print">
+              Clique ou toque para visualizar o conteúdo. 
+            </p>
+
+            <div class="no-print" aria-hidden="true">
+              
+              <div class="painel-hamburguerias">
+
+                <button class=" btn-painel-hamburguerias btn-saborSupremo" data-bs-toggle="modal" data-bs-target="#modal-saborSupremo"></button>
+                
+                <button class=" btn-painel-hamburguerias btn-deliciasDaHora" data-bs-toggle="modal" data-bs-target="#modal-deliciasDaHora"></button>
+              
+              </div>
+
+              <div class="modal fade" id="modal-saborSupremo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Hamburgueria Sabor Supremo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                              A Sabor Supremo nasceu com a padronização em seu DNA. Desde o início, seu dono, Carlos, investiu em processos rigorosos para garantir qualidade e consistência. 
+                            </p>
+                            <p>
+                              Na Sabor Supremo, cada detalhe da produção de hambúrgueres era cuidadosamente documentado e seguido à risca. Desde a compra e seleção dos ingredientes frescos, de alta qualidade, até a entrega do produto, passando pelos procedimentos de preparação e montagem. Tudo era padronizado para garantir a máxima qualidade em cada hambúrguer. 
+                            </p>
+                            <p>
+                              O proprietário da hamburgueria era um grande defensor da importância da <b>padronização da documentação do SGQ</b>. Ele sabia que isso não apenas garantia a satisfação dos clientes, mas também contribuía para a eficiência operacional e a reputação da empresa. Seus hambúrgueres logo ficaram famosos por seu sabor excepcional e sua consistência impecável. 
+                            </p>
+                            <p>
+                              O segredo do sucesso da hamburgueria residia na meticulosa <b>padronização da documentação do SGQ</b>. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modal-deliciasDaHora" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Hamburgueria Delícias da Hora </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                              Um dia, um amigo de Carlos, chamado Marcos, também decidiu abrir uma hamburgueria, em uma cidade vizinha. Marcos era apaixonado por hambúrgueres. Porém, ele era conhecido por suas abordagens informais e improvisadas na administração do negócio. Ele acreditava que a qualidade dos hambúrgueres poderia ser mantida sem a padronização do SGQ. 
+                            </p>
+                            <p>
+                              Enquanto a Sabor Supremo continuava a prosperar com sua abordagem disciplinada, a hamburgueria Delícias da Hora enfrentava desafios. Os clientes reclamavam da inconsistência nos hambúrgueres, pois eles variavam em tamanho, sabor e apresentação, frustrando os clientes. Também havia dificuldade da equipe em gerenciar o controle de estoque, as receitas e os custos. Além disso, a falta de padronização tornava o preparo demorado.  
+                            </p>
+                            <p>
+                              A qualidade inferior dos hambúrgueres e do serviço da Delícias da Hora começou a afetar negativamente os negócios de Marcos. Ele resolveu, então, realizar um <i>benchmarking</i> na hamburgueria do amigo Carlos. O <i>benchmarking</i> consiste no processo de busca das melhores práticas de gestão em outra empresa.                              
+                            </p>
+                            <p>
+                              Marcos ficou encantando com tamanha organização da Sabor Supremo e reconheceu a importância da <b>padronização da documentação do SGQ</b>. Ele aprendeu com Carlos e sua equipe os benefícios de manter e de seguir procedimentos padronizados. Inspirado, Marcos decidiu implementar um sistema semelhante em sua própria hamburgueria.                             
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <p class="acessivel print visually-hidden">
+              <h4>Hamburgueria Sabor Supremo </h4>
+
+              <p>A Sabor Supremo nasceu com a padronização em seu DNA. Desde o início, seu dono, Carlos, investiu em processos rigorosos para garantir qualidade e consistência. </p>
+
+              <p>Na Sabor Supremo, cada detalhe da produção de hambúrgueres era cuidadosamente documentado e seguido à risca. Desde a compra e seleção dos ingredientes frescos, de alta qualidade, até a entrega do produto, passando pelos procedimentos de preparação e montagem. Tudo era padronizado para garantir a máxima qualidade em cada hambúrguer. </p>
+
+              <p>O proprietário da hamburgueria era um grande defensor da importância da padronização da documentação do SGQ. Ele sabia que isso não apenas garantia a satisfação dos clientes, mas também contribuía para a eficiência operacional e a reputação da empresa. Seus hambúrgueres logo ficaram famosos por seu sabor excepcional e sua consistência impecável. </p>
+
+              <p>O segredo do sucesso da hamburgueria residia na meticulosa padronização da documentação do SGQ. </p>            
+
+              <h4>Hamburgueria Delícias da Hora </h4>
+
+              <p>Um dia, um amigo de Carlos, chamado Marcos, também decidiu abrir uma hamburgueria, em uma cidade vizinha. Marcos era apaixonado por hambúrgueres. Porém, ele era conhecido por suas abordagens informais e improvisadas na administração do negócio. Ele acreditava que a qualidade dos hambúrgueres poderia ser mantida sem a padronização do SGQ. </p>
+
+              <p>Enquanto a Sabor Supremo continuava a prosperar com sua abordagem disciplinada, a hamburgueria Delícias da Hora enfrentava desafios. Os clientes reclamavam da inconsistência nos hambúrgueres, pois eles variavam em tamanho, sabor e apresentação, frustrando os clientes. Também havia dificuldade da equipe em gerenciar o controle de estoque, as receitas e os custos. Além disso, a falta de padronização tornava o preparo demorado. </p>
+            
+
+              <p>A qualidade inferior dos hambúrgueres e do serviço da Delícias da Hora começou a afetar negativamente os negócios de Marcos. Ele resolveu, então, realizar um <i>benchmarking</i> na hamburgueria do amigo Carlos. O <i>benchmarking</i> consiste no processo de busca das melhores práticas de gestão em outra empresa.  </p>              
+
+              <p>Marcos ficou encantando com tamanha organização da Sabor Supremo e reconheceu a importância da padronização da documentação do SGQ. Ele aprendeu com Carlos e sua equipe os benefícios de manter e de seguir procedimentos padronizados. Inspirado, Marcos decidiu implementar um sistema semelhante em sua própria hamburgueria. </p>
+
+ 
+            </p>
+
+            <p>
+              Com a introdução da padronização do SGQ na Delícias da Hora, a qualidade dos hambúrgueres melhorou significativamente. Os clientes voltaram a elogiar os sabores consistentes e a experiência de alta qualidade. 
+            </p>
+
+            <p>
+              No final, tanto Carlos quanto Marcos entenderam que a <b>padronização da documentação do SGQ</b> era fundamental para o sucesso no comércio de hambúrgueres. Ambas as hamburguerias obtiveram uma boa reputação, tudo graças à importância da qualidade padronizada. 
+            </p>
+
+            <p>
+              As histórias das duas hamburguerias demonstram que a padronização é um ingrediente essencial para o sucesso. Ao padronizar seus processos, você pode: 
+            </p>
+
+            <ul class="custom-check-bullet ml-2">
+              <li><b>Garantir qualidade e consistência:</b> seus clientes sempre saberão o que esperar.</li>
+              <li><b>Aumentar a eficiência:</b> a padronização ajuda a otimizar os processos, melhorando a eficiência e reduzindo o tempo de espera.</li>
+              <li><b>Melhorar a lucratividade:</b> o controle de custos e a otimização contribuem para aumentar a lucratividade.</li>
+            </ul>
+
+            <div class="grafismo">
+              <div class="destaque borda-colorida icone refletir">
+                Como a implementação da padronização influenciou diretamente a qualidade e a consistência dos produtos oferecidos pelas hamburguerias? 
+              </div>
+            </div>
+
+            <h4>Conheça mais um caso, agora de uma hamburgueria muito famosa</h4>
+
+            <div class="no-print">
+
+              <p>Clique ou toque para visualizar o conteúdo.</p>
+  
+              <div class="mcdonalds">
+                <button class="btn-mcdonalds" data-bs-toggle="modal" data-bs-target="#modal-mcdonalds"></button>
+              </div>
+  
+              <div class="modal fade" id="modal-mcdonalds" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">A história por trás do sucesso do McDonald’s</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                              Na década de 1940, os irmãos Dick e Mac McDonald revolucionaram a indústria de restaurantes com a criação do sistema <i>speedy</i>. Essa inovação radical abandonou o modelo tradicional e otimizou a entrega de pedidos, transformando a forma como as pessoas consumiam alimentos. 
+                            </p>
+                            <p>
+                              O <i>speedy</i> baseava-se na padronização de cada etapa da produção de hambúrgueres. Desde o atendimento ao cliente e o registro do pedido até a preparação e entrega, tudo era cuidadosamente definido e executado com precisão.                             
+                            </p>
+                            <p>
+                              O sistema <i>speedy</i> foi fundamental para o sucesso estrondoso do McDonald’s. A empresa rapidamente se tornou um gigante global, inspirando outras empresas a adotarem métodos semelhantes para aumentar a eficiência e a consistência em suas operações.                             </p>
+                            <p>
+                              O segredo do sucesso da hamburgueria residia na meticulosa <b>padronização da documentação do SGQ</b>. 
+                            </p>
+
+                            <h4>Elementos-chave do <i>speedy</i>:</h4>
+                            <ul class="custom-bullet">
+                              <li>Padronização de tarefas e procedimentos</li>
+                              <li>Definição clara da disposição dos equipamentos e das operações das máquinas</li>
+                              <li>Movimentos dos colaboradores cuidadosamente padronizados ao longo do processo produtivo</li>
+                            </ul>
+
+                            <h4>Impacto do speedy:</h4>
+                            <ul class="custom-bullet">
+                              <li>Reduziu drasticamente o tempo de espera dos clientes </li>
+                              <li>Aumentou significativamente a produção de hambúrgueres </li>
+                              <li>Permitiu a expansão rápida e eficiente do McDonald’s </li>
+                              <li>Inspirou outras empresas a adotarem métodos padronizados para aumentar a eficiência </li>
+                            </ul>
+
+                            <div class="grafismo">
+                              <div class="destaque borda-colorida icone dica">
+                                <p><b>Para saber mais:</b></p>
+                                <ul>
+                                  <li>Assista ao filme <i>Fome de Poder</i> (2016), disponível nas principais plataformas de <i>streaming</i>.</li>
+                                  <li>Pesquise sobre a história do McDonald’s e a importância do sistema <i>speedy</i>.</li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <figure>
+                              <div class="figure-img">
+                                  <img class="img-fluid mx-auto d-block " src="imgs/Figuras/fome-de-poder.jpg">
+                              </div>                      
+                            </figure>
+                            <figcaption class="figure-caption text-center mt-2 mb-5">
+                              Capa do filme <i>Fome de Poder</i> <br>
+                              Fonte: AdoroCinema (2017)                            
+                            </figcaption>
+
+                            <p class="acessivel no-print visually-hidden">
+                              A imagem mostra um homem de terno e gravata bege, visto de frente, em pé diante de uma paisagem ensolarada. No fundo da imagem, o logotipo do McDonald’s é exibido na cor amarela. O título do filme, Fome de Poder, aparece em letras brancas, com uma fonte que evoca uma sensação de determinação e ambição. Acima do título, há o nome do ator principal, Michael Keaton. Mais acima, a frase: Ele roubou uma ideia e o mundo engoliu. A imagem transmite uma atmosfera de negócios e poder corporativo, sugerindo uma narrativa envolvente sobre a ascensão da marca McDonald’s.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="acessivel print visually-hidden">
+               
+              <h3>A história por trás do sucesso do McDonald’s</h3>
+              
+              <p>
+                Na década de 1940, os irmãos Dick e Mac McDonald revolucionaram a indústria de restaurantes com a criação do sistema <i>speedy</i>. Essa inovação radical abandonou o modelo tradicional e otimizou a entrega de pedidos, transformando a forma como as pessoas consumiam alimentos. 
+              </p>
+              <p>
+                O <i>speedy</i> baseava-se na padronização de cada etapa da produção de hambúrgueres. Desde o atendimento ao cliente e o registro do pedido até a preparação e entrega, tudo era cuidadosamente definido e executado com precisão.                             
+              </p>
+              <p>
+                O sistema <i>speedy</i> foi fundamental para o sucesso estrondoso do McDonald’s. A empresa rapidamente se tornou um gigante global, inspirando outras empresas a adotarem métodos semelhantes para aumentar a eficiência e a consistência em suas operações.                             </p>
+              <p>
+                O segredo do sucesso da hamburgueria residia na meticulosa <b>padronização da documentação do SGQ</b>. 
+              </p>
+
+              <h4>Elementos-chave do <i>speedy</i>:</h4>
+              <ul class="custom-bullet">
+                <li>Padronização de tarefas e procedimentos</li>
+                <li>Definição clara da disposição dos equipamentos e das operações das máquinas</li>
+                <li>Movimentos dos colaboradores cuidadosamente padronizados ao longo do processo produtivo</li>
+              </ul>
+
+              <h4>Impacto do speedy:</h4>
+              <ul class="custom-bullet">
+                <li>Reduziu drasticamente o tempo de espera dos clientes </li>
+                <li>Aumentou significativamente a produção de hambúrgueres </li>
+                <li>Permitiu a expansão rápida e eficiente do McDonald’s </li>
+                <li>Inspirou outras empresas a adotarem métodos padronizados para aumentar a eficiência </li>
+              </ul>
+
+              <div class="grafismo">
+                <div class="destaque borda-colorida icone dica">
+                  <p><b>Para saber mais:</b></p>
+                  <ul>
+                    <li>Assista ao filme <i>Fome de Poder</i> (2016), disponível nas principais plataformas de <i>streaming</i>.</li>
+                    <li>Pesquise sobre a história do McDonald’s e a importância do sistema <i>speedy</i>.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <figure>
+                <div class="figure-img">
+                    <img class="img-fluid mx-auto d-block " src="imgs/Figuras/fome-de-poder.jpg">
+                </div>                      
+              </figure>
+              <figcaption class="figure-caption text-center mt-2 mb-5">
+                Capa do filme <i>Fome de Poder</i> <br>
+                Fonte: AdoroCinema (2017)                            
+              </figcaption>
+
+              <p class="acessivel no-print visually-hidden">
+                A imagem mostra um homem de terno e gravata bege, visto de frente, em pé diante de uma paisagem ensolarada. No fundo da imagem, o logotipo do McDonald’s é exibido na cor amarela. O título do filme, Fome de Poder, aparece em letras brancas, com uma fonte que evoca uma sensação de determinação e ambição. Acima do título, há o nome do ator principal, Michael Keaton. Mais acima, a frase: Ele roubou uma ideia e o mundo engoliu. A imagem transmite uma atmosfera de negócios e poder corporativo, sugerindo uma narrativa envolvente sobre a ascensão da marca McDonald’s.
+              </p>
+
+            </div>
+
+            <p>
+              Após explorar a importância da padronização na documentação do SGQ e seus diversos benefícios, é fundamental compreender também os processos de revisão e atualização desses documentos. Afinal, a padronização só pode ser eficaz se acompanhada por um sistema dinâmico e ágil de manutenção da documentação, garantindo que ela permaneça relevante, precisa e alinhada aos objetivos e às práticas da organização. Agora, você “mergulhará” nos detalhes desses processos, que desempenham um papel fundamental na sustentação da excelência do SGQ. 
+            </p>
+
+            <h4>Processos de revisão e atualização da documentação</h4>
+
+          </div>
+
+         
 
 
 
