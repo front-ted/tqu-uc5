@@ -29,16 +29,13 @@
     <link rel="stylesheet" href="../assets/css/template.css">
     <!-- Estilos da pagina -->
     <link rel="stylesheet" href="styles/custom.css">
+
+    <!-- paineis -->
     <link rel="stylesheet" href="styles/painel-beneficios-documentacao.css">
     <link rel="stylesheet" href="styles/painel-hierarquia-documentacao.css">
     <link rel="stylesheet" href="styles/painel-padronizacao.css">
     <link rel="stylesheet" href="styles/painel-hamburguerias.css">
-
-
-
-
-    
-
+    <link rel="stylesheet" href="styles/painel-etapas-revisao.css"> 
 
   </head>
   <body class="bg-claro">
@@ -330,7 +327,7 @@
               Adotar a prática de documentação padrão para a realização das atividades traz vários benefícios. 
             </p>
 
-            <!-- <div class="no-print " aria-hidden="true">
+            <div class="no-print " aria-hidden="true">
               <p>
                 Clique ou toque para visualizar o conteúdo. 
               </p>
@@ -431,7 +428,7 @@
 
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">eficiencia produtividade</div>
               </div>
-            </div> -->
+            </div>
 
             <div class="acessivel no-print visually-hidden">
 
@@ -820,27 +817,27 @@
 
               <button class="btn-painelHierarquia" data-bs-toggle="popover" title="Manuais" data-bs-content="No topo da pirâmide, há o manual da qualidade. Com a nova versão da NBR ISO 9001, esse documento não é obrigatório, mas ainda é muito utilizado pelas empresas, pois as informações nele contidas fornecem uma visão geral do SGQ, incluindo sua estrutura, seu escopo, suas políticas, seus procedimentos e suas responsabilidades. Ele serve de ponto central de referência para todos os documentos relacionados à qualidade.">
                 <span class="titulo-botao-painel02">Manuais</span>
-                <img src="imgs/painel02/bt01.png" class="img-fluid" alt="" srcset="">
+                <img src="imgs/painel02/bt01.png" class="img-fluid bt-manuais" alt="" srcset="">
               </button>
 
-              <button class=" btn-painelHierarquia" data-bs-toggle="popover" title="Procedimentos" data-bs-content="Os procedimentos operacionais descrevem a orientação dos processos existentes. Isso inclui procedimentos para os mais diferentes processos definidos pela empresa ou aqueles requeridos por normas.">
+              <button class="btn-painelHierarquia" data-bs-toggle="popover" title="Procedimentos" data-bs-content="Os procedimentos operacionais descrevem a orientação dos processos existentes. Isso inclui procedimentos para os mais diferentes processos definidos pela empresa ou aqueles requeridos por normas.">
                 <span class="titulo-botao-painel02">Procedimentos</span>
-                <img src="imgs/painel02/bt02.png" class="img-fluid" alt="" srcset="">
+                <img src="imgs/painel02/bt02.png" class="img-fluid bt-procedimentos" alt="" srcset="">
               </button>
 
               <button class=" btn-painelHierarquia" data-bs-toggle="popover" title="Instruções de trabalho" data-bs-content="As instruções de trabalho fornecem orientações detalhadas sobre como as tarefas devem ser executadas de forma específica e de maneira consistente, conforme os padrões de qualidade estabelecidos. Elas são mais detalhadas e podem incluir fluxogramas, listas, tabelas, imagens e outros recursos visuais.">
                 <span class="titulo-botao-painel02">Instruções de trabalho</span>
-                <img src="imgs/painel02/bt03.png" class="img-fluid" alt="" srcset="">
+                <img src="imgs/painel02/bt03.png" class="img-fluid bt-instrucoes" alt="" srcset="">
               </button>
 
               <button class=" btn-painelHierarquia" data-bs-toggle="popover" title="Registros" data-bs-content="Os registros são documentos que evidenciam a conformidade com os requisitos do SGQ. Isso pode incluir registros de treinamentos, de manutenção de equipamentos, de não conformidades, de auditoria, entre outros.">
                 <span class="titulo-botao-painel02">Registros</span>
-                <img src="imgs/painel02/bt04.png" class="img-fluid" alt="" srcset="">
+                <img src="imgs/painel02/bt04.png" class="img-fluid bt-registros" alt="" srcset="">
               </button>
 
               <button class=" btn-painelHierarquia" data-bs-toggle="popover" title="Documentos de origem externa" data-bs-content="A documentação do SGQ também inclui referência a documentos externos, como normas e padrões relevantes que a organização deve cumprir. Isso pode incluir normas nacionais e internacionais de qualidade, regulamentos governamentais, requisitos do cliente, alvarás, procedimento de terceiros, entre outros. ">
                 <span class="titulo-botao-painel02">Documentos de origem externa</span>
-                <img src="imgs/painel02/bt05.png" class="img-fluid" alt="" srcset="">
+                <img src="imgs/painel02/bt05.png" class="img-fluid bt-documentos" alt="" srcset="">
               </button>
             </div>
             <figcaption class="figure-caption text-center mt-2 mb-5">
@@ -1179,7 +1176,7 @@
 
               <p>Clique ou toque para visualizar o conteúdo.</p>
   
-              <div class="mcdonalds">
+              <div class="mcdonalds mb-5">
                 <button class="btn-mcdonalds" data-bs-toggle="modal" data-bs-target="#modal-mcdonalds"></button>
               </div>
   
@@ -1312,15 +1309,805 @@
 
             <h4>Processos de revisão e atualização da documentação</h4>
 
+            <p>
+              A norma ISO 9001:2015 define os requisitos para um SGQ eficaz, incluindo a necessidade de manter a documentação do sistema atualizada e precisa. Logo, é necessário manter um processo de revisão e atualização da documentação.  
+            </p>
+
+            <p>
+              Os documentos do SGQ devem ter uma frequência definida de revisão. Essa frequência depende do tamanho da organização, da dinamicidade do mercado e da criticidade dos processos. Alguns exemplos frequentemente utilizados para frequências são: anualmente, semestralmente ou trimestralmente. Não há uma frequência ideal de revisão, pois ela deve ser analisada de acordo com diversos fatores, tais como os que você verá na sequência. 
+            </p>
+
+            <div class="no-print" aria-hidden="true">
+
+              <p>Clique ou toque para visualizar o conteúdo.</p>
+
+              <div class="accordion" id="accordionFrequenciaRevisao">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading21">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                          1. Tamanho da organização 
+                        </button>
+                    </h2>
+                    <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#accordionFrequenciaRevisao">
+                        <div class="accordion-body">
+                            <ul class="custom-bullet">
+                              <li><b>Organizações maiores:</b> geralmente têm mais documentação e processos mais complexos, exigindo revisões mais frequentes. </li>
+                              <li><b>Organizações menores:</b> podem ter menos documentação e processos mais simples, permitindo revisões menos frequentes. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading22">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                          2. Dinamicidade do mercado 
+                        </button>
+                    </h2>
+                    <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22" data-bs-parent="#accordionFrequenciaRevisao">
+                        <div class="accordion-body">
+                            <ul class="custom-bullet">
+                              <li><b>Mercados dinâmicos:</b> exigem que as empresas se adaptem rapidamente às mudanças, o que pode implicar revisões mais frequentes da documentação.</li>
+                              <li><b>Mercados estáveis:</b> podem permitir revisões menos frequentes da documentação.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading23">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                          3. Criticidade dos processos 
+                        </button>
+                    </h2>
+                    <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23" data-bs-parent="#accordionFrequenciaRevisao">
+                        <div class="accordion-body">
+                            <ul class="custom-bullet">
+                              <li><b>Processos críticos:</b> impactam diretamente a qualidade do produto ou serviço e devem ter sua documentação revisada com mais frequência.</li>
+                              <li><b>Processos menos críticos:</b> podem ter sua documentação revisada com menos frequência. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading24">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                        É importante também considerar outros fatores 
+                      </button>
+                  </h2>
+                  <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24" data-bs-parent="#accordionFrequenciaRevisao">
+                      <div class="accordion-body">
+                          <ul class="custom-bullet">
+                            <li><b>Mudanças na legislação ou normas:</b> podem exigir a revisão da documentação para garantir a conformidade.</li>
+                            <li><b>Reclamações de clientes:</b> podem indicar a necessidade de revisar a documentação para identificar e corrigir falhas nos processos.</li>
+                            <li><b>Resultados de auditorias internas:</b> podem identificar áreas da documentação que precisam ser revisadas e aprimoradas.</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="acessivel print visually-hidden">
+
+              <ol>
+                <li>
+                  <b>Tamanho da organização</b>
+                  <ul>
+                    <li>Organizações maiores: geralmente têm mais documentação e processos mais complexos, exigindo revisões mais frequentes. 
+                    </li>
+                    <li>Organizações menores: podem ter menos documentação e processos mais simples, permitindo revisões menos frequentes. 
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Dinamicidade do mercado</b>
+                  <ul>
+                    <li>Mercados dinâmicos: exigem que as empresas se adaptem rapidamente às mudanças, o que pode implicar revisões mais frequentes da documentação. 
+                    </li>
+                    <li>Mercados estáveis: podem permitir revisões menos frequentes da documentação. 
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Criticidade dos processos</b> 
+                  <ul>
+                    <li>Processos críticos: impactam diretamente a qualidade do produto ou serviço e devem ter sua documentação revisada com mais frequência. 
+                    </li>
+                    <li>Processos menos críticos: podem ter sua documentação revisada com menos frequência. 
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>É importante também considerar outros fatores</b> 
+                  <ul>
+                    <li>Mudanças na legislação ou normas: podem exigir a revisão da documentação para garantir a conformidade. 
+                    </li>
+                    <li>Reclamações de clientes: podem indicar a necessidade de revisar a documentação para identificar e corrigir falhas nos processos. 
+                    </li>
+                    <li>Resultados de auditorias internas: podem identificar áreas da documentação que precisam ser revisadas e aprimoradas. 
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+
+            <div class="grafismo">
+              <div class="destaque borda-colorida icone atencao">
+                <strong>Lembre-se:</strong> a frequência ideal de revisão é aquela que garante que a documentação do SGQ esteja sempre atualizada, precisa e adequada às necessidades da organização. 
+              </div>
+            </div>
+
+            <p>
+              A revisão é um momento muito importante, por isso o responsável deve ter conhecimento técnico e familiaridade com o conteúdo do documento. Além do responsável pela revisão, os documentos também devem ter um aprovador, que deve garantir que o documento atenda ao que se propõe e esteja alinhado às políticas da organização. 
+            </p>
+
+            <p>
+              Veja quais são as etapas da revisão de um documento. 
+            </p>
+
+            <div class="no-print" aria-hidden="true">
+
+              <p>Clique ou toque para visualizar o conteúdo.</p>
+
+              <div class="painel-etapas-revisao mx-auto">
+                
+                <img src="imgs/painel03/bt01.png" class="btn-painel-etapas-revisao btn-analise-critica" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalAnaliseCritica">
+                
+                <img src="imgs/painel03/bt02.png" class="btn-painel-etapas-revisao btn-atualizacao-conteudo" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalAtualizacaoConteudo">
+
+                <img src="imgs/painel03/bt03.png" class="btn-painel-etapas-revisao btn-validacao" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalValidacao">
+
+                <img src="imgs/painel03/bt04.png" class="btn-painel-etapas-revisao btn-aprovacao" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalAprovacao">
+
+                <img src="imgs/painel03/bt05.png" class="btn-painel-etapas-revisao btn-recomendacoes-adicionais" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalRecomendacoesAdicionais">
+
+              </div>
+
+              <div class="modal fade" id="modalAnaliseCritica" tabindex="-1" aria-labelledby="modalAnaliseCriticaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">1. Análise crítica</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="custom-bullet">
+                              <li>
+                                <b>Identificação da necessidade:</b>a necessidade da revisão pode surgir de uma série de questões: 
+                                <ul>
+                                  <li>Mudança nos requisitos, nos processos, nas tecnologias</li>
+                                  <li>Mudanças no ambiente externo </li>
+                                  <li>Avaliações dos clientes e/ou das partes interessadas </li>
+                                  <li>Melhoria contínua </li>
+                                  <li>Correção de não conformidades </li>
+                                  <li>Evolução da organização </li>
+                                  <li>Novas oportunidades de negócios </li>
+                                  <li>Mudanças na estrutura organizacional </li>
+                                  <li>Entre outras</li>
+                                </ul>
+                              </li>
+                              <li>
+                                <b>Identificar seções obsoletas:</b>
+                                <ul>
+                                  <li>
+                                    Verificar se as informações contidas no documento estão desatualizadas ou não refletem mais a realidade da organização 
+                                  </li>
+                                  <li>
+                                    Buscar por informações contraditórias ou inconsistentes com outras partes da documentação 
+                                  </li>
+                                  <li>
+                                    Avaliar se o documento ainda é relevante para os objetivos da organização 
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <b>Identificar seções inconsistentes:</b>
+                                <ul>
+                                  <li>Buscar por contradições entre diferentes seções do mesmo documento </li>
+                                  <li>Verificar se a terminologia utilizada é consistente em todo o documento </li>
+                                  <li>Avaliar se as informações contidas no documento são consistentes com outras normas ou requisitos aplicáveis </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <b>Identificar seções incompletas: </b>
+                                <ul>
+                                  <li>Verificar se o documento fornece todas as informações necessárias para o seu propósito </li>
+                                  <li>Buscar por lacunas de informação que possam comprometer a compreensão do documento </li>
+                                  <li>Avaliar se o documento fornece instruções claras e precisas para as atividades descritas </li>
+                                </ul>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalAtualizacaoConteudo" tabindex="-1" aria-labelledby="modalAtualizacaoConteudoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">2. Atualização do conteúdo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="custom-bullet">
+                              <li>
+                                <b>Analisar o impacto e dos riscos:</b>
+                                <ul>
+                                  <li>Identificar as seções da documentação afetadas pela revisão</li>
+                                  <li>Avaliar como as mudanças propostas afetarão as operações diárias da organização</li>
+                                  <li>Identificar e avaliar os possíveis riscos associados às mudanças propostas, incluindo operacionais, financeiros, legais, de reputação e outros</li>
+                                  <li>Considerar a mitigação desses riscos durante o processo de análise </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <b>Incluir novas informações:</b>
+                                <ul>
+                                  <li>
+                                    Incluir informações sobre novas tecnologias, processos ou requisitos legais 
+                                  </li>
+                                  <li>
+                                    Atualizar o documento para refletir as mudanças na organização, como novos produtos ou serviços 
+                                  </li>
+                                  <li>
+                                    Incorporar as melhores práticas no documento 
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <b>Revisar a linguagem e o estilo:</b>
+                                <ul>
+                                  <li>Usar linguagem clara, concisa e objetiva</li>
+                                  <li>Evitar termos técnicos desnecessários ou jargões</li>
+                                  <li>Formatar o documento de forma legível e organizada </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <b>Garantir a coerência e a completude do documento: </b>
+                                <ul>
+                                  <li>Verificar se todas as seções do documento estão interligadas e se há um fluxo lógico de informações</li>
+                                  <li>Assegurar que o documento fornece todas as informações necessárias para o seu propósito </li>
+                                  <li>Corrigir erros gramaticais e ortográficos </li>
+                                </ul>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalValidacao" tabindex="-1" aria-labelledby="modalValidacaoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">3. Validação</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="custom-bullet">
+                              <li>
+                                <b>Confirmar se as alterações atendem às necessidades da organização:</b>
+                                <ul>
+                                  <li>Testar o documento com usuários reais para verificar se é fácil de usar e entender</li>
+                                  <li>Obter avaliação de diferentes partes interessadas da organização </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <b>Garantir que o documento está atualizado e completo:</b>
+                                <ul>
+                                  <li>
+                                    Verificar se o documento inclui todas as informações relevantes e necessárias  
+                                  </li>
+                                  <li>
+                                    Assegurar que o documento está alinhado com os objetivos da organização  
+                                  </li>
+                                  <li>
+                                    Confirmar se o documento está em conformidade com os requisitos legais e outras normas aplicáveis                                  
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalAprovacao" tabindex="-1" aria-labelledby="modalAprovacaoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">4. Aprovação</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="custom-bullet">
+                              <li>
+                                <b>Formalizar a nova versão do documento:</b>
+                                <ul>
+                                  <li>
+                                    Registrar a data da revisão e a versão do documento 
+                                  </li>
+                                  <li>
+                                    Obter a aprovação da pessoa responsável pela revisão e atualização da documentação 
+                                  </li>
+                                  <li>
+                                    Armazenar o documento em um local seguro e acessível 
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <b>Comunicar e treinar a nova versão do documento:</b>
+                                <ul>
+                                  <li>
+                                    Informar todos os colaboradores da organização sobre a nova versão do documento   
+                                  </li>
+                                  <li>
+                                    Fornecer treinamento sobre as mudanças no documento, se necessário, detalhando como as alterações impactam seus trabalhos   
+                                  </li>
+                                  <li>
+                                    Assegurar que todos os colaboradores estejam cientes de como utilizar a nova versão do documento.                                
+                                  </li>
+                                  <li>
+                                    Informar os colaboradores sobre as mudanças e como elas impactam seus trabalhos 
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalRecomendacoesAdicionais" tabindex="-1" aria-labelledby="modalRecomendacoesAdicionaisLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Recomendações adicionais:</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="custom-bullet">
+                              <li>
+                                <b>Documente o processo de revisão e atualização da documentação: </b>
+                                <ul>
+                                  <li>
+                                    Descreva as etapas envolvidas no processo. 
+                                  </li>
+                                  <li>
+                                    Defina os responsáveis por cada etapa. 
+                                  </li>
+                                  <li>
+                                    Estabeleça prazos para a conclusão de cada etapa. 
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <b>Mantenha registros das revisões: </b>
+                                <ul>
+                                  <li>
+                                    Registre as alterações realizadas no documento.    
+                                  </li>
+                                  <li>
+                                    Mantenha um histórico das revisões do documento.   
+                                  </li>
+                                  <li>
+                                    Assegure que os registros das revisões sejam facilmente acessíveis.                               
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="acessivel print visually-hidden">
+
+              <h4>1. Análise crítica</h4>
+              
+              <ul class="custom-bullet">
+                <li>
+                  <b>Identificação da necessidade:</b>a necessidade da revisão pode surgir de uma série de questões: 
+                  <ul>
+                    <li>Mudança nos requisitos, nos processos, nas tecnologias</li>
+                    <li>Mudanças no ambiente externo </li>
+                    <li>Avaliações dos clientes e/ou das partes interessadas </li>
+                    <li>Melhoria contínua </li>
+                    <li>Correção de não conformidades </li>
+                    <li>Evolução da organização </li>
+                    <li>Novas oportunidades de negócios </li>
+                    <li>Mudanças na estrutura organizacional </li>
+                    <li>Entre outras</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Identificar seções obsoletas:</b>
+                  <ul>
+                    <li>
+                      Verificar se as informações contidas no documento estão desatualizadas ou não refletem mais a realidade da organização 
+                    </li>
+                    <li>
+                      Buscar por informações contraditórias ou inconsistentes com outras partes da documentação 
+                    </li>
+                    <li>
+                      Avaliar se o documento ainda é relevante para os objetivos da organização 
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Identificar seções inconsistentes:</b>
+                  <ul>
+                    <li>Buscar por contradições entre diferentes seções do mesmo documento </li>
+                    <li>Verificar se a terminologia utilizada é consistente em todo o documento </li>
+                    <li>Avaliar se as informações contidas no documento são consistentes com outras normas ou requisitos aplicáveis </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Identificar seções incompletas: </b>
+                  <ul>
+                    <li>Verificar se o documento fornece todas as informações necessárias para o seu propósito </li>
+                    <li>Buscar por lacunas de informação que possam comprometer a compreensão do documento </li>
+                    <li>Avaliar se o documento fornece instruções claras e precisas para as atividades descritas </li>
+                  </ul>
+                </li>
+              </ul>
+          
+              <h4>2. Atualização do conteúdo</h4>
+                            
+              <ul class="custom-bullet">
+                <li>
+                  <b>Analisar o impacto e dos riscos:</b>
+                  <ul>
+                    <li>Identificar as seções da documentação afetadas pela revisão</li>
+                    <li>Avaliar como as mudanças propostas afetarão as operações diárias da organização</li>
+                    <li>Identificar e avaliar os possíveis riscos associados às mudanças propostas, incluindo operacionais, financeiros, legais, de reputação e outros</li>
+                    <li>Considerar a mitigação desses riscos durante o processo de análise </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Incluir novas informações:</b>
+                  <ul>
+                    <li>
+                      Incluir informações sobre novas tecnologias, processos ou requisitos legais 
+                    </li>
+                    <li>
+                      Atualizar o documento para refletir as mudanças na organização, como novos produtos ou serviços 
+                    </li>
+                    <li>
+                      Incorporar as melhores práticas no documento 
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Revisar a linguagem e o estilo:</b>
+                  <ul>
+                    <li>Usar linguagem clara, concisa e objetiva</li>
+                    <li>Evitar termos técnicos desnecessários ou jargões</li>
+                    <li>Formatar o documento de forma legível e organizada </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Garantir a coerência e a completude do documento: </b>
+                  <ul>
+                    <li>Verificar se todas as seções do documento estão interligadas e se há um fluxo lógico de informações</li>
+                    <li>Assegurar que o documento fornece todas as informações necessárias para o seu propósito </li>
+                    <li>Corrigir erros gramaticais e ortográficos </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h4>3. Validação</h4>
+                            
+              <ul class="custom-bullet">
+                    <li>
+                      <b>Confirmar se as alterações atendem às necessidades da organização:</b>
+                      <ul>
+                        <li>Testar o documento com usuários reais para verificar se é fácil de usar e entender</li>
+                        <li>Obter avaliação de diferentes partes interessadas da organização </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <b>Garantir que o documento está atualizado e completo:</b>
+                      <ul>
+                        <li>
+                          Verificar se o documento inclui todas as informações relevantes e necessárias  
+                        </li>
+                        <li>
+                          Assegurar que o documento está alinhado com os objetivos da organização  
+                        </li>
+                        <li>
+                          Confirmar se o documento está em conformidade com os requisitos legais e outras normas aplicáveis                                  
+                        </li>
+                      </ul>
+                    </li>
+              </ul>
+
+              <h4>4. Aprovação</h4>
+                            
+              <ul class="custom-bullet">
+                <li>
+                  <b>Formalizar a nova versão do documento:</b>
+                  <ul>
+                    <li>
+                      Registrar a data da revisão e a versão do documento 
+                    </li>
+                    <li>
+                      Obter a aprovação da pessoa responsável pela revisão e atualização da documentação 
+                    </li>
+                    <li>
+                      Armazenar o documento em um local seguro e acessível 
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Comunicar e treinar a nova versão do documento:</b>
+                  <ul>
+                    <li>
+                      Informar todos os colaboradores da organização sobre a nova versão do documento   
+                    </li>
+                    <li>
+                      Fornecer treinamento sobre as mudanças no documento, se necessário, detalhando como as alterações impactam seus trabalhos   
+                    </li>
+                    <li>
+                      Assegurar que todos os colaboradores estejam cientes de como utilizar a nova versão do documento.                                
+                    </li>
+                    <li>
+                      Informar os colaboradores sobre as mudanças e como elas impactam seus trabalhos 
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h4>Recomendações adicionais:</h4>
+                            
+              <ul class="custom-bullet">
+                <li>
+                  <b>Documente o processo de revisão e atualização da documentação: </b>
+                  <ul>
+                    <li>
+                      Descreva as etapas envolvidas no processo. 
+                    </li>
+                    <li>
+                      Defina os responsáveis por cada etapa. 
+                    </li>
+                    <li>
+                      Estabeleça prazos para a conclusão de cada etapa. 
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Mantenha registros das revisões: </b>
+                  <ul>
+                    <li>
+                      Registre as alterações realizadas no documento.    
+                    </li>
+                    <li>
+                      Mantenha um histórico das revisões do documento.   
+                    </li>
+                    <li>
+                      Assegure que os registros das revisões sejam facilmente acessíveis.                               
+                    </li>
+                  </ul>
+                </li>
+              </ul>                                
+
+            </div>
+
+
+            <div class="grafismo">
+              <div class="destaque borda-colorida icone atencao">
+                <b>Lembre-se:</b> a revisão e atualização da documentação é um processo contínuo que deve ser realizado regularmente, para garantir que a documentação esteja sempre atualizada, precisa e adequada às necessidades da organização.
+              </div>
+            </div>
+
+            <p>
+              Também é importante destacar que envolver as pessoas que estão diretamente ligadas às tarefas durante o desenvolvimento ou a revisão dos documentos é essencial. Além disso, sempre que possível, devem ser incluídas pessoas de outras áreas, já que isso garante que todas as perspectivas sejam consideradas e que a documentação reflita com precisão as práticas e os procedimentos em toda a empresa. 
+            </p>
+
+            <p>
+              Outro ponto muito importante é manter um controle de revisões, contendo o histórico de alterações e a identificação da versão. Isso facilita a rastreabilidade das modificações e ajuda a distinguir diferentes versões do documento. 
+            </p>
+
+            <p>
+              A revisão e a atualização da documentação do SGQ são atividades contínuas que garantem a efetividade do sistema e a sua adequação às necessidades da organização. Veja mais detalhes sobre a revisão e a atualização da documentação do SGQ ainda nesta unidade curricular. 
+            </p>
+
+            <p>
+              Após entender a importância dos processos de revisão e atualização da documentação do SGQ, é fundamental, agora, explorar as boas práticas na elaboração desses documentos.  
+            </p>
+
+            <h4>Boas práticas na elaboração da documentação do SGQ</h4>
+
+            <ul class="custom-bullet">
+              
+              <li>
+                <b>Estratégias para garantir a precisão e clareza dos documentos</b>
+                <p>
+                  Ao elaborar a documentação do SGQ, é essencial adotar boas práticas para garantir que os documentos sejam precisos, claros e acessíveis a todos os envolvidos. 
+                </p>
+                <p>
+                  Veja os aspectos que algumas estratégias importantes incluem. 
+                </p>
+
+                <div class="no-print">
+                  
+                  <p>
+                    Clique ou toque para visualizar o conteúdo. 
+                  </p>
+
+                  <div class="row mb-5 painel-estrategias">
+                    <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-padronizacao" role="tab" aria-controls="list-padronizacao">Padronização de formato</a>
+
+                        <a class="list-group-item list-group-item-action" id="list-inclusao-list" data-bs-toggle="list" href="#list-inclusao" role="tab" aria-controls="list-inclusao">Inclusão de exemplos e ilustrações</a>
+
+                        <a class="list-group-item list-group-item-action" id="list-revisao-list" data-bs-toggle="list" href="#list-revisao" role="tab" aria-controls="list-revisao">Revisão de múltiplas pessoas </a>
+
+                        <a class="list-group-item list-group-item-action" id="list-avaliacao-list" data-bs-toggle="list" href="#list-avaliacao" role="tab" aria-controls="list-avaliacao">Avaliação contínua</a>
+                    </div>
+                    </div>
+                    <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-padronizacao" role="tabpanel" aria-labelledby="list-padronizacao-list">
+                            <p>
+                              Utilize um formato consistente e textos claros em todos os documentos do SGQ, facilitando a compreensão e a aplicação dos procedimentos.
+                            </p>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-inclusao" role="tabpanel" aria-labelledby="list-inclusao-list">
+                            <p>Onde for apropriado, inclua exemplos práticos e ilustrações para clarificar conceitos e procedimentos complexos. Isso ajuda os usuários a visualizar melhor as informações e aplicá-las em suas atividades diárias. </p>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-revisao" role="tabpanel" aria-labelledby="list-revisao-list">
+                            <p>
+                              Promova a revisão com uma maior diversidade de indivíduos, assegurando que os documentos sejam avaliados por diferentes perspectivas, o que auxilia na detecção e correção de erros ou omissões. 
+                            </p>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-avaliacao" role="tabpanel" aria-labelledby="list-avaliacao-list">
+                            <p>
+                              Estabeleça um processo contínuo de avaliação, permitindo que os colaboradores sugiram melhorias na documentação e relatem quaisquer problemas ou inconsistências encontradas na prática. 
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                </div>
+
+                <div class="acessivel visually-hidden">
+
+                  <h4>Padronização de formato</h4> 
+
+                  <p>Utilize um formato consistente e textos claros em todos os documentos do SGQ, facilitando a compreensão e a aplicação dos procedimentos.</p> 
+                  
+                  <h4>Inclusão de exemplos e ilustrações</h4> 
+                  
+                  <p>Onde for apropriado, inclua exemplos práticos e ilustrações para clarificar conceitos e procedimentos complexos. Isso ajuda os usuários a visualizar melhor as informações e aplicá-las em suas atividades diárias.</p> 
+                  
+                  <h4>Revisão de múltiplas pessoas</h4> 
+                  
+                  <p>Promova a revisão com uma maior diversidade de indivíduos, assegurando que os documentos sejam avaliados por diferentes perspectivas, o que auxilia na detecção e correção de erros ou omissões.</p>                  
+                  
+                  <h4>Avaliação contínua</h4> 
+                  
+                  <p>Estabeleça um processo contínuo de avaliação, permitindo que os colaboradores sugiram melhorias na documentação e relatem quaisquer problemas ou inconsistências encontradas na prática.</p>
+                </div>
+
+              </li>
+
+              <li>
+                <b>Métodos de controle de versões</b>
+
+                <p>
+                  Os métodos de controle de versões referem-se às práticas utilizadas para gerenciar as diferentes mudanças de um documento ao longo do tempo. Isso inclui a identificação clara de cada versão, bem como a documentação das alterações realizadas em relação à versão anterior. Essa abordagem permite acompanhar a evolução dos documentos e entender as modificações feitas ao longo do tempo.  
+                </p>
+
+                <p>
+                  Um método que vem sendo amplamente empregado pelas empresas é o de utilizar sistemas de gerenciamento de documentos que permitam o controle de versões, mantendo um histórico de todas as versões anteriores dos documentos e permitindo que os usuários visualizem a versão mais atual. 
+                </p>
+
+                <p>
+                  Para empresas que não têm acesso a sistemas de controle de versões automatizados, é possível implementar um sistema manual. Isso envolve criar uma versão de um documento sempre que houver uma modificação, identificando-a claramente. As versões podem ser organizadas em pastas ou diretórios cronologicamente. As alterações podem ser registradas em cada versão do documento ou em um documento separado, incluindo datas, detalhes das mudanças e os responsáveis por elas. Esse registro permite acompanhar a evolução dos documentos ao longo do tempo, mesmo sem um sistema automatizado. Muitas vezes, uma planilha de Excel é usada para esse controle. 
+                </p>
+
+                <p>
+                  O controle de versões pode ser realizado de diversas maneiras, mas o mais importante é garantir a acessibilidade dos documentos para os colaboradores daquelas atividades. Independentemente do método escolhido, é fundamental estabelecer procedimentos claros e rigorosos para a gestão de versões, assegurando que as informações estejam sempre atualizadas, precisas e disponíveis quando necessárias. Além disso, a transparência e a rastreabilidade das alterações ao longo do tempo são essenciais para garantir a confiabilidade dos documentos e a conformidade com os requisitos do SGQ.  
+                </p>
+
+                <div class="grafismo">
+                  <div class="destaque borda-colorida">
+                    Por fim, mas certamente não menos importante, é essencial reconhecer que uma organização pode implementar uma variedade de estratégias para controlar seus funcionários, estabelecer normas rígidas, supervisionar e fiscalizar suas atividades. No entanto, é fundamental compreender que nada se compara à eficácia do espírito colaborativo e da iniciativa daqueles que genuinamente acreditam no propósito do trabalho. Inquestionavelmente, as pessoas representam o ativo mais valioso de qualquer organização. Assim, o engajamento delas é essencial para garantir o pleno aproveitamento de suas energias em prol do sucesso organizacional.  
+                  </div>
+                </div>
+
+                <p>
+                  O engajamento das pessoas é influenciado por diversos fatores, tais como motivação, capacitação e métodos de trabalho. A motivação para o trabalho, para o desenvolvimento e para a mudança, por sua vez, é resultado de uma interação complexa entre diferentes variáveis. É importante notar que as pessoas não buscam apenas uma remuneração adequada, mas também anseiam por espaço e oportunidades para demonstrar suas habilidades, participar ativamente, crescer profissionalmente e ter seus esforços devidamente reconhecidos. Portanto, é imperativo que o envolvimento das pessoas permeie todas as práticas e estratégias discutidas neste conhecimento (Carpinetti; Gerolamo, 2022).  
+                </p>
+
+              </li>
+            </ul>
+
+            <figure>
+              <div class="figure-img">
+                  <img class="img-fluid mx-auto d-block " src="imgs/fig02.png">
+              </div>                      
+            </figure>
+            
+            <p>
+              Ao seguir essas boas práticas na elaboração da documentação do SGQ, as organizações podem garantir que seus documentos sejam claros, precisos e úteis para todos os envolvidos, contribuindo assim para a eficácia geral do SGQ. Você aprendeu que a padronização, a revisão e a elaboração cuidadosa da documentação do SGQ são aspectos críticos para o sucesso de qualquer SGQ. Ao adotar essas práticas recomendadas, as organizações podem promover uma cultura de excelência operacional, melhoria contínua e satisfação do cliente. 
+            </p>
+
+            <p>
+              Que tal praticar o que você aprendeu sobre os processos de revisão e atualização da documentação? 
+            </p>
+
+            <div class="box-atividade">
+              
+              <p class="titulo-ativ"><strong>Verdadeiro ou falso</strong></p>
+              
+              <div class="esquemaDaBru verdadeiro-falso">
+                  <p class="enunciado" tabindex="0">1) Uma das estratégias para garantir a precisão e a clareza dos documentos do SGQ é a inclusão de exemplos e ilustrações.</p>
+                  <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                      <button class="alt-c botao hvr-grow-shadow">Verdadeiro</button>
+                      <button class="alt-e botao hvr-grow-shadow">Falso</button>
+                  </div>
+                  <div class="feedbacks">
+                      <p class="f-positivo"><i
+                              class="fas fa-check"></i> Parabéns! Incluir exemplos e ilustrações é uma excelente estratégia para garantir que os documentos do SGQ sejam compreensíveis e precisos. </p>
+                      <p class="f-negativo"><i
+                              class="fas fa-times"></i> Ops! Parece que você escolheu a opção errada. Incluir exemplos e ilustrações é uma excelente estratégia para garantir que os documentos do SGQ sejam compreensíveis e precisos.</p>
+                  </div>
+              </div>
+              
+              <div class="esquemaDaBru verdadeiro-falso">
+                  <p class="enunciado" tabindex="0">2) A revisão de múltiplas pessoas na elaboração da documentação do SGQ pode não ser necessária, pois pode causar conflitos de opiniões.</p>
+                  <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                      <button class="alt-e botao hvr-grow-shadow">Verdadeiro</button>
+                      <button class="alt-c botao hvr-grow-shadow">Falso</button>
+                  </div>
+                  <div class="feedbacks">
+                      <p class="f-positivo"><i
+                              class="fas fa-check"></i> Ótimo! A revisão por múltiplas pessoas na elaboração da documentação do SGQ é importante para garantir a qualidade e a precisão dos documentos, pois diferentes pontos de vista podem identificar erros ou melhorias necessárias.</p>
+                      <p class="f-negativo"><i
+                              class="fas fa-times"></i>Quase lá! A revisão por múltiplas pessoas na elaboração da documentação do SGQ é importante para garantir a qualidade e a precisão dos documentos, pois diferentes pontos de vista podem identificar erros ou melhorias necessárias. </p>
+                  </div>
+              </div>
+              
+              <div class="esquemaDaBru verdadeiro-falso">
+                <p class="enunciado" tabindex="0">3) O método de controle de versões pode ser manual ou automatizado, e ambos são igualmente eficazes para garantir a rastreabilidade das mudanças nos documentos do SGQ.</p>
+                <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                    <button class="alt-c botao hvr-grow-shadow">Verdadeiro</button>
+                    <button class="alt-e botao hvr-grow-shadow">Falso</button>
+                </div>
+                <div class="feedbacks">
+                    <p class="f-positivo"><i
+                            class="fas fa-check"></i>Excelente! Tanto o método de controle de versões manual quanto o automatizado são eficazes para garantir a rastreabilidade das mudanças nos documentos do SGQ.</p>
+                    <p class="f-negativo"><i
+                            class="fas fa-times"></i>Ops! Tente novamente! Tanto o método de controle de versões manual quanto o automatizado são eficazes para garantir a rastreabilidade das mudanças nos documentos do SGQ. </p>
+                </div>
+              </div>
+            
+            </div>
+
+
+
+
+
+
           </div>
-
-         
-
-
-
-          
-          
-
         
           <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
         </div>

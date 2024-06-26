@@ -70,3 +70,23 @@
 .btn-painel-beneficios-documentacao{
     background-size: cover;
 }
+
+@media only screen and (max-width:500px) {
+    .painel-beneficios-documentacao {
+        width: 323px;
+        height: 450px;
+    }
+
+    .tab-content {
+        padding: 5px;
+    }
+
+}
+
+
+/* .painel-beneficios-documentacao {
+    position: relative;
+    width: 323px;
+    height: 517px;
+    background: url(../imgs/painel01/painel_bg.png);
+    background-size: cover;} */
