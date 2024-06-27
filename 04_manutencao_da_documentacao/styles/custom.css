@@ -1,0 +1,15 @@
+.btn-normas{
+    width: fit-content;
+    margin: auto;
+}
+
+.img-sombra:hover{
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1.9));
+}
+
+.citacao p{
+    padding-left: 30%;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 0px;
+  }

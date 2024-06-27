@@ -1,0 +1,37 @@
+.painel-padronizacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-painel-padronizacao{
+    border: none;
+    background: transparent;
+    width: 185px;
+    height: 153px;
+    background-size: cover;
+    color: transparent;
+}
+
+.btn-consistencia{
+    background: url('../img/btns/bt01pasta.png');
+}
+
+.btn-conformidade{
+    background: url('../img/btns/bt02pasta.png');
+}
+
+.btn-treinamento{
+    background: url('../img/btns/bt03pasta.png');
+}
+
+.btn-melhoria{
+    background: url('../img/btns/bt04pasta.png');
+}
+
+.btn-painel-padronizacao:hover{
+    transform: scale(1.1);
+    transition:  transform 0.5s ease;
+}
+

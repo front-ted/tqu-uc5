@@ -21,6 +21,7 @@ body {
 	background-attachment: fixed !important;
 	height: auto;
 	overflow-x: hidden;
+    background-image: radial-gradient(farthest-corner at -2% 25%, #92ACCE 0%, transparent 25%), radial-gradient(farthest-corner at 106% 114%, #1A447F 5%, transparent 25%), radial-gradient(farthest-corner at -2% 75%, #CF9993 0%, transparent 25%);
 }
 .bg-fundo{
 	width: 100%;
@@ -69,7 +70,7 @@ h4{font-size: 18px;}
 h5{font-size: 17px;}
 p, li, th, td, a{
     font-family: figtree;
-    font-size: 16px;
+    font-size: 20px;
 }
 b, strong{font-family: figtree-bold;}
 i, blockquote p, blockquote, em{font-family: figtree-italic;}
