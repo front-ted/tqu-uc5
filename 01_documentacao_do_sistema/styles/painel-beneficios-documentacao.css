@@ -1,0 +1,92 @@
+.painel-beneficios-documentacao{
+    position: relative;
+    width: 437px;
+    height: 420px;
+    background: url('../img/painel01/painel_bg.png');
+    background-size: cover;
+}
+
+
+.btn-painel-beneficios-documentacao{
+    position: absolute;
+    width: 85px;
+    height: 86px;
+    color: blue;
+    border: none;
+}
+
+.btn-painel-beneficios-documentacao:hover{
+    transform: scale(1.1);
+}
+
+.btn-clareza{
+    top: 10%;
+    left: 8%;
+    background: url('../img/painel01/bt01.png');
+}
+
+.btn-transferencia-conhecimento{
+    top: 10%;
+    left: 35%;
+    background: url('../img/painel01/bt02.png');
+}
+
+.btn-eficiencia-produtividade{
+    top: 10%;
+    left: 62%;
+    background: url('../img/painel01/bt03.png');
+}
+
+.btn-padronizacao-qualidade{
+    top: 35%;
+    left: 8%;
+    background: url('../img/painel01/bt04.png');
+}
+
+.btn-reducao-riscos{
+    top: 35%;
+    left: 35%;
+    background: url('../img/painel01/bt05.png');
+}
+
+.btn-facilitacao-auditoria{
+    top: 35%;
+    left: 62%;
+    background: url('../img/painel01/bt06.png');
+}                
+
+.btn-melhoria-continua{
+    top: 62%;
+    left: 8%;
+    background: url('../img/painel01/bt07.png');
+}  
+
+.btn-facilitacao-comunicacao{
+    top:62%;
+    left: 35%;
+    background: url('../img/painel01/bt08.png');
+}
+
+.btn-painel-beneficios-documentacao{
+    background-size: cover;
+}
+
+@media only screen and (max-width:500px) {
+    .painel-beneficios-documentacao {
+        width: 323px;
+        height: 450px;
+    }
+
+    .tab-content {
+        padding: 5px;
+    }
+
+}
+
+
+/* .painel-beneficios-documentacao {
+    position: relative;
+    width: 323px;
+    height: 517px;
+    background: url(../imgs/painel01/painel_bg.png);
+    background-size: cover;} */

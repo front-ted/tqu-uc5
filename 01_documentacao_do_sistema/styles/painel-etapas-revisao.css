@@ -1,0 +1,66 @@
+.painel-etapas-revisao{
+    background: url('../img/painel03/painel03.png');
+    background-repeat: no-repeat;
+    height: 465px;
+    width: 567px;
+}
+
+.btn-painel-etapas-revisao{
+    cursor: pointer;
+}
+
+.btn-painel-etapas-revisao:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.4));;
+    transition:  transform 0.5s ease;
+}
+
+
+.btn-analise-critica{
+    margin-left: 41%;
+}
+
+.btn-atualizacao-conteudo{
+    margin-top: 6%;
+    margin-left: 55%;
+}
+
+.btn-validacao{
+    margin-top: 7%;
+    margin-left: 59%;
+}
+
+.btn-aprovacao{
+    margin-top: 8%;
+    margin-left: 56%;
+}
+
+.btn-recomendacoes-adicionais{
+    margin-top: 6.5%;
+    margin-left: 41%;
+}
+
+@media only screen and (max-width:550px) {
+    .painel-etapas-revisao{
+        background: unset;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .btn-recomendacoes-adicionais{
+        width: 230px;
+        height: 61px;
+    }
+
+    .btn-analise-critica,
+    .btn-atualizacao-conteudo,
+    .btn-validacao,
+    .btn-aprovacao,
+    .btn-recomendacoes-adicionais{
+        margin: auto;
+    }
+
+}
