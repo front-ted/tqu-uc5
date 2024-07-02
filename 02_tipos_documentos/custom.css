@@ -1,0 +1,7 @@
+.bt-download {
+    background: url('img/bt_pdf.png') no-repeat;
+    width: 254px;
+    height: 87px;
+    display: block;
+    margin: 50px auto;
+}
