@@ -1,7 +1,9 @@
 .btn-normas{
     width: fit-content;
     margin: auto;
+    cursor: pointer;
 }
+
 
 .img-sombra:hover{
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 1.9));
