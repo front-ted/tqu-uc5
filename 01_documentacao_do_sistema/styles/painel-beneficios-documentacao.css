@@ -5,7 +5,7 @@
     background: url('../img/painel01/painel_bg.png');
     background-size: cover;
 }
-
+.tab-content{margin-bottom: 50px;}
 
 .btn-painel-beneficios-documentacao{
     position: absolute;

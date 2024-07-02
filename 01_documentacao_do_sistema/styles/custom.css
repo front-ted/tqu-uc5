@@ -29,10 +29,10 @@
     margin: auto;
 }
 
-.btn-mcdonalds:hover{
+/* .btn-mcdonalds:hover{
     transform: scale(1.1);
     transition:  transform 0.5s ease;
-}
+} */
 
 .mcdonalds{
     display: flex;
