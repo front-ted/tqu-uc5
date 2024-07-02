@@ -51,7 +51,6 @@
   }
   img, .equacoes, figure, .print-proteger {
     page-break-inside: avoid !important;
-    max-width: 500px !important;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -133,7 +132,44 @@
     white-space:normal!important;
     border: 0!important;
   }
+  /*tabelas*/
+  
+  .pagina table{
+    display: table;
+    border-collapse: separate;
+    border: 2px solid gray;
+  }
+  .pagina tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;	
+  }
+  .pagina td{
+    display: table-cell;
+    vertical-align: inherit;
+  }	
+  .pagina tfoot{
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;	
+  }
+  th{
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;	
+  }
+  .pagina thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }	
 
+  .pagina tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
   /*paindel de abas*/
   .painel-abas .tab-content{
     border: 0;

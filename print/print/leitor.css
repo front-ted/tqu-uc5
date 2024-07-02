@@ -245,8 +245,7 @@
 .pagina table{
   display: table;
   border-collapse: separate;
-  border-spacing: 2px;
-  border-color: gray;	
+  border: 2px solid gray;
 }
 .pagina tbody{
   display: table-row-group;
