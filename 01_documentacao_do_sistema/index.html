@@ -334,101 +334,153 @@
               </p>
 
               <div class="painel-beneficios-documentacao">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
 
-                  <li class="nav-item" role="presentation">
-                    <button class="  active btn-painel-beneficios-documentacao btn-clareza " id="clareza-tab" data-bs-toggle="tab" data-bs-target="#clareza-consistencia" type="button" role="tab" aria-controls="clareza" aria-selected="true"></button>
-                  </li>
+                    <button class="  active btn-painel-beneficios-documentacao btn-clareza " id="clareza-tab" data-bs-toggle="modal" data-bs-target="#modalClareza"></button>
 
-                  <li class="nav-item" role="presentation">
-                    <button class=" btn-painel-beneficios-documentacao btn-transferencia-conhecimento " id="transferencia-tab" data-bs-toggle="tab" data-bs-target="#transferencia-conhecimento" type="button" role="tab" aria-controls="transferencia" aria-selected="false"></button>
-                  </li>
+                    <button class=" btn-painel-beneficios-documentacao btn-transferencia-conhecimento" id="transferencia-tab" data-bs-toggle="modal" data-bs-target="#modalTransferenciaConhecimento"></button>
 
-                  <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao btn-eficiencia-produtividade" id="eficiencia-tab" data-bs-toggle="tab" data-bs-target="#eficiencia-produtividade" type="button" role="tab" aria-controls="eficiencia" aria-selected="false"></button>
-                  </li>
+                    <button class="btn-painel-beneficios-documentacao btn-eficiencia-produtividade" id="eficiencia-tab" data-bs-toggle="modal" data-bs-target="#modalEficienciaProdutividade"></button>
 
-                  <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao btn-padronizacao-qualidade" id="padronizacao-tab" data-bs-toggle="tab" data-bs-target="#padronizacao-qualidade" type="button" role="tab" aria-controls="padronizacao" aria-selected="false"></button>
-                  </li>
+                    <button class="btn-painel-beneficios-documentacao btn-padronizacao-qualidade" id="padronizacao-tab" data-bs-toggle="modal" data-bs-target="#modalPadronizacaoQualidade"></button>
 
-                  <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao btn-reducao-riscos" id="reducao-tab" data-bs-toggle="tab" data-bs-target="#reducao-riscos" type="button" role="tab" aria-controls="reducao" aria-selected="false"></button>
-                  </li>
+                    <button class="btn-painel-beneficios-documentacao btn-reducao-riscos" id="reducao-tab" data-bs-toggle="modal" data-bs-target="#modalReducaoRiscos"></button>
 
-                  <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao btn-facilitacao-auditoria" id="facilitacao-tab" data-bs-toggle="tab" data-bs-target="#facilitacao-auditoria" type="button" role="tab" aria-controls="facilitacao" aria-selected="false"></button>
-                  </li> 
+                    <button class="btn-painel-beneficios-documentacao btn-facilitacao-auditoria" id="facilitacao-tab" data-bs-toggle="modal" data-bs-target="#modalFacilitacaoAuditoria"></button>
 
-                  <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao btn-melhoria-continua" id="melhoria-tab" data-bs-toggle="tab" data-bs-target="#melhoria-continua" type="button" role="tab" aria-controls="melhoria" aria-selected="false"></button>
-                  </li>
+                    <button class="btn-painel-beneficios-documentacao btn-melhoria-continua" id="melhoria-tab" data-bs-toggle="modal" data-bs-target="#modalMelhoriaContinua"></button>
 
-                  <li class="nav-item" role="presentation">
-                    <button class="btn-painel-beneficios-documentacao btn-facilitacao-comunicacao" id="facilitacao-tab" data-bs-toggle="tab" data-bs-target="#facilitacao-comunicacao" type="button" role="tab" aria-controls="facilitacao" aria-selected="false"></button>
-                  </li>
-                </ul>            
+                    <button class="btn-painel-beneficios-documentacao btn-facilitacao-comunicacao" id="facilitacao-tab" data-bs-toggle="modal" data-bs-target="#modalFacilitacaoComunicacao"></button>
               </div>
 
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="clareza-consistencia" role="tabpanel" aria-labelledby="clareza-tab">
-                  <h5>Clareza e consistência</h5>
-                  <p>
-                    A documentação-padrão garante que todos os envolvidos compreendem claramente os procedimentos e processos a serem seguidos. Isso promove consistência nas operações, reduzindo a chance de erros e mal-entendidos. 
-                  </p>
-                </div>
+              <!-- Modais do painel -->
 
-                <div class="tab-pane fade" id="transferencia-conhecimento" role="tabpanel" aria-labelledby="transferencia-tab">
-                  <h5>Transferência de conhecimento</h5>
-                  <p>
-                    Documentar procedimentos permite que o conhecimento seja compartilhado de forma eficaz entre membros da equipe e ao longo do tempo. Isso é especialmente útil em empresas onde a rotatividade de funcionários é alta ou em projetos de longo prazo. 
-                  </p>
+              <div class="modal fade" id="modalClareza" tabindex="-1" aria-labelledby="clarezaModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="clarezaModalLabel">Clareza e consistência</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>A documentação-padrão garante que todos os envolvidos compreendem claramente os procedimentos e processos a serem seguidos. Isso promove consistência nas operações, reduzindo a chance de erros e mal-entendidos.</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="tab-pane fade" id="eficiencia-produtividade" role="tabpanel" aria-labelledby="eficiencia-tab">
-                  <h5>Eficiência e produtividade</h5>
-                  <p>
-                    Com procedimentos documentados, os colaboradores podem realizar tarefas de forma mais eficiente, uma vez que não precisam gastar tempo descobrindo como fazer algo toda vez que é necessário. Isso aumenta a produtividade e reduz e erros e falhas, levando à eliminação de desperdícios, sejam eles de tempo, sejam de energia ou materiais, além de liberar tempo da operação para a realização de outras atividades.
-                  </p>
-                </div>
-
-                <div class="tab-pane fade" id="padronizacao-qualidade" role="tabpanel" aria-labelledby="padronizacao-tab">
-                  <h5>Padronização de qualidade</h5>
-                  <p>
-                    A documentação-padrão pode incluir diretrizes de qualidade que ajudam a garantir que todas as atividades sejam realizadas de acordo com os padrões estabelecidos. Isso é fundamental para garantir a consistência e a qualidade do produto ou serviço prestado, mantendo a eficácia do SGQ. 
-                  </p>
-                </div>
-
-                <div class="tab-pane fade" id="reducao-riscos" role="tabpanel" aria-labelledby="reducao-tab">
-                  <h5>Redução de riscos</h5>
-                  <p>
-                    Ao documentar procedimentos, as organizações podem identificar e mitigar potenciais riscos operacionais. Isso inclui questões de conformidade regulatória, segurança da informação e outras preocupações relacionadas à gestão de riscos. 
-                  </p>
-                </div>
-
-                <div class="tab-pane fade" id="facilitacao-auditoria" role="tabpanel" aria-labelledby="facilitacao-tab">
-                  <h5>Facilitação da auditoria e do cumprimento de regulamentos</h5>
-                  <p>
-                    A documentação adequada pode facilitar processos de auditoria interna e externa, bem como garantir conformidade com regulamentos governamentais e do setor. Essa prática é essencial para empresas que precisam demonstrar conformidade com padrões específicos. 
-                  </p>
-                </div>
-
-                <div class="tab-pane fade" id="melhoria-continua" role="tabpanel" aria-labelledby="facilitacao-tab">
-                  <h5>Melhoria contínua</h5>
-                  <p>
-                    Ao documentar processos e procedimentos, as organizações têm uma base sólida para análise e melhoria contínua. A documentação permite identificar áreas de ineficiência ou oportunidades de otimização, sendo de grande relevância para estabelecer, implementar e manter de forma eficaz um SGQ, contribuindo para a evolução constante das operações. 
-                  </p>
-                </div>
-
-                <div class="tab-pane fade" id="facilitacao-comunicacao" role="tabpanel" aria-labelledby="facilitacao-tab">
-                  <h5>Facilitação da comunicação</h5>
-                  <p>
-                    A documentação clara e acessível serve de ferramenta de comunicação eficaz dentro e fora da organização. Isso ajuda a alinhar expectativas, coordenar esforços entre equipes e facilitar a colaboração em projetos.
-                  </p>
-                </div>
-
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">eficiencia produtividade</div>
               </div>
+
+              <div class="modal fade" id="modalTransferenciaConhecimento" tabindex="-1" aria-labelledby="transferenciaConhecimentoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="transferenciaConhecimentoModalLabel">Transferência de conhecimento</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>                    Documentar procedimentos permite que o conhecimento seja compartilhado de forma eficaz entre membros da equipe e ao longo do tempo. Isso é especialmente útil em empresas onde a rotatividade de funcionários é alta ou em projetos de longo prazo. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalEficienciaProdutividade" tabindex="-1" aria-labelledby="eficienciaProdutividadeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="eficienciaProdutividadeModalLabel">Eficiência e produtividade</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>                    
+                              Com procedimentos documentados, os colaboradores podem realizar tarefas de forma mais eficiente, uma vez que não precisam gastar tempo descobrindo como fazer algo toda vez que é necessário. Isso aumenta a produtividade e reduz e erros e falhas, levando à eliminação de desperdícios, sejam eles de tempo, sejam de energia ou materiais, além de liberar tempo da operação para a realização de outras atividades.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalPadronizacaoQualidade" tabindex="-1" aria-labelledby="padronizacaoQualidadeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="padronizacaoQualidadeModalLabel">Padronização de qualidade</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>                    
+                              A documentação-padrão pode incluir diretrizes de qualidade que ajudam a garantir que todas as atividades sejam realizadas de acordo com os padrões estabelecidos. Isso é fundamental para garantir a consistência e a qualidade do produto ou serviço prestado, mantendo a eficácia do SGQ. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalReducaoRiscos" tabindex="-1" aria-labelledby="reducaoRiscosModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="reducaoRiscosModalLabel">Redução de riscos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>                    
+                              Ao documentar procedimentos, as organizações podem identificar e mitigar potenciais riscos operacionais. Isso inclui questões de conformidade regulatória, segurança da informação e outras preocupações relacionadas à gestão de riscos. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalFacilitacaoAuditoria" tabindex="-1" aria-labelledby="facilitacaoAuditoriaModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="facilitacaoAuditoriaModalLabel">Facilitação da auditoria e do cumprimento de regulamentos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>                    
+                              A documentação adequada pode facilitar processos de auditoria interna e externa, bem como garantir conformidade com regulamentos governamentais e do setor. Essa prática é essencial para empresas que precisam demonstrar conformidade com padrões específicos.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalMelhoriaContinua" tabindex="-1" aria-labelledby="melhoriaContinuaModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="melhoriaContinuaModalLabel">Melhoria contínua</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>                    
+                              Ao documentar processos e procedimentos, as organizações têm uma base sólida para análise e melhoria contínua. A documentação permite identificar áreas de ineficiência ou oportunidades de otimização, sendo de grande relevância para estabelecer, implementar e manter de forma eficaz um SGQ, contribuindo para a evolução constante das operações.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="modalFacilitacaoComunicacao" tabindex="-1" aria-labelledby="facilitacaoComunicacaoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="facilitacaoComunicacaoModalLabel">Facilitação da comunicação</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>                    
+                              A documentação clara e acessível serve de ferramenta de comunicação eficaz dentro e fora da organização. Isso ajuda a alinhar expectativas, coordenar esforços entre equipes e facilitar a colaboração em projetos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+             
+
             </div>
 
             <div class="acessivel no-print visually-hidden">

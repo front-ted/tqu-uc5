@@ -244,17 +244,21 @@
 }
 .pagina table{
   display: table;
-  border-collapse: separate;
+  border-collapse: collapse;
   border: 2px solid gray;
 }
 .pagina tbody{
   display: table-row-group;
   vertical-align: middle;
   border-color: inherit;	
+  border: 2px solid gray;
+
 }
 .pagina td{
   display: table-cell;
   vertical-align: inherit;
+  border: 2px solid gray;
+
 }	
 .pagina tfoot{
   display: table-footer-group;
