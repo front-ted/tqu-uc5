@@ -43,7 +43,7 @@
             <div class="container">
                 <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
             </div>
-            <div class="btn-tema_pagina no-print">Modo<span>escuro</span></div>
+            <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
 
         </div>
     </header>
@@ -144,17 +144,17 @@
         });
 
         $(".btn-tema_pagina").click(function () {
-            console.log($(".btn-tema_pagina"))
-            if ($("body").hasClass('bg-claro')) {
-                console.log("sim");
-                $("body").removeClass('bg-claro')
-                $("body").addClass("bg-escuro");
-            } else if ($("body").hasClass('bg-escuro')) {
-                console.log("não");
-                $("body").removeClass('bg-escuro')
-                $("body").addClass("bg-claro")
-            }
-        });
+          console.log($(".btn-tema_pagina"))
+          if ($("body").hasClass('bg-claro')) {
+              console.log("sim");
+              $("body").removeClass('bg-claro')
+              $("body").addClass("bg-escuro");
+          } else if ($("body").hasClass('bg-escuro')) {
+              console.log("não");
+              $("body").removeClass('bg-escuro')
+              $("body").addClass("bg-claro")
+          }
+      });
     </script>
 
     <!-- Handtalk -->

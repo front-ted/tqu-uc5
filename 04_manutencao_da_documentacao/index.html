@@ -53,9 +53,10 @@
     <header id="topo">
       <div class="topo-logo">
         <div class="container">
-          <h1 id="nome-curso" class="only-print">Técnico em qualidade</h1>    
+          <h1 id="nome-curso" class="only-print">Técnico em qua lidade</h1>    
         </div>
       </div>
+      <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
     </header>
     <!--Menu lateral-->
     <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></button>
@@ -79,6 +80,8 @@
     <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
     <section id="booklet">      
       <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+      <div class="layer-preta no-print"></div>
+
       <section class="paginas">
         <div class="container pagina">
 
@@ -1340,11 +1343,24 @@
      <!--Atividade associar colunas-->
      <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
 
-    <script>
-      $(function() {
-        $("body").prognroll();
+     <script>
+      $(function () {
+          $("body").prognroll();
       });
-    </script>
+
+      $(".btn-tema_pagina").click(function () {
+          console.log($(".btn-tema_pagina"))
+          if ($("body").hasClass('bg-claro')) {
+              console.log("sim");
+              $("body").removeClass('bg-claro')
+              $("body").addClass("bg-escuro");
+          } else if ($("body").hasClass('bg-escuro')) {
+              console.log("não");
+              $("body").removeClass('bg-escuro')
+              $("body").addClass("bg-claro")
+          }
+      });
+  </script>
 
     <!-- Handtalk -->
     <script>

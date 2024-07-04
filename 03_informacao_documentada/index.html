@@ -53,12 +53,15 @@
           <h1 id="nome-curso" class="only-print">Técnico em qualidade</h1>    
         </div>
       </div>
+      <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
     </header>
     
    
     <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
     <section id="booklet">      
       <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+      <div class="layer-preta no-print"></div>
+
       <section class="paginas">
         <div class="container pagina">
 
@@ -457,10 +460,23 @@
     <script src="../assets/atividades/perguntas/perguntas.js"></script>
 
     <script>
-      $(function() {
-        $("body").prognroll();
+      $(function () {
+          $("body").prognroll();
       });
-    </script>
+
+      $(".btn-tema_pagina").click(function () {
+          console.log($(".btn-tema_pagina"))
+          if ($("body").hasClass('bg-claro')) {
+              console.log("sim");
+              $("body").removeClass('bg-claro')
+              $("body").addClass("bg-escuro");
+          } else if ($("body").hasClass('bg-escuro')) {
+              console.log("não");
+              $("body").removeClass('bg-escuro')
+              $("body").addClass("bg-claro")
+          }
+      });
+  </script>
 
     <!-- Handtalk -->
     <script>
