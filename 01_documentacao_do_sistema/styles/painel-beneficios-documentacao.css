@@ -1,9 +1,10 @@
 .painel-beneficios-documentacao{
     position: relative;
     width: 80%;
-    height: 600px;
+    height: 692px;
     background: url('../img/painel01/painel_bg.png');
     background-size: cover;
+    background-repeat: no-repeat;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -16,6 +17,7 @@
     height: 120px;
     color: blue;
     margin: 25px;
+    border: none;
 }
 
 .btn-painel-beneficios-documentacao:hover{
