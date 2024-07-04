@@ -1005,6 +1005,19 @@ tbody td:first-child {
     filter: drop-shadow(#000 4px 4px 5px);
 }
 
+ 
+.bg-escuro .destaque li, p {
+    color: black;
+}
+
+.bg-escuro .box-atividade p {
+    color: black;
+}
+
+.bg-escuro .tab-pane p {
+    color: black;
+}
+
 
 @media screen and (max-width: 1530px) {
     .ilustracao-float {
