@@ -1,3 +1,14 @@
+
+body{
+    background: url('../img/bg.png') fixed ;
+}
+
+#booklet{
+    background: url('../img/asset.png') left top;
+    background-size: 20% !important;
+    background-repeat: no-repeat;
+}
+
 .btn-documento {
     width: fit-content;
     margin: auto;
@@ -17,4 +28,13 @@
     border-radius: 20px;
     margin: auto;
     margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width:1200px) {
+
+    #booklet{
+        background: unset ;
+    }
+
 }
