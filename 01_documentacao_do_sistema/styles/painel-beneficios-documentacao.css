@@ -44,8 +44,10 @@
     background: url('../img/painel01/bt05.png');
 }
 
-.btn-facilitacao-auditoria{
-    background: url('../img/painel01/bt06.png');
+.btn-facilitacao-auditoria {
+    background: url(../img/painel01/bt06.png) no-repeat;
+    height: 183px;
+    background-size: contain !important;
 }                
 
 .btn-melhoria-continua{
