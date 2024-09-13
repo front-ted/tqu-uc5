@@ -1,1379 +1,1701 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- Inserir o tíutlo do conhecimento na tag title -->
-    <title>Manutenção da documentação do sistema de gestão da qualidade: controle, guarda, disseminação e atualização</title>
-    <!-- Meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="../assets/css/animate.min.css" />
-    <!-- hover.css https://ianlunn.github.io/Hover/ -->
-    <link rel="stylesheet" href="../assets/css/hover-min.css" />
-    <!--Splide - slideshow-->
-    <link rel="stylesheet" href="../assets/css/splide.min.css">
-    <!-- Atividade de verdadeiro ou falso -->
-    <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
-    <!-- Atividade relacionar colunas -->
-    <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
+<head>
+  <!-- Inserir o tíutlo do conhecimento na tag title -->
+  <title>Manutenção da documentação do sistema de gestão da qualidade: controle, guarda, disseminação e atualização
+  </title>
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Print -->
-    <link rel="stylesheet" href="../assets/css/print.css">
-    <!-- Preloader -->
-    <link rel="stylesheet" href="../assets/css/preloader.css">
-    <!-- Áudio customizado -->
-    <link rel="stylesheet" href="../assets/css/player.css">
-    <!-- Estilos do template -->
-    <link rel="stylesheet" href="../assets/css/cores.css">
-    <link rel="stylesheet" href="../assets/css/template.css">
-    <!-- Estilos da pagina -->
-    <link rel="stylesheet" href="styles/custom.css">
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="../assets/css/animate.min.css" />
+  <!-- hover.css https://ianlunn.github.io/Hover/ -->
+  <link rel="stylesheet" href="../assets/css/hover-min.css" />
+  <!--Splide - slideshow-->
+  <link rel="stylesheet" href="../assets/css/splide.min.css">
+  <!-- Atividade de verdadeiro ou falso -->
+  <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+  <!-- Atividade relacionar colunas -->
+  <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
 
-    <!-- paineis -->
-    <link rel="stylesheet" href="styles/painel-beneficios-documentacao.css">
-    <link rel="stylesheet" href="styles/painel-hierarquia-documentacao.css">
-    <link rel="stylesheet" href="styles/painel-padronizacao.css">
-    <link rel="stylesheet" href="styles/painel-hamburguerias.css">
-    <link rel="stylesheet" href="styles/painel-etapas-revisao.css"> 
+  <!-- Print -->
+  <link rel="stylesheet" href="../assets/css/print.css">
+  <!-- Preloader -->
+  <link rel="stylesheet" href="../assets/css/preloader.css">
+  <!-- Áudio customizado -->
+  <link rel="stylesheet" href="../assets/css/player.css">
+  <!-- Estilos do template -->
+  <link rel="stylesheet" href="../assets/css/cores.css">
+  <link rel="stylesheet" href="../assets/css/template.css">
+  <!-- Estilos da pagina -->
+  <link rel="stylesheet" href="styles/custom.css">
 
-  </head>
-  <body class="bg-claro">
-    <!-- Preloader OBRIGATÓRIO -->
-    <div class="preloader">
-      <div class="anim"></div>
-      <p>Aguarde enquanto o conteúdo é carregado.</p>
+  <!-- paineis -->
+  <link rel="stylesheet" href="styles/painel-beneficios-documentacao.css">
+  <link rel="stylesheet" href="styles/painel-hierarquia-documentacao.css">
+  <link rel="stylesheet" href="styles/painel-padronizacao.css">
+  <link rel="stylesheet" href="styles/painel-hamburguerias.css">
+  <link rel="stylesheet" href="styles/painel-etapas-revisao.css">
+
+</head>
+
+<body class="bg-claro">
+  <!-- Preloader OBRIGATÓRIO -->
+  <div class="preloader">
+    <div class="anim"></div>
+    <p>Aguarde enquanto o conteúdo é carregado.</p>
+  </div>
+  <!-- Marca d'água OBRIGATÓRIA -->
+  <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+  <header id="topo">
+    <div class="topo-logo">
+      <div class="container">
+        <h1 id="nome-curso" class="only-print">Técnico em qua lidade</h1>
+      </div>
     </div>
-    <!-- Marca d'água OBRIGATÓRIA -->
-    <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+    <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
+  </header>
+  <!--Menu lateral-->
+  <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+    aria-controls="offcanvasWithBackdrop"></button>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+    aria-labelledby="offcanvasWithBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Técnico em qualidade</h5>
+      <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
 
-    <header id="topo">
-      <div class="topo-logo">
-        <div class="container">
-          <h1 id="nome-curso" class="only-print">Técnico em qua lidade</h1>    
+    <nav id="nav-offcanvas" class="offcanvas-body">
+      <ul>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#conceitoDocumentacaoSGQ">Conceito de documentação do SGQ</a></li>
+        <li><a href="#finalidadeDocumentacaoSGQ">Finalidade da documentação do SGQ</a></li>
+        <li><a href="#estruturaDocumentacaoSGQ">Estrutura da documentação do SGQ</a></li>
+        <li><a href="#padronizacaoDocumentacaoSGQ">Padronização da documentação do SGQ</a></li>
+      </ul>
+    </nav>
+
+  </div>
+  <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
+  <section id="booklet">
+    <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+    <div class="layer-preta no-print"></div>
+
+    <section class="paginas">
+      <div class="container pagina">
+
+        <h2>Manutenção da documentação do sistema de gestão da qualidade: controle, guarda, disseminação e atualização
+        </h2>
+
+        <p>
+          A documentação é um item importante na implantação e na longevidade do sistema de gestão da qualidade (SGQ).
+          Sua manutenção é crucial para garantir a eficácia contínua desse sistema. Anteriormente, você compreendeu a
+          importância da documentação; viu sobre conceito, finalidade, estrutura (hierarquia), padronização, tipos e
+          aplicação prática das documentações do SGQ.
+        </p>
+
+        <p>
+          Como profissionais da área da qualidade, é crucial reconhecer que esse aspecto é frequentemente identificado
+          como causa de não conformidades durante auditorias de sistemas de gestão. Em outras palavras, a falta de
+          controle e proteção das informações pode resultar em não conformidades. Por isso, é fundamental dedicar sua
+          atenção a esse tema. Então, agora você aprenderá sobre controle, guarda, atualização e disseminação dessa
+          documentação e sua rastreabilidade.
+        </p>
+
+        <h4>Generalidades</h4>
+
+        <p>
+          A norma ABNT NBR ISO 9001:2015 requer que as organizações mantenham registros documentados para respaldar a
+          execução de seus processos, servir de evidência de atividades, processos, produtos ou serviços e assegurar que
+          seus processos estejam sendo conduzidos conforme o planejado e ainda possam ser rastreados. A norma chama
+          esses registros de <b>informação documentada</b>.
+        </p>
+
+        <p>
+          Devido à sua importância, o termo “informação documentada” aparece cerca de 60 vezes na norma da Associação
+          Brasileira de Normas Técnicas (ABNT) NBR ISO 9001:2015. Desse modo, para cumprir os requisitos, as
+          organizações estão cada vez mais focadas em encontrar soluções para gerenciar e controlar seus documentos.
+        </p>
+
+        <p>
+          Como forma de auxiliar as organizações a atenderem aos requisitos da ISO 9001, que tratam de manter os
+          registros, foi desenvolvida uma norma orientativa em relação a sua guarda. É a ABNT NBR ISO 10013, cuja última
+          revisão ocorreu em 2021.
+        </p>
+
+        <p>
+          Então, tanto a norma ISO 9001:2015 quanto a ISO 10013:2021 fornecem diretrizes e requisitos específicos para o
+          controle da documentação, contribuindo para a eficácia e a conformidade dos processos organizacionais.
+        </p>
+
+        <p>
+          A norma ABNT NBR ISO 10013:2021, em seu item <b>4.1.5 (Benefícios)</b>, traz uma relação extensa dos proveitos
+          para as organizações que mantêm sua informação documentada. Veja na integra (ABNT, 2021, p. 4):
+        </p>
+
+        <div class="grafismo">
+          <div class="destaque borda-colorida">
+            <ul class="sem-marcador">
+              <li>a) demonstrar <i>compliance</i> com requisitos estatutários e regulamentares;</li>
+              <li>b) prover informação para grupos multifuncionais, para que eles possam melhor compreender
+                inter-relacionamentos; </li>
+              <li>c) comunicar compromisso da organização com a qualidade para partes interessadas pertinentes;   </li>
+              <li>d) ajudar pessoas a compreender seu papel na organização, provendo assim uma base para expectativas de
+                desempenho no trabalho;   </li>
+              <li>e) facilitar a compreensão mútua entre os diferentes níveis na organização; </li>
+              <li>f) prover evidência objetiva de que requisitos especificados foram alcançados;   </li>
+              <li>g) abordar riscos e oportunidades para melhorar o desempenho organizacional, a conformidade de produto
+                ou serviço e a satisfação do cliente; </li>
+              <li>h) prover conhecimento organizacional, incluindo a base para competência e treinamento para pessoas e
+                outras partes interessadas pertinentes; </li>
+              <li>i) declarar como coisas são para ser feitas para atender consistentemente a requisitos especificados,
+                promovendo assim condições controladas e provendo uma base para melhoria contínua; </li>
+              <li>j) demonstrar para partes interessadas as capacidades na organização, provendo assim confiança;  
+              </li>
+              <li>k) prover requisitos para provedores externos; </li>
+              <li>l) prover uma base para auditar e avaliar a eficácia e adequação contínua do sistema de gestão da
+                qualidade. </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
-    </header>
-    <!--Menu lateral-->
-    <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></button>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Técnico em qualidade</h5>
-        <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      
-      <nav id="nav-offcanvas" class="offcanvas-body">
-        <ul>
-          <li><a href="#introducao">Introdução</a></li>
-          <li><a href="#conceitoDocumentacaoSGQ">Conceito de documentação do SGQ</a></li>
-          <li><a href="#finalidadeDocumentacaoSGQ">Finalidade da documentação do SGQ</a></li>
-          <li><a href="#estruturaDocumentacaoSGQ">Estrutura da documentação do SGQ</a></li>
-          <li><a href="#padronizacaoDocumentacaoSGQ">Padronização da documentação do SGQ</a></li>
-        </ul>
-      </nav>
-    
-    </div>
-    <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
-    <section id="booklet">      
-      <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
-      <div class="layer-preta no-print"></div>
 
-      <section class="paginas">
-        <div class="container pagina">
+        <h4>As normas da ABNT NBR ISO</h4>
 
-          <h2>Manutenção da documentação do sistema de gestão da qualidade: controle, guarda, disseminação e atualização</h2>
+        <p>
+          Para aprender sobre manutenção da documentação do SGQ, serão verificadas duas normas. São elas:
+        </p>
 
-          <p>
-            A documentação é um item importante na implantação e na longevidade do sistema de gestão da qualidade (SGQ). Sua manutenção é crucial para garantir a eficácia contínua desse sistema. Anteriormente, você compreendeu a importância da documentação; viu sobre conceito, finalidade, estrutura (hierarquia), padronização, tipos e aplicação prática das documentações do SGQ. 
-          </p>
+        <div class="no-print mb-5" aria-hidden="true">
 
-          <p>
-            Como profissionais da área da qualidade, é crucial reconhecer que esse aspecto é frequentemente identificado como causa de não conformidades durante auditorias de sistemas de gestão. Em outras palavras, a falta de controle e proteção das informações pode resultar em não conformidades. Por isso, é fundamental dedicar sua atenção a esse tema. Então, agora você aprenderá sobre controle, guarda, atualização e disseminação dessa documentação e sua rastreabilidade. 
-          </p>
+          <p>Clique ou toque para visualizar o conteúdo.</p>
 
-          <h4>Generalidades</h4>
-
-          <p>
-            A norma ABNT NBR ISO 9001:2015 requer que as organizações mantenham registros documentados para respaldar a execução de seus processos, servir de evidência de atividades, processos, produtos ou serviços e assegurar que seus processos estejam sendo conduzidos conforme o planejado e ainda possam ser rastreados. A norma chama esses registros de <b>informação documentada</b>.  
-          </p>
-
-          <p>
-            Devido à sua importância, o termo “informação documentada” aparece cerca de 60 vezes na norma da Associação Brasileira de Normas Técnicas (ABNT) NBR ISO 9001:2015. Desse modo, para cumprir os requisitos, as organizações estão cada vez mais focadas em encontrar soluções para gerenciar e controlar seus documentos. 
-          </p>
-
-          <p>
-            Como forma de auxiliar as organizações a atenderem aos requisitos da ISO 9001, que tratam de manter os registros, foi desenvolvida uma norma orientativa em relação a sua guarda. É a ABNT NBR ISO 10013, cuja última revisão ocorreu em 2021.  
-          </p>
-
-          <p>
-            Então, tanto a norma ISO 9001:2015 quanto a ISO 10013:2021 fornecem diretrizes e requisitos específicos para o controle da documentação, contribuindo para a eficácia e a conformidade dos processos organizacionais. 
-          </p>
-
-          <p>
-            A norma ABNT NBR ISO 10013:2021, em seu item <b>4.1.5 (Benefícios)</b>, traz uma relação extensa dos proveitos para as organizações que mantêm sua informação documentada. Veja na integra (ABNT, 2021, p. 4): 
-          </p>
-
-          <div class="grafismo">
-            <div class="destaque borda-colorida">
-              <ul class="sem-marcador">
-                <li>a) demonstrar <i>compliance</i> com requisitos estatutários e regulamentares;</li>
-                <li>b) prover informação para grupos multifuncionais, para que eles possam melhor compreender inter-relacionamentos;  </li>
-                <li>c) comunicar compromisso da organização com a qualidade para partes interessadas pertinentes;   </li>
-                <li>d) ajudar pessoas a compreender seu papel na organização, provendo assim uma base para expectativas de desempenho no trabalho;   </li>
-                <li>e) facilitar a compreensão mútua entre os diferentes níveis na organização;  </li>
-                <li>f) prover evidência objetiva de que requisitos especificados foram alcançados;   </li>
-                <li>g) abordar riscos e oportunidades para melhorar o desempenho organizacional, a conformidade de produto ou serviço e a satisfação do cliente;  </li>
-                <li>h) prover conhecimento organizacional, incluindo a base para competência e treinamento para pessoas e outras partes interessadas pertinentes;  </li>
-                <li>i) declarar como coisas são para ser feitas para atender consistentemente a requisitos especificados, promovendo assim condições controladas e provendo uma base para melhoria contínua;  </li>
-                <li>j) demonstrar para partes interessadas as capacidades na organização, provendo assim confiança;   </li>
-                <li>k) prover requisitos para provedores externos;  </li>
-                <li>l) prover uma base para auditar e avaliar a eficácia e adequação contínua do sistema de gestão da qualidade. </li>
-              </ul>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true">ABNT NBR ISO 9001:2015</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">ABNT NBR ISO 10013:2021 </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <p>
+                Estabelece os requisitos e as diretrizes para um SGQ em uma organização. É uma norma bem ampla e é
+                auditável. Ela <b>estabelece</b> fortemente a manutenção de informações documentadas necessárias para
+                apoiar um SGQ, indicado as informações obrigatórias e as recomendáveis.
+              </p>
+              <p>
+                Nessa norma, há uma seção específica, a <b>7.5 (Informação documentada)</b>, que apresenta recomendações
+                de reter a informação, determinando, sugerindo e atribuindo responsabilidades. Porém, esse tema também
+                surge em muitos outros itens da norma, como será visto aqui.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <p>
+                Apresenta exclusivamente orientações para o desenvolvimento, o manejo e a manutenção das informações
+                documentadas do SGQ. Não é uma norma auditável, ou seja, só traz <b>orientações/recomendações</b>. Em
+                sua seção <b>4.1 (Generalidades)</b>, destaca a natureza flexível e adaptável das estruturas da
+                informação documentada dentro de um SGQ. Reconhece que não existe uma abordagem única para criar ou
+                estruturar essas informações, mas pode variar de acordo com as necessidades da organização.
+              </p>
             </div>
           </div>
 
-          <h4>As normas da ABNT NBR ISO</h4>
+        </div>
+
+        <div class="acessivel print visually-hidden">
+          <h4>ABNT NBR ISO 9001:2015</h4>
+
+          <p>Estabelece os requisitos e as diretrizes para um SGQ em uma organização. É uma norma bem ampla e é
+            auditável. Ela <b>estabelece</b> fortemente a manutenção de informações documentadas necessárias para apoiar
+            um SGQ, indicado as informações obrigatórias e as recomendáveis.</p>
+
+          <p>Nessa norma, há uma seção específica, a <b>7.5 (Informação documentada)</b>, que apresenta recomendações de
+            reter a informação, determinando, sugerindo e atribuindo responsabilidades. Porém, esse tema também surge em
+            muitos outros itens da norma, como será visto aqui.</p>
+
+          <h4>ABNT NBR ISO 10013:2021 </h4>
+
+          <p>Apresenta exclusivamente orientações para o desenvolvimento, o manejo e a manutenção das informações
+            documentadas do SGQ. Não é uma norma auditável, ou seja, só traz <b>orientações/recomendações</b>. Em sua
+            seção <b>4.1 (Generalidades)</b>, destaca a natureza flexível e adaptável das estruturas da informação
+            documentada dentro de um SGQ. Reconhece que não existe uma abordagem única para criar ou estruturar essas
+            informações, mas pode variar de acordo com as necessidades da organização.</p>
+        </div>
+
+        <p>
+          A partir de agora, você conhecerá mais sobre controle, guarda, atualização, disseminação e rastreabilidade das
+          informações documentas à luz das diretrizes estabelecidas pela norma ISO 9001:2015 e das orientações da ISO
+          10013:2021. Essas diretrizes, como já dito, serão a base para práticas executadas pelas organizações na busca
+          de atender aos requisitos estabelecidos para o SGQ, no que tange à manutenção das informações.
+        </p>
+
+        <h3>Controle de informação documentada</h3>
+
+        <p>
+          O controle da informação documentada consiste em esta estar disponível quando e onde for necessária (fácil
+          acesso); adequada ao uso; protegida contra perda de confidencialidade e de mudanças não intencionais; e
+          protegida do uso impróprio ou da perda de integridade. O controle deve gerir também a distribuição, o acesso,
+          o armazenamento, a preservação, o controle de alterações, a retenção e a disposição dessas informações.
+        </p>
+
+        <p>
+          Sendo necessário, é preciso identificar e controlar também os documentos de origem externa.
+        </p>
+
+        <p>
+          Por fim, um controle adequado da informação documentada torna-se fundamental para garantir o SGQ.
+        </p>
+
+        <div class="no-print" aria-hidden="true">
+          <p>Clique ou toque para visualizar o conteúdo.</p>
+
+          <div class="btn-normas hvr-float-shadow mx-auto d-block my-5">
+            <img src="img/bt_normas.png" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalControle">
+          </div>
+
+          <div class="modal fade" id="modalControle" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">O que as normas dizem</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Estes pontos estão todos apresentados na ISO 9001, no requisito <b>7.5 (Informação documentada)</b>.
+                    A norma estabelece (ABNT, 2015, p. 10):
+                  </p>
+
+                  <div class="citacao">
+                    <p><b>7.5.3 Controle de informação documentada</b></p>
+
+                    <p><b>7.5.3.1</b> A informação documentada requerida pelo sistema de gestão da qualidade e por esta
+                      Norma deve ser controlada para assegurar que:</p>
+
+                    <p>a) ela esteja disponível e adequada para uso, aonde e quando ela for necessária;</p>
+
+                    <p>b) ela esteja protegida suficientemente (por exemplo, contra perda de confidencialidade, uso
+                      impróprio ou perda de integridade).</p>
+
+                    <p><b>7.5.3.2</b> Para o controle de informação documentada, a organização deve abordar as seguintes
+                      atividades, como aplicável:</p>
+
+                    <p>a) distribuição, acesso, recuperação e uso;</p>
+
+                    <p>b) armazenamento e preservação, incluindo preservação de legibilidade;</p>
+
+                    <p>c) controle de alterações (por exemplo, controle de versão);</p>
+
+                    <p>d) retenção e disposição.</p>
+                  </div>
+
+                  <p class="mt-4">
+                    Todos esses pontos são um pouco mais detalhados e apresentados como recomendações na ISO 10013, no
+                    item <b>5.2 (Controle de informação documentada)</b>, que tratará de disponibilidade (subitem
+                    5.2.1), proteção (subitem 5.2.2), distribuição, acesso, recuperação e uso (subitem 5.2.3),
+                    armazenamento e preservação (subitem 5.2.4), atualização da informação documentada e controle de
+                    mudanças (subitem 5.2.5) e, por fim, retenção e disposição (subitem 5.2.6). Desse modo, recomenda-se
+                    a leitura desses itens na íntegra. Contudo, eles também serão abordados na sequência.
+                  </p>
+
+
+                  <div class="destaque borda-colorida icone dica">
+                    <p><b>Algumas sugestões para o controle da informação documentada: </b></p>
+                    <ul>
+                      <li>Mesmo não sendo uma obrigatoriedade da ISO 9001, estabeleça um procedimento documentado para
+                        controlar a criação, a atualização (revisão), a aprovação, a distribuição, a disponibilidade e o
+                        descarte de documentos do SGQ. </li>
+                      <li>Atribua responsabilidades, por exemplo, quem realizará cada uma das atividades previstas em
+                        seu procedimento. </li>
+                      <li>Crie uma lista mestra. </li>
+                      <li>Identifique os documentos de origem externa. </li>
+                      <li>Padronize as formas de identificação: utilize números de versão e datas para rastrear as
+                        alterações nos documentos. </li>
+                      <li>Mantenha registros de revisões e aprovações. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acessivel print visually-hidden">
+          <h4>O que as normas dizem</h4>
 
           <p>
-            Para aprender sobre manutenção da documentação do SGQ, serão verificadas duas normas. São elas: 
+            Estes pontos estão todos apresentados na ISO 9001, no requisito <b>7.5 (Informação documentada)</b>. A norma
+            estabelece (ABNT, 2015, p. 10):
           </p>
 
-          <div class="no-print mb-5" aria-hidden="true">
+          <div class="citacao">
+            <p><b>7.5.3 Controle de informação documentada</b></p>
 
-            <p>Clique ou toque para visualizar o conteúdo.</p>
+            <p><b>7.5.3.1</b> A informação documentada requerida pelo sistema de gestão da qualidade e por esta Norma
+              deve ser controlada para assegurar que:</p>
 
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">ABNT NBR ISO 9001:2015</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">ABNT NBR ISO 10013:2021 </button>
-              </li>
+            <p>a) ela esteja disponível e adequada para uso, aonde e quando ela for necessária;</p>
+
+            <p>b) ela esteja protegida suficientemente (por exemplo, contra perda de confidencialidade, uso impróprio ou
+              perda de integridade).</p>
+
+            <p><b>7.5.3.2</b> Para o controle de informação documentada, a organização deve abordar as seguintes
+              atividades, como aplicável:</p>
+
+            <p>a) distribuição, acesso, recuperação e uso;</p>
+
+            <p>b) armazenamento e preservação, incluindo preservação de legibilidade;</p>
+
+            <p>c) controle de alterações (por exemplo, controle de versão);</p>
+
+            <p>d) retenção e disposição.</p>
+          </div>
+
+          <p class="mt-4">
+            Todos esses pontos são um pouco mais detalhados e apresentados como recomendações na ISO 10013, no item
+            <b>5.2 (Controle de informação documentada)</b>, que tratará de disponibilidade (subitem 5.2.1), proteção
+            (subitem 5.2.2), distribuição, acesso, recuperação e uso (subitem 5.2.3), armazenamento e preservação
+            (subitem 5.2.4), atualização da informação documentada e controle de mudanças (subitem 5.2.5) e, por fim,
+            retenção e disposição (subitem 5.2.6). Desse modo, recomenda-se a leitura desses itens na íntegra. Contudo,
+            eles também serão abordados na sequência.
+          </p>
+
+
+          <div class="destaque borda-colorida icone dica">
+            <p><b>Algumas sugestões para o controle da informação documentada: </b></p>
+            <ul>
+              <li>Mesmo não sendo uma obrigatoriedade da ISO 9001, estabeleça um procedimento documentado para controlar
+                a criação, a atualização (revisão), a aprovação, a distribuição, a disponibilidade e o descarte de
+                documentos do SGQ. </li>
+              <li>Atribua responsabilidades, por exemplo, quem realizará cada uma das atividades previstas em seu
+                procedimento. </li>
+              <li>Crie uma lista mestra. </li>
+              <li>Identifique os documentos de origem externa. </li>
+              <li>Padronize as formas de identificação: utilize números de versão e datas para rastrear as alterações
+                nos documentos. </li>
+              <li>Mantenha registros de revisões e aprovações. </li>
             </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <p>
-                  Estabelece os requisitos e as diretrizes para um SGQ em uma organização. É uma norma bem ampla e é auditável. Ela <b>estabelece</b> fortemente a manutenção de informações documentadas necessárias para apoiar um SGQ, indicado as informações obrigatórias e as recomendáveis. 
-                </p>
-                <p>
-                  Nessa norma, há uma seção específica, a <b>7.5 (Informação documentada)</b>, que apresenta recomendações de reter a informação, determinando, sugerindo e atribuindo responsabilidades. Porém, esse tema também surge em muitos outros itens da norma, como será visto aqui.  
-                </p>
-              </div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <p>
-                  Apresenta exclusivamente orientações para o desenvolvimento, o manejo e a manutenção das informações documentadas do SGQ. Não é uma norma auditável, ou seja, só traz <b>orientações/recomendações</b>. Em sua seção <b>4.1 (Generalidades)</b>, destaca a natureza flexível e adaptável das estruturas da informação documentada dentro de um SGQ. Reconhece que não existe uma abordagem única para criar ou estruturar essas informações, mas pode variar de acordo com as necessidades da organização. 
-                </p>
-              </div>
           </div>
 
+        </div>
+
+        <h3>Guarda da informação documentada</h3>
+
+        <p>
+          Como evitar perdas, danos ou acesso não autorizado da informação documentada? Somente por meio da guarda
+          adequada da documentação é possível garantir sua proteção contra essas situações. É importante saber que as
+          normas afirmam que é da própria organização, diante do seu contexto a responsabilidade por determinar quais
+          documentações precisam ser retidas, o período pelo qual devem ser mantidas e o método de retenção.
+        </p>
+
+        <p>
+          A guarda dos documentos eleitos pelas organizações deve considerar a segurança física e digital, o controle de
+          acesso e a realização de <i>backup</i>, garantindo que os documentos estejam protegidos contra os mais
+          diversos tipos de sinistros, como: incêndios, inundações, falhas de <i>hardware</i> ou ataques cibernéticos.
+          Além disso, é importante estabelecer procedimentos claros para a recuperação rápida e eficiente da
+          documentação em caso de necessidade.
+        </p>
+
+        <div class="no-print" aria-hidden="true">
+          <p>Clique ou toque para visualizar o conteúdo.</p>
+
+          <div class="btn-normas hvr-float-shadow mx-auto d-block my-5">
+            <img src="img/bt_normas.png" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalGuarda">
           </div>
 
-          <div class="acessivel print visually-hidden">
-            <h4>ABNT NBR ISO 9001:2015</h4> 
+          <div class="modal fade" id="modalGuarda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">O que as normas dizem</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Um ponto importante que a norma ISO 9001 estabelece, e que deve ser considerado, é distinção entre
+                    <b>manter</b> e <b>reter</b> uma informação documentada. Conforme o item <b>4.4.2</b> (ABNT, 2015,
+                    p. 4):
+                  </p>
 
-            <p>Estabelece os requisitos e as diretrizes para um SGQ em uma organização. É uma norma bem ampla e é auditável. Ela <b>estabelece</b> fortemente a manutenção de informações documentadas necessárias para apoiar um SGQ, indicado as informações obrigatórias e as recomendáveis.</p> 
+                  <div class="citacao">
+                    <p>4.4.2 Na extensão necessária, a organização deve: </p>
 
-            <p>Nessa norma, há uma seção específica, a <b>7.5 (Informação documentada)</b>, que apresenta recomendações de reter a informação, determinando, sugerindo e atribuindo responsabilidades. Porém, esse tema também surge em muitos outros itens da norma, como será visto aqui.</p>  
+                    <p>a) <b>manter</b> informação documentada para apoiar a operação de seus processos;</p>
 
-            <h4>ABNT NBR ISO 10013:2021 </h4>
-
-            <p>Apresenta exclusivamente orientações para o desenvolvimento, o manejo e a manutenção das informações documentadas do SGQ. Não é uma norma auditável, ou seja, só traz <b>orientações/recomendações</b>. Em sua seção <b>4.1 (Generalidades)</b>, destaca a natureza flexível e adaptável das estruturas da informação documentada dentro de um SGQ. Reconhece que não existe uma abordagem única para criar ou estruturar essas informações, mas pode variar de acordo com as necessidades da organização.</p> 
-          </div>
-
-          <p>
-            A partir de agora, você conhecerá mais sobre controle, guarda, atualização, disseminação e rastreabilidade das informações documentas à luz das diretrizes estabelecidas pela norma ISO 9001:2015 e das orientações da ISO 10013:2021. Essas diretrizes, como já dito, serão a base para práticas executadas pelas organizações na busca de atender aos requisitos estabelecidos para o SGQ, no que tange à manutenção das informações. 
-          </p>
-
-          <h3>Controle de informação documentada</h3>
-
-          <p>
-            O controle da informação documentada consiste em esta estar disponível quando e onde for necessária (fácil acesso); adequada ao uso; protegida contra perda de confidencialidade e de mudanças não intencionais; e protegida do uso impróprio ou da perda de integridade. O controle deve gerir também a distribuição, o acesso, o armazenamento, a preservação, o controle de alterações, a retenção e a disposição dessas informações.  
-          </p>
-
-          <p>
-            Sendo necessário, é preciso identificar e controlar também os documentos de origem externa. 
-          </p>
-
-          <p>
-            Por fim, um controle adequado da informação documentada torna-se fundamental para garantir o SGQ. 
-          </p>
-          
-          <div class="no-print" aria-hidden="true">
-            <p >Clique ou toque para visualizar o conteúdo.</p>
-
-            <div class="btn-normas hvr-float-shadow mx-auto d-block my-5">
-              <img src="img/bt_normas.png" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalControle">
-            </div>
-
-            <div class="modal fade" id="modalControle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">O que as normas dizem</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                            Estes pontos estão todos apresentados na ISO 9001, no requisito <b>7.5 (Informação documentada)</b>. A norma estabelece (ABNT, 2015, p. 10): 
-                          </p>
-
-                          <div class="citacao">
-                            <p><b>7.5.3 Controle de informação documentada</b></p>
-
-                            <p><b>7.5.3.1</b> A informação documentada requerida pelo sistema de gestão da qualidade e por esta Norma deve ser controlada para assegurar que:</p>
-
-                            <p>a) ela esteja disponível e adequada para uso, aonde e quando ela for necessária;</p> 
-
-                            <p>b) ela esteja protegida suficientemente (por exemplo, contra perda de confidencialidade, uso impróprio ou perda de integridade).</p> 
-
-                            <p><b>7.5.3.2</b> Para o controle de informação documentada, a organização deve abordar as seguintes atividades, como aplicável:</p> 
-
-                            <p>a) distribuição, acesso, recuperação e uso;</p> 
-
-                            <p>b) armazenamento e preservação, incluindo preservação de legibilidade;</p> 
-
-                            <p>c) controle de alterações (por exemplo, controle de versão);</p> 
-
-                            <p>d) retenção e disposição.</p>
-                          </div>
-
-                          <p class="mt-4">
-                            Todos esses pontos são um pouco mais detalhados e apresentados como recomendações na ISO 10013, no item <b>5.2 (Controle de informação documentada)</b>, que tratará de disponibilidade (subitem 5.2.1), proteção (subitem 5.2.2), distribuição, acesso, recuperação e uso (subitem 5.2.3), armazenamento e preservação (subitem 5.2.4), atualização da informação documentada e controle de mudanças (subitem 5.2.5) e, por fim, retenção e disposição (subitem 5.2.6). Desse modo, recomenda-se a leitura desses itens na íntegra. Contudo, eles também serão abordados na sequência.
-                          </p>
-
-                          
-                            <div class="destaque borda-colorida icone dica">
-                              <p><b>Algumas sugestões para o controle da informação documentada: </b></p>
-                              <ul>
-                                <li>Mesmo não sendo uma obrigatoriedade da ISO 9001, estabeleça um procedimento documentado para controlar a criação, a atualização (revisão), a aprovação, a distribuição, a disponibilidade e o descarte de documentos do SGQ.  </li>
-                                <li>Atribua responsabilidades, por exemplo, quem realizará cada uma das atividades previstas em seu procedimento. </li>
-                                <li>Crie uma lista mestra. </li>
-                                <li>Identifique os documentos de origem externa. </li>
-                                <li>Padronize as formas de identificação: utilize números de versão e datas para rastrear as alterações nos documentos. </li>
-                                <li>Mantenha registros de revisões e aprovações. </li>
-                              </ul>
-                            </div>
-                      </div>
+                    <p>b) <b>reter</b> informação documentada para ter confiança em que os processos sejam realizados
+                      conforme planejado. </p>
                   </div>
-              </div>
-            </div>          
-          </div>
-        
-          <div class="acessivel print visually-hidden">
-            <h4>O que as normas dizem</h4>
-                          
-            <p>
-              Estes pontos estão todos apresentados na ISO 9001, no requisito <b>7.5 (Informação documentada)</b>. A norma estabelece (ABNT, 2015, p. 10): 
-            </p>
 
-            <div class="citacao">
-              <p><b>7.5.3 Controle de informação documentada</b></p>
+                  <p class="mt-4">
+                    Aqui, cabe um comentário mais detalhado para cada um desses termos:
+                  </p>
 
-              <p><b>7.5.3.1</b> A informação documentada requerida pelo sistema de gestão da qualidade e por esta Norma deve ser controlada para assegurar que:</p>
+                  <ul class="custom-bullet">
+                    <li><b>Reter</b>: trata da guarda por um tempo determinado. A finalidade é respaldar a operação de
+                      seus processos, ou seja, são os documentos que trazem a evidências de conformidade com requisitos.
+                      Na situação de uma informação documentada retida como evidência de conformidade, é recomendável
+                      que a organização a proteja de mudanças não intencionais. </li>
+                    <li><b>Manter</b>: trada da guarda, bem como da revisão contínua dos documentos. A finalidade é a
+                      confiança de que os processos são executados conforme o planejado. Essa documentação precisa ser
+                      mantida em um meio apropriado para assegurar sua preservação e legibilidade. Exemplos: instrução
+                      de trabalho, procedimentos, formulários, manual da qualidade etc. </li>
+                  </ul>
 
-              <p>a) ela esteja disponível e adequada para uso, aonde e quando ela for necessária;</p> 
-
-              <p>b) ela esteja protegida suficientemente (por exemplo, contra perda de confidencialidade, uso impróprio ou perda de integridade).</p> 
-
-              <p><b>7.5.3.2</b> Para o controle de informação documentada, a organização deve abordar as seguintes atividades, como aplicável:</p> 
-
-              <p>a) distribuição, acesso, recuperação e uso;</p> 
-
-              <p>b) armazenamento e preservação, incluindo preservação de legibilidade;</p> 
-
-              <p>c) controle de alterações (por exemplo, controle de versão);</p> 
-
-              <p>d) retenção e disposição.</p>
-            </div>
-
-            <p class="mt-4">
-              Todos esses pontos são um pouco mais detalhados e apresentados como recomendações na ISO 10013, no item <b>5.2 (Controle de informação documentada)</b>, que tratará de disponibilidade (subitem 5.2.1), proteção (subitem 5.2.2), distribuição, acesso, recuperação e uso (subitem 5.2.3), armazenamento e preservação (subitem 5.2.4), atualização da informação documentada e controle de mudanças (subitem 5.2.5) e, por fim, retenção e disposição (subitem 5.2.6). Desse modo, recomenda-se a leitura desses itens na íntegra. Contudo, eles também serão abordados na sequência.
-            </p>
-
-                        
-            <div class="destaque borda-colorida icone dica">
-              <p><b>Algumas sugestões para o controle da informação documentada: </b></p>
-              <ul>
-                <li>Mesmo não sendo uma obrigatoriedade da ISO 9001, estabeleça um procedimento documentado para controlar a criação, a atualização (revisão), a aprovação, a distribuição, a disponibilidade e o descarte de documentos do SGQ.  </li>
-                <li>Atribua responsabilidades, por exemplo, quem realizará cada uma das atividades previstas em seu procedimento. </li>
-                <li>Crie uma lista mestra. </li>
-                <li>Identifique os documentos de origem externa. </li>
-                <li>Padronize as formas de identificação: utilize números de versão e datas para rastrear as alterações nos documentos. </li>
-                <li>Mantenha registros de revisões e aprovações. </li>
-              </ul>
-            </div>
-            
-          </div>
-
-          <h3>Guarda da informação documentada</h3>
-
-          <p>
-            Como evitar perdas, danos ou acesso não autorizado da informação documentada? Somente por meio da guarda adequada da documentação é possível garantir sua proteção contra essas situações. É importante saber que as normas afirmam que é da própria organização, diante do seu contexto a responsabilidade por determinar quais documentações precisam ser retidas, o período pelo qual devem ser mantidas e o método de retenção. 
-          </p>
-
-          <p>
-            A guarda dos documentos eleitos pelas organizações deve considerar a segurança física e digital, o controle de acesso e a realização de <i>backup</i>, garantindo que os documentos estejam protegidos contra os mais diversos tipos de sinistros, como: incêndios, inundações, falhas de <i>hardware</i> ou ataques cibernéticos. Além disso, é importante estabelecer procedimentos claros para a recuperação rápida e eficiente da documentação em caso de necessidade.  
-          </p>
-
-          <div class="no-print" aria-hidden="true">
-            <p>Clique ou toque para visualizar o conteúdo.</p>
-
-            <div class="btn-normas hvr-float-shadow mx-auto d-block my-5">
-              <img src="img/bt_normas.png" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalGuarda">
-            </div>
-
-            <div class="modal fade" id="modalGuarda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">O que as normas dizem</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                            Um ponto importante que a norma ISO 9001 estabelece, e que deve ser considerado, é distinção entre <b>manter</b> e <b>reter</b> uma informação documentada. Conforme o item <b>4.4.2</b> (ABNT, 2015, p. 4):  
-                          </p>
-
-                          <div class="citacao">
-                            <p>4.4.2 Na extensão necessária, a organização deve:  </p>
-
-                            <p>a) <b>manter</b> informação documentada para apoiar a operação de seus processos;</p>
-
-                            <p>b) <b>reter</b> informação documentada para ter confiança em que os processos sejam realizados conforme planejado.  </p>
-                          </div>
-
-                          <p class="mt-4">
-                            Aqui, cabe um comentário mais detalhado para cada um desses termos:
-                          </p>
-
-                          <ul class="custom-bullet">
-                            <li><b>Reter</b>: trata da guarda por um tempo determinado. A finalidade é respaldar a operação de seus processos, ou seja, são os documentos que trazem a evidências de conformidade com requisitos. Na situação de uma informação documentada retida como evidência de conformidade, é recomendável que a organização a proteja de mudanças não intencionais. </li>
-                            <li><b>Manter</b>: trada da guarda, bem como da revisão contínua dos documentos. A finalidade é a confiança de que os processos são executados conforme o planejado. Essa documentação precisa ser mantida em um meio apropriado para assegurar sua preservação e legibilidade. Exemplos: instrução de trabalho, procedimentos, formulários, manual da qualidade etc. </li>
-                          </ul>
-
-                          <div class="destaque borda-colorida">
-                            <p><b>É importante salientar que manter informação documentada não impede que ela seja retida para um propósito específico, como a retenção de versões anteriores.</b>  </p>
-                          </div>
-
-                          <p>
-                            Desse modo, sustentando o que foi apresentado, a ISO 10013:2021, no item <b>5.2.4</b> <b>(Armazenamento e preservação)</b> (ABNT, 2021, p. 13), orienta que a informação documentada que deve ser <b>retida</b> seja <b>armazenada</b> e <b>preservada</b> em um formato ou meio apropriado, considerando a <b>duração do armazenamento</b>. Quando armazenada eletronicamente, deve-se assegurar que haja sistemas de <b><i>backup</i></b>.  
-                          </p>
-
-                          <p>
-                            Também na ISO 10013 encontram-se recomendações complementares para organização, no item <b>5.2.2 (Proteção)</b> (ABNT, 2021, p. 12): <b>proteger adequadamente</b> a informação documentada para garantir sua <b>legibilidade</b> e <b>acessibilidade</b> e para prevenir possíveis violações de <b>confidencialidade</b>, usos indevidos, ou seja, <b>usos impróprios</b>, ou ainda o comprometimento da <b>integridade</b>. É preciso considerar os <b>riscos</b> associados à <b>segurança da informação</b>. 
-                          </p>
-
-                          <p>
-                            Por fim, segundo o item <b>5.2.6 (Retenção e disposição)</b>, a organização deve levar em consideração (ABNT, 2021, p. 13): “requisitos de cliente, estatutários e regulamentares e seus próprios requisitos” ao determinar o período de retenção e os métodos de disposição de informação documentada. 
-                          </p>
-
-                          <div class="destaque borda-colorida icone dica">
-                            <p><b>Sugestões para auxiliar na guarda da informação documentada:</b></p>
-                            <ul class="custom-bullet">
-                              <li>Armazene os documentos em um local seguro, acessível apenas para pessoas autorizadas. </li>
-                              <li>Considere o uso de sistemas eletrônicos de gerenciamento de documentos para facilitar o acesso e a organização. </li>
-                              <li>Implemente medidas de segurança para proteger os documentos contra acesso não autorizado, perda ou danos. </li>
-                            </ul>
-                          </div>
-
-
-                      </div>
+                  <div class="destaque borda-colorida">
+                    <p><b>É importante salientar que manter informação documentada não impede que ela seja retida para
+                        um propósito específico, como a retenção de versões anteriores.</b> </p>
                   </div>
+
+                  <p>
+                    Desse modo, sustentando o que foi apresentado, a ISO 10013:2021, no item <b>5.2.4</b>
+                    <b>(Armazenamento e preservação)</b> (ABNT, 2021, p. 13), orienta que a informação documentada que
+                    deve ser <b>retida</b> seja <b>armazenada</b> e <b>preservada</b> em um formato ou meio apropriado,
+                    considerando a <b>duração do armazenamento</b>. Quando armazenada eletronicamente, deve-se assegurar
+                    que haja sistemas de <b><i>backup</i></b>.
+                  </p>
+
+                  <p>
+                    Também na ISO 10013 encontram-se recomendações complementares para organização, no item <b>5.2.2
+                      (Proteção)</b> (ABNT, 2021, p. 12): <b>proteger adequadamente</b> a informação documentada para
+                    garantir sua <b>legibilidade</b> e <b>acessibilidade</b> e para prevenir possíveis violações de
+                    <b>confidencialidade</b>, usos indevidos, ou seja, <b>usos impróprios</b>, ou ainda o
+                    comprometimento da <b>integridade</b>. É preciso considerar os <b>riscos</b> associados à
+                    <b>segurança da informação</b>.
+                  </p>
+
+                  <p>
+                    Por fim, segundo o item <b>5.2.6 (Retenção e disposição)</b>, a organização deve levar em
+                    consideração (ABNT, 2021, p. 13): “requisitos de cliente, estatutários e regulamentares e seus
+                    próprios requisitos” ao determinar o período de retenção e os métodos de disposição de informação
+                    documentada.
+                  </p>
+
+                  <div class="destaque borda-colorida icone dica">
+                    <p><b>Sugestões para auxiliar na guarda da informação documentada:</b></p>
+                    <ul class="custom-bullet">
+                      <li>Armazene os documentos em um local seguro, acessível apenas para pessoas autorizadas. </li>
+                      <li>Considere o uso de sistemas eletrônicos de gerenciamento de documentos para facilitar o acesso
+                        e a organização. </li>
+                      <li>Implemente medidas de segurança para proteger os documentos contra acesso não autorizado,
+                        perda ou danos. </li>
+                    </ul>
+                  </div>
+
+
+                </div>
               </div>
-            </div>          
+            </div>
+          </div>
+        </div>
+
+
+        <div class="acessivel print visually-hidden">
+
+          <h4>O que as normas dizem</h4>
+
+          <p>
+            Um ponto importante que a norma ISO 9001 estabelece, e que deve ser considerado, é distinção entre
+            <b>manter</b> e <b>reter</b> uma informação documentada. Conforme o item <b>4.4.2</b> (ABNT, 2015, p. 4):
+          </p>
+
+          <div class="citacao">
+            <p>4.4.2 Na extensão necessária, a organização deve: </p>
+
+            <p>a) <b>manter</b> informação documentada para apoiar a operação de seus processos;</p>
+
+            <p>b) <b>reter</b> informação documentada para ter confiança em que os processos sejam realizados conforme
+              planejado. </p>
           </div>
 
+          <p class="mt-4">
+            Aqui, cabe um comentário mais detalhado para cada um desses termos:
+          </p>
 
-          <div class="acessivel print visually-hidden">
+          <ul class="custom-bullet">
+            <li><b>Reter</b>: trata da guarda por um tempo determinado. A finalidade é respaldar a operação de seus
+              processos, ou seja, são os documentos que trazem a evidências de conformidade com requisitos. Na situação
+              de uma informação documentada retida como evidência de conformidade, é recomendável que a organização a
+              proteja de mudanças não intencionais. </li>
+            <li><b>Manter</b>: trada da guarda, bem como da revisão contínua dos documentos. A finalidade é a confiança
+              de que os processos são executados conforme o planejado. Essa documentação precisa ser mantida em um meio
+              apropriado para assegurar sua preservação e legibilidade. Exemplos: instrução de trabalho, procedimentos,
+              formulários, manual da qualidade etc. </li>
+          </ul>
 
-            <h4>O que as normas dizem</h4>
-                          
-            <p>
-              Um ponto importante que a norma ISO 9001 estabelece, e que deve ser considerado, é distinção entre <b>manter</b> e <b>reter</b> uma informação documentada. Conforme o item <b>4.4.2</b> (ABNT, 2015, p. 4):  
-            </p>
+          <div class="destaque borda-colorida">
+            <b>É importante salientar que manter informação documentada não impede que ela seja retida para um propósito
+              específico, como a retenção de versões anteriores.</b>
+          </div>
 
-            <div class="citacao">
-              <p>4.4.2 Na extensão necessária, a organização deve:  </p>
+          <p>
+            Desse modo, sustentando o que foi apresentado, a ISO 10013:2021, no item <b>5.2.4</b> <b>(Armazenamento e
+              preservação)</b> (ABNT, 2021, p. 13), orienta que a informação documentada que deve ser <b>retida</b> seja
+            <b>armazenada</b> e <b>preservada</b> em um formato ou meio apropriado, considerando a <b>duração do
+              armazenamento</b>. Quando armazenada eletronicamente, deve-se assegurar que haja sistemas de
+            <b><i>backup</i></b>.
+          </p>
 
-              <p>a) <b>manter</b> informação documentada para apoiar a operação de seus processos;</p>
+          <p>
+            Também na ISO 10013 encontram-se recomendações complementares para organização, no item <b>5.2.2
+              (Proteção)</b> (ABNT, 2021, p. 12): <b>proteger adequadamente</b> a informação documentada para garantir
+            sua <b>legibilidade</b> e <b>acessibilidade</b> e para prevenir possíveis violações de
+            <b>confidencialidade</b>, usos indevidos, ou seja, <b>usos impróprios</b>, ou ainda o comprometimento da
+            <b>integridade</b>. É preciso considerar os <b>riscos</b> associados à <b>segurança da informação</b>.
+          </p>
 
-              <p>b) <b>reter</b> informação documentada para ter confiança em que os processos sejam realizados conforme planejado.  </p>
-            </div>
+          <p>
+            Por fim, segundo o item <b>5.2.6 (Retenção e disposição)</b>, a organização deve levar em consideração
+            (ABNT, 2021, p. 13): “requisitos de cliente, estatutários e regulamentares e seus próprios requisitos” ao
+            determinar o período de retenção e os métodos de disposição de informação documentada.
+          </p>
 
-            <p class="mt-4">
-              Aqui, cabe um comentário mais detalhado para cada um desses termos:
-            </p>
-
+          <div class="destaque borda-colorida icone dica">
+            <p><b>Sugestões para auxiliar na guarda da informação documentada:</b></p>
             <ul class="custom-bullet">
-              <li><b>Reter</b>: trata da guarda por um tempo determinado. A finalidade é respaldar a operação de seus processos, ou seja, são os documentos que trazem a evidências de conformidade com requisitos. Na situação de uma informação documentada retida como evidência de conformidade, é recomendável que a organização a proteja de mudanças não intencionais. </li>
-              <li><b>Manter</b>: trada da guarda, bem como da revisão contínua dos documentos. A finalidade é a confiança de que os processos são executados conforme o planejado. Essa documentação precisa ser mantida em um meio apropriado para assegurar sua preservação e legibilidade. Exemplos: instrução de trabalho, procedimentos, formulários, manual da qualidade etc. </li>
+              <li>Armazene os documentos em um local seguro, acessível apenas para pessoas autorizadas. </li>
+              <li>Considere o uso de sistemas eletrônicos de gerenciamento de documentos para facilitar o acesso e a
+                organização. </li>
+              <li>Implemente medidas de segurança para proteger os documentos contra acesso não autorizado, perda ou
+                danos. </li>
             </ul>
-
-            <div class="destaque borda-colorida">
-              <b>É importante salientar que manter informação documentada não impede que ela seja retida para um propósito específico, como a retenção de versões anteriores.</b>  
-            </div>
-
-            <p>
-              Desse modo, sustentando o que foi apresentado, a ISO 10013:2021, no item <b>5.2.4</b> <b>(Armazenamento e preservação)</b> (ABNT, 2021, p. 13), orienta que a informação documentada que deve ser <b>retida</b> seja <b>armazenada</b> e <b>preservada</b> em um formato ou meio apropriado, considerando a <b>duração do armazenamento</b>. Quando armazenada eletronicamente, deve-se assegurar que haja sistemas de <b><i>backup</i></b>.  
-            </p>
-
-            <p>
-              Também na ISO 10013 encontram-se recomendações complementares para organização, no item <b>5.2.2 (Proteção)</b> (ABNT, 2021, p. 12): <b>proteger adequadamente</b> a informação documentada para garantir sua <b>legibilidade</b> e <b>acessibilidade</b> e para prevenir possíveis violações de <b>confidencialidade</b>, usos indevidos, ou seja, <b>usos impróprios</b>, ou ainda o comprometimento da <b>integridade</b>. É preciso considerar os <b>riscos</b> associados à <b>segurança da informação</b>. 
-            </p>
-
-            <p>
-              Por fim, segundo o item <b>5.2.6 (Retenção e disposição)</b>, a organização deve levar em consideração (ABNT, 2021, p. 13): “requisitos de cliente, estatutários e regulamentares e seus próprios requisitos” ao determinar o período de retenção e os métodos de disposição de informação documentada. 
-            </p>
-
-            <div class="destaque borda-colorida icone dica">
-              <p><b>Sugestões para auxiliar na guarda da informação documentada:</b></p>
-              <ul class="custom-bullet">
-                <li>Armazene os documentos em um local seguro, acessível apenas para pessoas autorizadas. </li>
-                <li>Considere o uso de sistemas eletrônicos de gerenciamento de documentos para facilitar o acesso e a organização. </li>
-                <li>Implemente medidas de segurança para proteger os documentos contra acesso não autorizado, perda ou danos. </li>
-              </ul>
-            </div>
-
-
           </div>
 
-          <h3>Atualização da informação documentada</h3>
 
-          <p>
-            A atualização da documentação garante que o SGQ está em conformidade com todas as alterações nos processos e nos requisitos legais, normativos ou de clientes, bem como todas as lições aprendidas e melhorias implementadas (identificadas por meio de análises críticas). Para realizar a atualização, é preciso pensar em revisão, aprovação e distribuição das alterações, garantindo que todos os envolvidos estejam cientes das atualizações.
-          </p>
+        </div>
 
-          <div class="no-print" aria-hidden="true">
-            <p>Clique ou toque para visualizar o conteúdo.</p>
+        <h3>Atualização da informação documentada</h3>
 
-            <div class="btn-normas hvr-float-shadow mx-auto d-block my-5">
-              <img src="img/bt_normas.png" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalAtualizacao">
-            </div>
+        <p>
+          A atualização da documentação garante que o SGQ está em conformidade com todas as alterações nos processos e
+          nos requisitos legais, normativos ou de clientes, bem como todas as lições aprendidas e melhorias
+          implementadas (identificadas por meio de análises críticas). Para realizar a atualização, é preciso pensar em
+          revisão, aprovação e distribuição das alterações, garantindo que todos os envolvidos estejam cientes das
+          atualizações.
+        </p>
 
-            <div class="modal fade" id="modalAtualizacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">O que as normas dizem</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                            A norma ISO 9001 diz, em seu item 7.5.2 (ABNT, 2015, p. 10):    
-                          </p>
+        <div class="no-print" aria-hidden="true">
+          <p>Clique ou toque para visualizar o conteúdo.</p>
 
-                          <div class="citacao">
-
-                            <p>7.5.2 Criando e atualizando  </p>
-
-                            <p>Ao criar e atualizar informação documentada, a organização deve assegurar apropriados (as):   </p>
-
-                            <p>a) identificação e descrição (por exemplo, um título, data, autor ou número de referência);   </p>
-
-                            <p>b) formato (por exemplo, linguagem, versão de software, gráficos) e meio (por exemplo, papel, eletrônico);   </p>
-
-                            <p>c) análise crítica e aprovação quanto à adequação e suficiência.</p>
-
-                          </div>
-
-                          <p class="mt-4">
-                            Lembre-se de que o item <b>7.5.3.2</b> da norma ISO 9001 estabelece o controle de alterações, que deve ser levado em consideração.  
-                          </p>
-
-                          <p>
-                            Por sua vez, contribuindo, a ISO 10013:2021, no item <b>5.2.5 (Atualizando informação documentada e controle de mudanças)</b> (ABNT, 2021, p. 13), entre outros pontos, traz algumas recomendações para a organização: 
-                          </p>
-
-                          <ul class="custom-bullet">
-                            <li>Determinar um <b>processo para o controle de mudanças</b>, incluindo desenvolvimento, <b>análise crítica</b>, controle de versões, aprovação, liberação e distribuição da informação já atualizada</li> 
-
-                            <li>Considerar a <b>manutenção do histórico</b> de mudanças (para preservar o conhecimento) </li>
-
-                            <li>Quando <b>controlada por <i>software</i></b>, controlar as mudanças nesse <i>software</i> e a segurança cibernética </li>
-                            
-                          </ul>
-
-                          
-                          <div class="destaque borda-colorida icone dica">
-                            <p><b>Mais sugestões, agora para garantir a atualização da informação documentada:</b> </p>
-                            <ul class="custom-bullet">
-                              <li>Estabeleça um processo (como já dito, não é obrigatoriedade imposta pela ISO 9001 criar processos) para revisar periodicamente os documentos do SGQ, para garantir que estejam atualizados e refletindo com precisão as práticas e os procedimentos atuais. </li>
-                              <li>Atribua responsabilidades claras para a revisão e atualização dos documentos. </li>
-                              <li>Mantenha-se atualizado sobre as mudanças nos requisitos legais, regulamentares e de clientes que possam afetar a documentação do SGQ. </li>
-                              <li>Registre todas as alterações realizadas nos documentos, incluindo a razão para a alteração e a data da revisão. </li>
-                            </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>          
+          <div class="btn-normas hvr-float-shadow mx-auto d-block my-5">
+            <img src="img/bt_normas.png" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalAtualizacao">
           </div>
 
-          <div class="acessivel print visually-hidden">
-
-            <h4>O que as normas dizem</h4>
-            
-            <p>
-              A norma ISO 9001 diz, em seu item 7.5.2 (ABNT, 2015, p. 10):    
-            </p>
-
-            <div class="citacao">
-
-              <p>7.5.2 Criando e atualizando  </p>
-
-              <p>Ao criar e atualizar informação documentada, a organização deve assegurar apropriados (as):   </p>
-
-              <p>a) identificação e descrição (por exemplo, um título, data, autor ou número de referência);   </p>
-
-              <p>b) formato (por exemplo, linguagem, versão de software, gráficos) e meio (por exemplo, papel, eletrônico);   </p>
-
-              <p>c) análise crítica e aprovação quanto à adequação e suficiência.</p>
-
-            </div>
-
-            <p class="mt-4">
-              Lembre-se de que o item <b>7.5.3.2</b> da norma ISO 9001 estabelece o controle de alterações, que deve ser levado em consideração.  
-            </p>
-
-            <p>
-              Por sua vez, contribuindo, a ISO 10013:2021, no item <b>5.2.5 (Atualizando informação documentada e controle de mudanças)</b> (ABNT, 2021, p. 13), entre outros pontos, traz algumas recomendações para a organização: 
-            </p>
-
-            <ul class="custom-bullet">
-              <li>Determinar um <b>processo para o controle de mudanças</b>, incluindo desenvolvimento, <b>análise crítica</b>, controle de versões, aprovação, liberação e distribuição da informação já atualizada</li> 
-
-              <li>Considerar a <b>manutenção do histórico</b> de mudanças (para preservar o conhecimento) </li>
-
-              <li>Quando <b>controlada por <i>software</i></b>, controlar as mudanças nesse <i>software</i> e a segurança cibernética </li>
-              
-            </ul>
-
-                          
-            <div class="destaque borda-colorida icone dica">
-              <p><b>Mais sugestões, agora para garantir a atualização da informação documentada:</b> </p>
-              <ul class="custom-bullet">
-                <li>Estabeleça um processo (como já dito, não é obrigatoriedade imposta pela ISO 9001 criar processos) para revisar periodicamente os documentos do SGQ, para garantir que estejam atualizados e refletindo com precisão as práticas e os procedimentos atuais. </li>
-                <li>Atribua responsabilidades claras para a revisão e atualização dos documentos. </li>
-                <li>Mantenha-se atualizado sobre as mudanças nos requisitos legais, regulamentares e de clientes que possam afetar a documentação do SGQ. </li>
-                <li>Registre todas as alterações realizadas nos documentos, incluindo a razão para a alteração e a data da revisão. </li>
-              </ul>
-            </div>
-                      
-          </div>
-
-          <h3>Disseminação da informação documentada</h3>
-
-          <p>
-            Como garantir que todas as partes envolvidas tenham acesso às informações necessárias e corretas para desempenhar suas funções de forma eficaz? Apenas com disseminação eficaz da documentação do SGQ é possível garantir que isso ocorra. Lembre-se de que as partes interessadas incluem funcionários, fornecedores, clientes etc. 
-          </p>
-
-          <p>
-            A disseminação também deve garantir que as versões mais recentes estejam sendo disponibilizadas para aqueles que precisam delas, enquanto versões anteriores sejam retiradas de circulação.  
-          </p>
-
-          <p>
-            Os autores Carpinetti e Gerolamo (2022) comentam que os sistemas de gerenciamento eletrônico de documentos e treinamentos específicos podem ser utilizados para facilitar o acesso à documentação por todos os envolvidos. 
-          </p>
-
-          <div class="no-print" aria-hidden="true">
-            <p>Clique ou toque para visualizar o conteúdo.</p>
-
-            <div class="btn-normas hvr-float-shadow mx-auto d-block my-5">
-              <img src="img/bt_normas.png" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalDisseminacao">
-            </div>
-
-            <div class="modal fade" id="modalDisseminacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">O que as normas dizem</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                            O item <b>7.1.6 (Conhecimento organizacional)</b> da ISO 9001 contribui com o tema da disseminação. Entre outros pontos, a norma estabelece que a organização deve determinar e tornar acessível a todos os envolvidos o conhecimento (informação) necessário e para alcançar a conformidade de produtos e serviço. Além disso, o item <b>7.3 (Conscientização)</b>, estabelece que a organização deve garantir que seus colaboradores estejam conscientes, que conheçam as informações gerais do funcionamento do SGQ, entre outros pontos.                           
-                          </p>
-
-                          <p>
-                            Lembre-se de que o item <b>7.5.3.2</b> da norma ISO 9001 recomenda que a organização deve atentar para a distribuição, o acesso, a recuperação e o uso da informação documentada  
-                          </p>
-
-                          <p>
-                            A ISO 10013:2021 contribui com esse tema em seu item <b>5.2.3 (Distribuição, acesso, recuperação e uso)</b>. Ela recomenda que é preciso assegurar o <b>acesso à informação documentada</b> para pessoal apropriado da organização, assegurando que apenas a informação documentada <b>apropriada esteja em uso</b>.  
-                          </p>
-
-                          <div class="destaque borda-colorida icone dica">
-                            <ul class="custom-bullet">
-                              <p><b>Sugestões para a disseminação da informação documentada: </b></p>
-                              <li>
-                                Estabeleça um método claro para disseminar os documentos relevantes para as partes interessadas. 
-                              </li> 
-  
-                              <li>
-                                Certifique-se de que todos os funcionários tenham acesso aos documentos necessários para desempenhar suas funções. 
-                              </li>
-  
-                              <li>
-                                Considere a realização de treinamentos para garantir que os funcionários compreendam como acessar e utilizar os documentos relevantes. 
-                              </li>
-                            </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="acessivel print visually-hidden">
-            
-            <h4>O que as normas dizem</h4>
-            
-            <p>
-              O item <b>7.1.6 (Conhecimento organizacional)</b> da ISO 9001 contribui com o tema da disseminação. Entre outros pontos, a norma estabelece que a organização deve determinar e tornar acessível a todos os envolvidos o conhecimento (informação) necessário e para alcançar a conformidade de produtos e serviço. Além disso, o item <b>7.3 (Conscientização)</b>, estabelece que a organização deve garantir que seus colaboradores estejam conscientes, que conheçam as informações gerais do funcionamento do SGQ, entre outros pontos.                           
-            </p>
-
-            <p>
-              Lembre-se de que o item <b>7.5.3.2</b> da norma ISO 9001 recomenda que a organização deve atentar para a distribuição, o acesso, a recuperação e o uso da informação documentada  
-            </p>
-
-            <p>
-              A ISO 10013:2021 contribui com esse tema em seu item <b>5.2.3 (Distribuição, acesso, recuperação e uso)</b>. Ela recomenda que é preciso assegurar o <b>acesso à informação documentada</b> para pessoal apropriado da organização, assegurando que apenas a informação documentada <b>apropriada esteja em uso</b>.  
-            </p>
-
-            <div class="destaque borda-colorida icone dica">
-              <p><b>Sugestões para a disseminação da informação documentada: </b></p>
-              <ul class="custom-bullet">
-                <li>
-                  Estabeleça um método claro para disseminar os documentos relevantes para as partes interessadas. 
-                </li> 
-
-                <li>
-                  Certifique-se de que todos os funcionários tenham acesso aos documentos necessários para desempenhar suas funções. 
-                </li>
-
-                <li>
-                  Considere a realização de treinamentos para garantir que os funcionários compreendam como acessar e utilizar os documentos relevantes. 
-                </li>
-              </ul>
-            </div>
-                      
-          </div>
-
-          <h3>Rastreabilidade da informação documentada</h3>
-
-          <p>
-            A rastreabilidade da informação documentada é obrigatória não só para atender a reclamações futuras de clientes, mas também para garantir integridade, confiabilidade e conformidade dos documentos, permitindo que as alterações sejam rastreadas até suas origens. Isso envolve: rastrear a origem, a evolução e o uso de cada documento ao longo do tempo, permitindo uma auditoria eficaz e a identificação rápida de qualquer desvio ou não conformidade. 
-          </p>
-
-          <p>
-            Para que a rastreabilidade aconteça, mais uma vez é importante que haja registros da criação, revisão, aprovação, distribuição e obsolescência. Além disso, o controle e o rastreamento de alterações, acessos e histórico de versões ajudam a garantir a confiabilidade na gestão da documentação. 
-          </p>
-
-          <div class="no-print" aria-hidden="true">
-            <p>Clique ou toque para visualizar o conteúdo.</p>
-
-            <div class="btn-normas hvr-float-shadow mx-auto d-block my-5">
-              <img src="img/bt_normas.png" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalRastreabilidade">
-            </div>
-
-            <div class="modal fade" id="modalRastreabilidade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">O que as normas dizem</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                          <p>
-                            A prática da rastreabilidade é destacada nas duas normas, tanto na ISO 9001 quanto na ISO 10013.                           
-                          </p>
-
-                          <p>
-                            Na ISO 9001, há o requisito <b>8.5.2 (Identificação e rastreabilidade)</b>, o qual informa que a organização deve “reter a informação documentada necessária para possibilitar rastreabilidade” (ABNT, 2015, p. 17). Por sua vez, a ISO 10013, no item <b>5.2.5 (Atualizando informação documentada e controle de mudanças)</b>, indica que a organização deve ter processos de controle de mudanças, desenvolvimento, análise crítica, de versões, aprovação, liberação e distribuição, bem como deve manter o histórico de mudanças de informação documentada para a preservação de conhecimento – tudo isso para que atenda a critérios de <b>identificação</b> e <b>rastreabilidade</b> dos seus produtos e serviços.    
-                          </p>
-
-                          <div class="destaque borda-colorida icone dica">
-                            <h4>Algumas práticas para a rastreabilidade da informação documentada: </h4>
-                            <ul class="custom-bullet">
-                              <li>
-                                Implemente métodos para rastrear a origem, a evolução e o uso da informação documentada ao longo do tempo, garantindo que seja possível reconstruir o histórico de um documento, se necessário.                               
-                              </li> 
-  
-                              <li>
-                                Mantenha registros detalhados sobre as alterações feitas nos documentos, incluindo datas, responsáveis e justificativas para as mudanças.                               
-                              </li>
-  
-                              <li>
-                                Utilize sistemas de gestão de documentos que permitam rastrear automaticamente o histórico de revisões e alterações, facilitando a auditoria e a conformidade com o SGQ. 
-                              </li>
-                            </ul>
-                          </div>
-
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="acessivel print visually-hidden">
-            <h4>O que as normas dizem</h4>
-                          
-            <p>
-              A prática da rastreabilidade é destacada nas duas normas, tanto na ISO 9001 quanto na ISO 10013.                           
-            </p>
-
-            <p>
-              Na ISO 9001, há o requisito <b>8.5.2 (Identificação e rastreabilidade)</b>, o qual informa que a organização deve “reter a informação documentada necessária para possibilitar rastreabilidade” (ABNT, 2015, p. 17). Por sua vez, a ISO 10013, no item <b>5.2.5 (Atualizando informação documentada e controle de mudanças)</b>, indica que a organização deve ter processos de controle de mudanças, desenvolvimento, análise crítica, de versões, aprovação, liberação e distribuição, bem como deve manter o histórico de mudanças de informação documentada para a preservação de conhecimento – tudo isso para que atenda a critérios de <b>identificação</b> e <b>rastreabilidade</b> dos seus produtos e serviços.    
-            </p>
-
-            <div class="destaque borda-colorida icone dica">
-              <h4>Algumas práticas para a rastreabilidade da informação documentada: </h4>
-              <ul class="custom-bullet">
-                <li>
-                  Implemente métodos para rastrear a origem, a evolução e o uso da informação documentada ao longo do tempo, garantindo que seja possível reconstruir o histórico de um documento, se necessário.                               
-                </li> 
-
-                <li>
-                  Mantenha registros detalhados sobre as alterações feitas nos documentos, incluindo datas, responsáveis e justificativas para as mudanças.                               
-                </li>
-
-                <li>
-                  Utilize sistemas de gestão de documentos que permitam rastrear automaticamente o histórico de revisões e alterações, facilitando a auditoria e a conformidade com o SGQ. 
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <p>
-            Certamente você aprendeu bastante com todos os requisitos, as recomendações e as dicas que viu até aqui. Tudo isso é para garantir a integridade, a disponibilidade e a confidencialidade dos documentos, contribuindo para o cumprimento dos requisitos e a eficácia do SGQ. O passo seguinte consiste em conhecer os documentos que precisam ser controlados. 
-          </p>
-
-          <p class="no-print">
-            Que tal praticar, por meio desta atividade, o que você aprendeu até agora? 
-          </p>
-
-          <div class="box-atividade no-print">
-            <p class="titulo-ativ"><strong>Relacione as colunas:</strong></p>
-            
-
-            <div class="game-associar-colunas no-print nao-imprimir">
-                <div class="row">
-                    <div class="col-12 col-sm-4 flexs itens">
-                        <button data-resp="1" class="item item1">
-                            <p>Pode ser criada uma lista mestra das informações documentadas, para atender a esta diretriz.</p>
-                        </button>
-        
-                        <button data-resp="2" class="item item2">
-                            <p>Estabelece que a informação documentada seja mantida e/ou retida, podendo ser por meio de sistemas eletrônicos de gerenciamento de documentos.</p>
-                        </button>
-        
-                        <button data-resp="3" class="item item3">
-                            <p>Quando a guarda da informação documentada deve ocorrer por um tempo determinado, podendo ser utilizados sistemas eletrônicos de gerenciamento de documentos.</p>
-                        </button>
-        
-                        <button data-resp="4" class="item item4">
-                            <p>Quando a guarda da informação documentada deve ocorrer com a finalidade de garantir a confiança de que os processos são executados conforme o planejado, podendo ser utilizados sistemas eletrônicos de gerenciamento de documentos.</p>
-                        </button>
-        
-                        <button data-resp="5" class="item item5">
-                            <p>Pode ser estabelecido um processo para revisar os documentos do SGQ, para assegurar que estejam atualizados e garantir a precisão das práticas e dos procedimentos atuais.</p>
-                        </button>
-        
-                        <button data-resp="6" class="item item6">
-                            <p>Pode ocorrer por meio da realização de treinamentos, a fim de garantir que os colaboradores compreendam como acessar e utilizar os documentos relevantes.</p>
-                        </button>
-        
-                        <button data-resp="7" class="item item7">
-                            <p>Pode ser utilizada, por exemplo, uma lista mestra para manter registros detalhados sobre as alterações feitas nos documentos, incluindo datas, responsáveis e justificativas para as mudanças.</p>
-                        </button>
-                    </div>
-        
-                    <div class="col-12 col-sm-8 flexs">
-                        <button type="button" data-resp="1" class="resp resp5">
-                            <div class="txtacao"><i class="fas fa-question"></i></div>
-                            <p>Atualização</p>
-                        </button>
-        
-                        <button type="button" data-resp="2" class="resp resp6">
-                            <div class="txtacao"><i class="fas fa-question"></i></div>
-                            <p>Controle</p>
-                        </button>
-        
-                        <button type="button" data-resp="3" class="resp resp7">
-                            <div class="txtacao"><i class="fas fa-question"></i></div>
-                            <p>Disseminação</p>
-                        </button>
-        
-                        <button type="button" data-resp="4" class="resp resp1">
-                            <div class="txtacao"><i class="fas fa-question"></i></div>
-                            <p>Guarda</p>
-                        </button>
-        
-                        <button type="button" data-resp="5" class="resp resp8">
-                            <div class="txtacao"><i class="fas fa-question"></i></div>
-                            <p>Manter</p>
-                        </button>
-        
-                        <button type="button" data-resp="6" class="resp resp4">
-                            <div class="txtacao"><i class="fas fa-question"></i></div>
-                            <p>Rastreabilidade</p>
-                        </button>
-        
-                        <button type="button" data-resp="7" class="resp resp2">
-                            <div class="txtacao"><i class="fas fa-question"></i></div>
-                            <p>Reter</p>
-                        </button>
-                    </div>
+          <div class="modal fade" id="modalAtualizacao" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">O que as normas dizem</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-        
-                <!-- Modal -->
-                <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
-                    aria-labelledby="associarColunasErrou" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-12 col-lg-4">
-                                        <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-12 col-lg-8">
-                                        <p>Nem todas as práticas que podem ser realizadas foram relacionadas adequadamente com as possibilidades de manutenção da documentação do SGQ: controle, guarda, atualização e disseminação. Revise o conhecimento e relacione novamente as colunas.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_acertou"
-                    tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col-12 col-lg-4">
-                                        <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="col-12 col-lg-8">
-                                        <p>Parabéns, você conseguiu identificar práticas que podem ser realizadas para os principais pontos relacionados à manutenção da documentação do SGQ: controle, guarda, atualização e disseminação.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-            </div>
-            <!-- Versão para impressão -->
-            <div class="print-only only-print">
-                <p>Associe a primeira coluna com a segunda.</p>
-                <table class="associe-colunas">
-                    <tr>
-                        <td>
-                            <p>A) GERMÂNIO</p>
-                            <p>B) TUNGSTÊNIO</p>
-                            <p>C) LÍTIO</p>
-                            <p>D) SÓDIO</p>
-                            <p>E) POTÁSSIO</p>
-                            <p>F) CÁLCIO</p>
-                            <p>G) CLORO</p>
-                            <p>H) CARBONO</p>
-                        </td>
-                        <td>
-                            <p>(&nbsp;&nbsp;) FRUTAS E VEGETAIS</p>
-                            <p>(&nbsp;&nbsp;) CONCHAS E OSSOS</p>
-                            <p>(&nbsp;&nbsp;) PISCINAS</p>
-                            <p>(&nbsp;&nbsp;) SEMICONDUTORES ELETRÔNICOS</p>
-                            <p>(&nbsp;&nbsp;) BASE DAS MOLÉCULAS DA VIDA</p>
-                            <p>(&nbsp;&nbsp;) SAL</p>
-                            <p>(&nbsp;&nbsp;) FILAMENTO DE LÂMPADAS</p>
-                            <p>(&nbsp;&nbsp;) BATERIAS</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-          </div>
-          
-          <h4>Documentos do SGQ</h4>
+                <div class="modal-body">
+                  <p>
+                    A norma ISO 9001 diz, em seu item 7.5.2 (ABNT, 2015, p. 10):
+                  </p>
 
-          <p>
-            Considerando tudo que foi visto até o momento, com tantas informações e tantos registros gerados nas organizações, é necessário identificar quais deles precisam ser retidos e/ou mantidos. Saber quais são os documentos necessários para gerenciar é essencial para garantir a conformidade com os requisitos do SGQ e para facilitar a eficácia operacional e a melhoria contínua dentro das organizações. 
-          </p>
+                  <div class="citacao">
 
-          <p>
-            Em sua subseção <b>7.5.1 (Generalidades)</b>, a ISO 9001 identifica dois tipos de documentos que devem constar no SGQ: os exigidos pela norma e os determinados pela própria organização. Veja de modo detalhado: 
-          </p>
+                    <p>7.5.2 Criando e atualizando </p>
 
-          <div class="no-print" aria-hidden="true">
-
-            <p>Clique ou toque para visualizar o conteúdo.</p>
-
-
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      Os exigidos pela norma 
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>
-                      Cabe registrar que ambas as normas em questão indicam a informação documentada obrigatória como: o escopo do SGQ, a política da qualidade e os objetivos da qualidade, conforme os itens <b>4.3 (Determinando o escopo do sistema de gestão da qualidade)</b>, <b>5.2.2 (Comunicando a política da qualidade)</b> e<b> 6.2 (Objetivos da qualidade e planejamento para alcançá-los)</b> da ISO 9001:2015 e o item <b>4.1.3 (Conteúdo)</b> da ISO 10013:2021.  
+                    <p>Ao criar e atualizar informação documentada, a organização deve assegurar apropriados (as):  
                     </p>
+
+                    <p>a) identificação e descrição (por exemplo, um título, data, autor ou número de referência);  
+                    </p>
+
+                    <p>b) formato (por exemplo, linguagem, versão de software, gráficos) e meio (por exemplo, papel,
+                      eletrônico);   </p>
+
+                    <p>c) análise crítica e aprovação quanto à adequação e suficiência.</p>
+
+                  </div>
+
+                  <p class="mt-4">
+                    Lembre-se de que o item <b>7.5.3.2</b> da norma ISO 9001 estabelece o controle de alterações, que
+                    deve ser levado em consideração.
+                  </p>
+
+                  <p>
+                    Por sua vez, contribuindo, a ISO 10013:2021, no item <b>5.2.5 (Atualizando informação documentada e
+                      controle de mudanças)</b> (ABNT, 2021, p. 13), entre outros pontos, traz algumas recomendações
+                    para a organização:
+                  </p>
+
+                  <ul class="custom-bullet">
+                    <li>Determinar um <b>processo para o controle de mudanças</b>, incluindo desenvolvimento, <b>análise
+                        crítica</b>, controle de versões, aprovação, liberação e distribuição da informação já
+                      atualizada</li>
+
+                    <li>Considerar a <b>manutenção do histórico</b> de mudanças (para preservar o conhecimento) </li>
+
+                    <li>Quando <b>controlada por <i>software</i></b>, controlar as mudanças nesse <i>software</i> e a
+                      segurança cibernética </li>
+
+                  </ul>
+
+
+                  <div class="destaque borda-colorida icone dica">
+                    <p><b>Mais sugestões, agora para garantir a atualização da informação documentada:</b> </p>
+                    <ul class="custom-bullet">
+                      <li>Estabeleça um processo (como já dito, não é obrigatoriedade imposta pela ISO 9001 criar
+                        processos) para revisar periodicamente os documentos do SGQ, para garantir que estejam
+                        atualizados e refletindo com precisão as práticas e os procedimentos atuais. </li>
+                      <li>Atribua responsabilidades claras para a revisão e atualização dos documentos. </li>
+                      <li>Mantenha-se atualizado sobre as mudanças nos requisitos legais, regulamentares e de clientes
+                        que possam afetar a documentação do SGQ. </li>
+                      <li>Registre todas as alterações realizadas nos documentos, incluindo a razão para a alteração e a
+                        data da revisão. </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Os determinados pela própria organização 
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <p>
-                        Na ABNT NBR ISO 10013:2021, há o item <b>4.1.3 (Conteúdo)</b>, o qual orienta as informações que uma organização pode determinar como necessárias para apoiar a operação do SGQ e seus processos. Já o item <b>4.2.4 (Informação que a organização determinou como necessária para apoiar a operação do sistema de gestão da qualidade e seus processos)</b> comenta sobre cada uma delas. Esses documentos, como sugere o título, são os que respaldam o SGQ, podendo ou não fazer parte das informações documentadas da organização, desde que sejam suficientes para atender às suas necessidades. São dez documentos. Veja quais são eles: 
-                      </p>
-                      <ol>
-                        <li>Manual da qualidade</li>
-                        <li>Organogramas</li>
-                        <li>Mapas de processos, fluxogramas de processos e/ou descrições de processos</li>
-                        <li>Procedimentos e instruções de trabalho</li>
-                        <li>Fluxos de trabalho automatizados</li>
-                        <li>Especificações de produtos e serviços</li>
-                        <li>Comunicações internas e externas</li>
-                        <li>Planos, cronogramas e listas</li>
-                        <li>Formulários e listas de verificação</li>
-                        <li>Informação documentada de origem externa</li>
-                      </ol>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="acessivel print visually-hidden">
-
-            <h4>Os exigidos pela norma</h4> 
-            
-            <p>
-              Cabe registrar que ambas as normas em questão indicam a informação documentada obrigatória como: o escopo do SGQ, a política da qualidade e os objetivos da qualidade, conforme os itens <b>4.3 (Determinando o escopo do sistema de gestão da qualidade)</b>, <b>5.2.2 (Comunicando a política da qualidade)</b> e<b> 6.2 (Objetivos da qualidade e planejamento para alcançá-los)</b> da ISO 9001:2015 e o item <b>4.1.3 (Conteúdo)</b> da ISO 10013:2021.  
-            </p>
-          
-              <h4>Os determinados pela própria organização</h4> 
-        
-              <p>
-                Na ABNT NBR ISO 10013:2021, há o item <b>4.1.3 (Conteúdo)</b>, o qual orienta as informações que uma organização pode determinar como necessárias para apoiar a operação do SGQ e seus processos. Já o item <b>4.2.4 (Informação que a organização determinou como necessária para apoiar a operação do sistema de gestão da qualidade e seus processos)</b> comenta sobre cada uma delas. Esses documentos, como sugere o título, são os que respaldam o SGQ, podendo ou não fazer parte das informações documentadas da organização, desde que sejam suficientes para atender às suas necessidades. São dez documentos. Veja quais são eles: 
-              </p>
-              <ol>
-                <li>Manual da qualidade</li>
-                <li>Organogramas</li>
-                <li>Mapas de processos, fluxogramas de processos e/ou descrições de processos</li>
-                <li>Procedimentos e instruções de trabalho</li>
-                <li>Fluxos de trabalho automatizados</li>
-                <li>Especificações de produtos e serviços</li>
-                <li>Comunicações internas e externas</li>
-                <li>Planos, cronogramas e listas</li>
-                <li>Formulários e listas de verificação</li>
-                <li>Informação documentada de origem externa</li>
-              </ol>
-
-          </div>
-
-          <p class="mt-5">
-            Contudo, uma leitura atenta da norma ABNT NBR ISO 9001:2015 permite construir uma lista bem detalhada de informações documentas pertinentes ao SGQ para serem obrigatoriamente retidas (e recomendavelmente mantidas).   
-          </p>
-
-          <p>
-            Veja a tabela que resume os documentos a serem retidos conforme estabelecido pela norma ABNT NBR ISO 9001:2015. 
-          </p>
-
-
-          <div class="table-responsive">
-            <table class="text-center align-middle">
-              <thead>
-                  <tr>
-                      <th class="w-50">Informação documentada a ser retida</th>
-                      <th class="w-50">Requisito ABNT NBR ISO 9001:2015 </th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td>Materiais como manuais, tutoriais, procedimentos operacionais e instruções de trabalho que servem de apoio à operação de seus processos </td>
-                      <td>4.4.2 a)</td>
-                  </tr>
-                  <tr>
-                      <td>Evidências da realização da operação dos processos conforme o planejado e da conformidade </td>
-                      <td>4.4.2 b) e 8.1 e) </td>
-                  </tr>
-                  <tr>
-                      <td>Evidências de recursos de monitoramento e medição apropriados </td>
-                      <td>7.1.5.1</td>
-                  </tr>
-                  <tr>
-                    <td>Base de calibração e verificação usada no caso de inexistência de padrões nacionais ou internacionais </td>
-                    <td>7.1.5.2 a)</td>
-                  </tr>
-                  <tr>
-                    <td>Evidência de competência de colaboradores </td>
-                    <td>7.2 d) </td>
-                  </tr>
-                  <tr>
-                    <td>Para produtos e serviços, evidências de resultados de análises críticas e de quaisquer mudanças ou novos requisitos </td>
-                    <td>8.2.3.2 a) e b) </td>
-                  </tr>
-                  <tr>
-                    <td>Requisitos de produtos e serviços, bem como de mudanças neles </td>
-                    <td>8.2.4</td>
-                  </tr>
-                  <tr>
-                    <td>Projeto e desenvolvimento de produtos e serviços: entradas, controles, saídas, mudanças e evidências de que os requisitos foram atendidos</td>
-                    <td>8.3.2 j)</td>
-                  </tr>
-                  <tr>
-                    <td>Evidência de entradas de projetos e desenvolvimento </td>
-                    <td>8.3.3 </td>
-                  </tr>
-                  <tr>
-                    <td>Controles de projetos e desenvolvimento </td>
-                    <td>8.3.4 f) </td>
-                  </tr>
-                  <tr>
-                    <td>Saídas de projetos e desenvolvimento </td>
-                    <td>8.3.5 </td>
-                  </tr>
-                  <tr>
-                    <td>Mudanças em projetos e desenvolvimento; resultados de análises críticas; autorização das mudanças; ações tomadas para prevenir impactos adversos </td>
-                    <td>8.3.6 a), b), c) e d)</td>
-                  </tr>
-                  <tr>
-                    <td>Processo de avaliação, seleção, monitoramento e reavaliação de fornecedores </td>
-                    <td>8.4.1</td>
-                  </tr>
-                  <tr>
-                    <td>Controle de produção e provisão de serviços, bem como de análises críticas, seus responsáveis e ações oriundas delas</td>
-                    <td>8.5.1 a) e 8.5.6 </td>
-                  </tr>
-                  <tr>
-                    <td>Identificação e rastreabilidade de produtos e serviços de única saída </td>
-                    <td>8.5.2</td>
-                  </tr>
-                  <tr>
-                    <td>Perda ou dano a propriedade de cliente ou fornecedor externo </td>
-                    <td>8.5.3 </td>
-                  </tr>
-                  <tr>
-                    <td>Liberação de produtos e serviços, com evidência de conformidade e rastreabilidade aos responsáveis pela liberação</td>
-                    <td>8.6 a) e b) </td>
-                  </tr>
-                  <tr>
-                    <td>Tratativa de saídas não conformes, incluindo: descrição da não conformidade, ações tomadas, concessões obtidas e responsável pela liberação </td>
-                    <td>8.7.2 a), b), c) e d)</td>
-                  </tr>
-                  <tr>
-                    <td>Evidência de resultados de avaliação de desempenho</td>
-                    <td>9.1.1 </td>
-                  </tr>
-                  <tr>
-                    <td>Evidência de implantação de auditoria interna e resultados </td>
-                    <td>9.2.2</td>
-                  </tr>
-                  <tr>
-                    <td>Evidência de resultados de análises críticas da direção </td>
-                    <td>9.3.3 f)</td>
-                  </tr>
-                  <tr>
-                    <td>Evidência das não conformidades e ações corretivas tomadas e seus resultados</td>
-                    <td>10.2.2 a) e b) </td>
-                  </tr>
-              </tbody>
-            </table>
-            <figcaption class="figure-caption text-center mt-2 mb-5 no-print">
-              Documentação recomendada e seu respectivo requisito na ABNT NBR ISO 9001:2015<br>
-              Fonte: Adaptado de Carpinetti e Gerolamo (2022) e Sartori (2024)                            
-            </figcaption>
-          </div>
-
-          <div class="grafismo">
-            <div class="destaque borda-colorida icone importante">
-              <p>Essa tabela fornece uma visão geral das principais informações documentadas recomendadas para retenção pelas normas ISO 9001. É importante consultar a norma completa para obter detalhes específicos sobre cada documento.</p>
             </div>
           </div>
-
-          <p>
-            É pertinente comentar que muitas dessas informações podem ser agrupadas. Por exemplo, é possível reunir o escopo, a política e os objetivos da qualidade em um único documento, como um manual da qualidade. Do mesmo modo, um único item pode requerer vários documentos. 
-          </p>
-
-          <p>
-            Além disso, a extensão dessa lista de documentos pode ultrapassar os itens mencionados, variando conforme o tamanho, o segmento e as políticas específicas da organização. 
-          </p>
-
-          <div class="grafismo">
-            <div class="destaque borda-colorida icone pergunta">
-              <p>Como fazer a manutenção dos documentos na prática? </p>
-            </div>
-          </div>
-
-          <p>
-            Diante de todos esses conhecimentos vistos e das sugestões já apresentadas, mesmo assim uma pergunta pode surgir: “Por onde começar?”. Nem a ISO 9001:2015 nem a ISO 10013:2021 detalham como a organização deve realizar a manutenção da sua informação documentada. <b>Tudo dependerá do porte da organização; da robustez de seus documentos; do quanto a empresa pretende investir para que os controles ocorram</b>.  
-          </p>
-
-          <p>
-            Então, veja algumas etapas que podem construir uma boa prática de manutenção da informação documentada. 
-          </p>
-
-          <div class="no-print " aria-hidden="true">
-            <ul class="nav nav-tabs" id="myTab2" role="tablist">
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#primeiro" type="button" role="tab" aria-controls="1" aria-selected="true">1º</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#segundo" type="button" role="tab" aria-controls="dois" aria-selected="false">2º</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="3-tab" data-bs-toggle="tab" data-bs-target="#terceiro" type="button" role="tab" aria-controls="3" aria-selected="false">3º</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="4-tab" data-bs-toggle="tab" data-bs-target="#quarto" type="button" role="tab" aria-controls="4" aria-selected="false">4º</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="5-tab" data-bs-toggle="tab" data-bs-target="#quinto" type="button" role="tab" aria-controls="5" aria-selected="false">5º</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="6-tab" data-bs-toggle="tab" data-bs-target="#sexto" type="button" role="tab" aria-controls="6" aria-selected="false">6º</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="7-tab" data-bs-toggle="tab" data-bs-target="#setimo" type="button" role="tab" aria-controls="7" aria-selected="false">7º</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="8-tab" data-bs-toggle="tab" data-bs-target="#oitavo" type="button" role="tab" aria-controls="8" aria-selected="false">8º</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="9-tab" data-bs-toggle="tab" data-bs-target="#nono" type="button" role="tab" aria-controls="9" aria-selected="false">9º</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="10-tab" data-bs-toggle="tab" data-bs-target="#decimo" type="button" role="tab" aria-controls="10" aria-selected="false">10º</button>
-            </li>
-            </ul>
-            <div class="tab-content" id="myTabContent2">
-                <div class="tab-pane fade show active" id="primeiro" role="tabpanel" aria-labelledby="1-tab">
-                  <p>Estabelecer quais documentos serão integrados ao SGQ.</p>
-                </div>
-
-                <div class="tab-pane fade" id="segundo" role="tabpanel" aria-labelledby="dois-tab">
-                  <p>Estabelecer um ou mais procedimentos, para controlar os documentos, sua criação, revisão, aprovação, distribuição, guarda e seu descarte (quando necessário). </p>
-                </div>
-
-                <div class="tab-pane fade" id="terceiro" role="tabpanel" aria-labelledby="3-tab">
-                  <p>Identificar os tipos de documento do SGQ utilizando uma codificação, como já visto anteriormente, inclusive identificar os documentos de origem externa e controlar sua distribuição.</p>
-                </div>
-
-                <div class="tab-pane fade" id="quarto" role="tabpanel" aria-labelledby="4-tab">
-                  <p>Estabelecer cronograma e responsáveis por: desenvolvimento, revisão e disponibilização e descarte dos documentos.</p>
-                </div>
-
-                <div class="tab-pane fade" id="quinto" role="tabpanel" aria-labelledby="5-tab">
-                  <p>Disponibilizar o documento na área de uso. Em caso de revisão, recolher a versão anterior e realizar o controle do documento disponibilizado. </p>
-                </div>
-
-                <div class="tab-pane fade" id="sexto" role="tabpanel" aria-labelledby="6-tab">
-                  <p>Controlar a documentação por meio de uma lista mestra, contendo, no mínimo, informações como: código do documento, identificação, número da revisão, data da revisão, data da próxima revisão, responsável pela revisão, local onde é disponibilizada, número de cópias, entre outras pertinentes.</p>
-                </div>
-
-                <div class="tab-pane fade" id="setimo" role="tabpanel" aria-labelledby="7-tab">
-                  <p>Treinar as pessoas envolvidas em todas as etapas da manutenção da documentação nova ou atualizada.</p>
-                </div>
-
-                <div class="tab-pane fade" id="oitavo" role="tabpanel" aria-labelledby="8-tab">
-                  <p>Realizar análise crítica não só nas etapas de criação e atualização das informações documentadas, mas também nos processos que estão sendo executados para a manutenção dessas documentações.</p>
-                </div>
-
-                <div class="tab-pane fade" id="nono" role="tabpanel" aria-labelledby="9-tab">
-                  <p>Certificar-se de que os procedimentos de guarda segura estão sendo cumpridos.</p>
-                </div>
-
-                <div class="tab-pane fade" id="decimo" role="tabpanel" aria-labelledby="10-tab">
-                  <p>Realizar pequenas auditorias para verificar se tudo o que foi determinado nos procedimentos e/ou foi planejado está sendo cumprido.</p>
-                </div>
-            </div>
-          </div>
-
-          <div class="print acessivel visually-hidden">
-
-            <p>1º Estabelecer quais documentos serão integrados ao SGQ.  </p>
-
-            <p>2º Estabelecer um ou mais procedimentos, para controlar os documentos, sua criação, revisão, aprovação, distribuição, guarda e seu descarte (quando necessário).  </p>
-
-            <p>3º Identificar os tipos de documento do SGQ utilizando uma codificação, como já visto anteriormente, inclusive identificar os documentos de origem externa e controlar sua distribuição. </p>
-
-            <p>4º Estabelecer cronograma e responsáveis por: desenvolvimento, revisão e disponibilização e descarte dos documentos. </p>
-
-            <p>5º Disponibilizar o documento na área de uso. Em caso de revisão, recolher a versão anterior e realizar o controle do documento disponibilizado. </p>
-
-            <p>6º Controlar a documentação por meio de uma lista mestra, contendo, no mínimo, informações como: código do documento, identificação, número da revisão, data da revisão, data da próxima revisão, responsável pela revisão, local onde é disponibilizada, número de cópias, entre outras pertinentes.  </p>
-
-            <p>7º Treinar as pessoas envolvidas em todas as etapas da manutenção da documentação nova ou atualizada. </p>
-
-            <p>8º Realizar análise crítica não só nas etapas de criação e atualização das informações documentadas, mas também nos processos que estão sendo executados para a manutenção dessas documentações. </p>
-
-            <p>9º Certificar-se de que os procedimentos de guarda segura estão sendo cumpridos.  </p>
-
-            <p>10º Realizar pequenas auditorias para verificar se tudo o que foi determinado nos procedimentos e/ou foi planejado está sendo cumprido. </p>
-          </div>
-
-          <h4><i>Softwares</i> para gestão eletrônica</h4>
-
-
-
-          <figure class="my-5">
-            <div class="figure-img  mb-4">
-                <img class="img-fluid mx-auto d-block " src="img/img1.png">
-            </div>
-          </figure>
-
-
-
-          <p>
-            Por vezes, as organizações têm SGQ bastante robustos. Desse modo, controlar somente por uma lista mestra não será a forma mais fácil. Para esses casos, surgiram os meios eletrônicos, como os <i>softwares</i> de gestão eletrônica de documentos (GED). Esses <i>softwares</i> são projetados para simplificar e otimizar o processo de gerenciamento de documentos, permitindo o armazenamento, a organização, o acesso e o controle eficientes da informação documentada. 
-          </p>
-
-          <p>
-            Um grande benefício está em gerenciar os níveis de permissão de acesso dos usuários e implementar procedimentos para restringir o acesso a informações confidenciais. 
-          </p>
-
-          <p>
-            As próprias normas já contemplam essa forma de gestão. Elas citam, no decorrer de seus textos, sistemas/meios eletrônicos. A ISO 10013, no item <b>4.1.3 (Conteúdo)</b>, por exemplo, descreve as vantagens da utilização das formas de GED (ABNT, 2021, p. 3): 
-          </p>
-
-          <div class="grafismo">
-            <div class="destaque borda-colorida icone nota">
-              <p>
-                As vantagens do meio eletrônico são, por exemplo: 
-              </p>
-              <ul class="custom-bullet">
-                <li>Acesso facilitado a versões pertinentes, incluindo acesso a partir de locais remotos</li>
-                <li>Controle de mudanças facilitado, incluindo o cancelamento de informação documentada obsoleta</li>
-                <li>Distribuição imediata e controlada</li>
-                <li>Recuperabilidade e retenção <i>versus</i> papel ou outro meio físico</li>
-              </ul>
-            </div>
-          </div>
-
-          <p>
-            De modo geral, ambas as normas orientam que a organização assegure que estejam em vigor sistemas de <i>backup</i> apropriados, acompanhe a versão do <i>software</i> usada, uma vez que é possível que nem todos os usuários tenham acesso à mesma versão, e, por fim, avalie questões de segurança da informação. 
-          </p>
-
-          <p>
-            Conforme Carpinetti e Gerolamo (2022, p. 98): “Existem vários <i>softwares</i> de gestão eletrônica de documentos desenvolvidos com o objetivo específico e gerenciar o sistema de documentação da qualidade, de acordo com os requisitos da ISO 9001”.  
-          </p>
-
-          <p>
-            Os autores citados estão corretos. Em uma busca rápida na internet, é possível encontrar dezenas de empresas que oferecem <i>softwares</i> para GED, dos mais simples aos mais complexos. 
-          </p>
-
-          <p>
-            Por fim, cabe a cada organização avaliar sua necessidade e o investimento que será necessário, tanto financeiro quanto de tempo para a implantação e adaptação das equipes. Sendo assim, são pontos a serem avaliados: necessidades de aquisição de licenças do <i>software</i>; tempo de implantação e parametrização às necessidades da organização; e custos de manutenção, estando claro que todo o investimento na manutenção da informação documentada precisa constar no planejamento da melhoria contínua do SGQ. 
-          </p>
-
-          <h3>Encerramento</h3>
-
-          <p>
-            Resumidamente, é fundamental que a organização se dedique em controlar, guardar, atualizar, disseminar e rastrear as suas informações documentadas, como forma de garantir a manutenção e evolução do SGQ. Ainda, a organização precisa determinar quais informações devem ser mantidas e/ou retidas. Além disso, precisa ter procedimentos claros, escolher entre utilizar um GED ou não, determinar os participantes envolvidos, enfim, realizar o que for necessário e recomendado para ter sucesso nesse controle. 
-          </p>
-
-          <p>
-            Muitas dessas atividades, sem dúvidas, serão atribuições do profissional da área da qualidade. Por isso, mantenha-se sempre atualizado e seja dedicado a esse tema. 
-          </p>
-
-          <img src="img/img3.png" alt="" srcset="" class="img-fluid mx-auto no-print">
-        
-          <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
         </div>
-      </section>
-      <!-- Paginação-->
-      <footer class="text-center no-print d-flex justify-content-center mx-auto">
-        <ul class="pagination">
-  
-        </ul>
-      </footer>   
+
+        <div class="acessivel print visually-hidden">
+
+          <h4>O que as normas dizem</h4>
+
+          <p>
+            A norma ISO 9001 diz, em seu item 7.5.2 (ABNT, 2015, p. 10):
+          </p>
+
+          <div class="citacao">
+
+            <p>7.5.2 Criando e atualizando </p>
+
+            <p>Ao criar e atualizar informação documentada, a organização deve assegurar apropriados (as):   </p>
+
+            <p>a) identificação e descrição (por exemplo, um título, data, autor ou número de referência);   </p>
+
+            <p>b) formato (por exemplo, linguagem, versão de software, gráficos) e meio (por exemplo, papel,
+              eletrônico);   </p>
+
+            <p>c) análise crítica e aprovação quanto à adequação e suficiência.</p>
+
+          </div>
+
+          <p class="mt-4">
+            Lembre-se de que o item <b>7.5.3.2</b> da norma ISO 9001 estabelece o controle de alterações, que deve ser
+            levado em consideração.
+          </p>
+
+          <p>
+            Por sua vez, contribuindo, a ISO 10013:2021, no item <b>5.2.5 (Atualizando informação documentada e controle
+              de mudanças)</b> (ABNT, 2021, p. 13), entre outros pontos, traz algumas recomendações para a organização:
+          </p>
+
+          <ul class="custom-bullet">
+            <li>Determinar um <b>processo para o controle de mudanças</b>, incluindo desenvolvimento, <b>análise
+                crítica</b>, controle de versões, aprovação, liberação e distribuição da informação já atualizada</li>
+
+            <li>Considerar a <b>manutenção do histórico</b> de mudanças (para preservar o conhecimento) </li>
+
+            <li>Quando <b>controlada por <i>software</i></b>, controlar as mudanças nesse <i>software</i> e a segurança
+              cibernética </li>
+
+          </ul>
+
+
+          <div class="destaque borda-colorida icone dica">
+            <p><b>Mais sugestões, agora para garantir a atualização da informação documentada:</b> </p>
+            <ul class="custom-bullet">
+              <li>Estabeleça um processo (como já dito, não é obrigatoriedade imposta pela ISO 9001 criar processos)
+                para revisar periodicamente os documentos do SGQ, para garantir que estejam atualizados e refletindo com
+                precisão as práticas e os procedimentos atuais. </li>
+              <li>Atribua responsabilidades claras para a revisão e atualização dos documentos. </li>
+              <li>Mantenha-se atualizado sobre as mudanças nos requisitos legais, regulamentares e de clientes que
+                possam afetar a documentação do SGQ. </li>
+              <li>Registre todas as alterações realizadas nos documentos, incluindo a razão para a alteração e a data da
+                revisão. </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <h3>Disseminação da informação documentada</h3>
+
+        <p>
+          Como garantir que todas as partes envolvidas tenham acesso às informações necessárias e corretas para
+          desempenhar suas funções de forma eficaz? Apenas com disseminação eficaz da documentação do SGQ é possível
+          garantir que isso ocorra. Lembre-se de que as partes interessadas incluem funcionários, fornecedores, clientes
+          etc.
+        </p>
+
+        <p>
+          A disseminação também deve garantir que as versões mais recentes estejam sendo disponibilizadas para aqueles
+          que precisam delas, enquanto versões anteriores sejam retiradas de circulação.
+        </p>
+
+        <p>
+          Os autores Carpinetti e Gerolamo (2022) comentam que os sistemas de gerenciamento eletrônico de documentos e
+          treinamentos específicos podem ser utilizados para facilitar o acesso à documentação por todos os envolvidos.
+        </p>
+
+        <div class="no-print" aria-hidden="true">
+          <p>Clique ou toque para visualizar o conteúdo.</p>
+
+          <div class="btn-normas hvr-float-shadow mx-auto d-block my-5">
+            <img src="img/bt_normas.png" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalDisseminacao">
+          </div>
+
+          <div class="modal fade" id="modalDisseminacao" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">O que as normas dizem</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    O item <b>7.1.6 (Conhecimento organizacional)</b> da ISO 9001 contribui com o tema da disseminação.
+                    Entre outros pontos, a norma estabelece que a organização deve determinar e tornar acessível a todos
+                    os envolvidos o conhecimento (informação) necessário e para alcançar a conformidade de produtos e
+                    serviço. Além disso, o item <b>7.3 (Conscientização)</b>, estabelece que a organização deve garantir
+                    que seus colaboradores estejam conscientes, que conheçam as informações gerais do funcionamento do
+                    SGQ, entre outros pontos.
+                  </p>
+
+                  <p>
+                    Lembre-se de que o item <b>7.5.3.2</b> da norma ISO 9001 recomenda que a organização deve atentar
+                    para a distribuição, o acesso, a recuperação e o uso da informação documentada
+                  </p>
+
+                  <p>
+                    A ISO 10013:2021 contribui com esse tema em seu item <b>5.2.3 (Distribuição, acesso, recuperação e
+                      uso)</b>. Ela recomenda que é preciso assegurar o <b>acesso à informação documentada</b> para
+                    pessoal apropriado da organização, assegurando que apenas a informação documentada <b>apropriada
+                      esteja em uso</b>.
+                  </p>
+
+                  <div class="destaque borda-colorida icone dica">
+                    <ul class="custom-bullet">
+                      <p><b>Sugestões para a disseminação da informação documentada: </b></p>
+                      <li>
+                        Estabeleça um método claro para disseminar os documentos relevantes para as partes interessadas.
+                      </li>
+
+                      <li>
+                        Certifique-se de que todos os funcionários tenham acesso aos documentos necessários para
+                        desempenhar suas funções.
+                      </li>
+
+                      <li>
+                        Considere a realização de treinamentos para garantir que os funcionários compreendam como
+                        acessar e utilizar os documentos relevantes.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="acessivel print visually-hidden">
+
+          <h4>O que as normas dizem</h4>
+
+          <p>
+            O item <b>7.1.6 (Conhecimento organizacional)</b> da ISO 9001 contribui com o tema da disseminação. Entre
+            outros pontos, a norma estabelece que a organização deve determinar e tornar acessível a todos os envolvidos
+            o conhecimento (informação) necessário e para alcançar a conformidade de produtos e serviço. Além disso, o
+            item <b>7.3 (Conscientização)</b>, estabelece que a organização deve garantir que seus colaboradores estejam
+            conscientes, que conheçam as informações gerais do funcionamento do SGQ, entre outros pontos.
+          </p>
+
+          <p>
+            Lembre-se de que o item <b>7.5.3.2</b> da norma ISO 9001 recomenda que a organização deve atentar para a
+            distribuição, o acesso, a recuperação e o uso da informação documentada
+          </p>
+
+          <p>
+            A ISO 10013:2021 contribui com esse tema em seu item <b>5.2.3 (Distribuição, acesso, recuperação e uso)</b>.
+            Ela recomenda que é preciso assegurar o <b>acesso à informação documentada</b> para pessoal apropriado da
+            organização, assegurando que apenas a informação documentada <b>apropriada esteja em uso</b>.
+          </p>
+
+          <div class="destaque borda-colorida icone dica">
+            <p><b>Sugestões para a disseminação da informação documentada: </b></p>
+            <ul class="custom-bullet">
+              <li>
+                Estabeleça um método claro para disseminar os documentos relevantes para as partes interessadas.
+              </li>
+
+              <li>
+                Certifique-se de que todos os funcionários tenham acesso aos documentos necessários para desempenhar
+                suas funções.
+              </li>
+
+              <li>
+                Considere a realização de treinamentos para garantir que os funcionários compreendam como acessar e
+                utilizar os documentos relevantes.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <h3>Rastreabilidade da informação documentada</h3>
+
+        <p>
+          A rastreabilidade da informação documentada é obrigatória não só para atender a reclamações futuras de
+          clientes, mas também para garantir integridade, confiabilidade e conformidade dos documentos, permitindo que
+          as alterações sejam rastreadas até suas origens. Isso envolve: rastrear a origem, a evolução e o uso de cada
+          documento ao longo do tempo, permitindo uma auditoria eficaz e a identificação rápida de qualquer desvio ou
+          não conformidade.
+        </p>
+
+        <p>
+          Para que a rastreabilidade aconteça, mais uma vez é importante que haja registros da criação, revisão,
+          aprovação, distribuição e obsolescência. Além disso, o controle e o rastreamento de alterações, acessos e
+          histórico de versões ajudam a garantir a confiabilidade na gestão da documentação.
+        </p>
+
+        <div class="no-print" aria-hidden="true">
+          <p>Clique ou toque para visualizar o conteúdo.</p>
+
+          <div class="btn-normas hvr-float-shadow mx-auto d-block my-5">
+            <img src="img/bt_normas.png" alt="" srcset="" data-bs-toggle="modal" data-bs-target="#modalRastreabilidade">
+          </div>
+
+          <div class="modal fade" id="modalRastreabilidade" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">O que as normas dizem</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    A prática da rastreabilidade é destacada nas duas normas, tanto na ISO 9001 quanto na ISO 10013.
+                  </p>
+
+                  <p>
+                    Na ISO 9001, há o requisito <b>8.5.2 (Identificação e rastreabilidade)</b>, o qual informa que a
+                    organização deve “reter a informação documentada necessária para possibilitar rastreabilidade”
+                    (ABNT, 2015, p. 17). Por sua vez, a ISO 10013, no item <b>5.2.5 (Atualizando informação documentada
+                      e controle de mudanças)</b>, indica que a organização deve ter processos de controle de mudanças,
+                    desenvolvimento, análise crítica, de versões, aprovação, liberação e distribuição, bem como deve
+                    manter o histórico de mudanças de informação documentada para a preservação de conhecimento – tudo
+                    isso para que atenda a critérios de <b>identificação</b> e <b>rastreabilidade</b> dos seus produtos
+                    e serviços.
+                  </p>
+
+                  <div class="destaque borda-colorida icone dica">
+                    <h4>Algumas práticas para a rastreabilidade da informação documentada: </h4>
+                    <ul class="custom-bullet">
+                      <li>
+                        Implemente métodos para rastrear a origem, a evolução e o uso da informação documentada ao longo
+                        do tempo, garantindo que seja possível reconstruir o histórico de um documento, se necessário.
+                      </li>
+
+                      <li>
+                        Mantenha registros detalhados sobre as alterações feitas nos documentos, incluindo datas,
+                        responsáveis e justificativas para as mudanças.
+                      </li>
+
+                      <li>
+                        Utilize sistemas de gestão de documentos que permitam rastrear automaticamente o histórico de
+                        revisões e alterações, facilitando a auditoria e a conformidade com o SGQ.
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="acessivel print visually-hidden">
+          <h4>O que as normas dizem</h4>
+
+          <p>
+            A prática da rastreabilidade é destacada nas duas normas, tanto na ISO 9001 quanto na ISO 10013.
+          </p>
+
+          <p>
+            Na ISO 9001, há o requisito <b>8.5.2 (Identificação e rastreabilidade)</b>, o qual informa que a organização
+            deve “reter a informação documentada necessária para possibilitar rastreabilidade” (ABNT, 2015, p. 17). Por
+            sua vez, a ISO 10013, no item <b>5.2.5 (Atualizando informação documentada e controle de mudanças)</b>,
+            indica que a organização deve ter processos de controle de mudanças, desenvolvimento, análise crítica, de
+            versões, aprovação, liberação e distribuição, bem como deve manter o histórico de mudanças de informação
+            documentada para a preservação de conhecimento – tudo isso para que atenda a critérios de
+            <b>identificação</b> e <b>rastreabilidade</b> dos seus produtos e serviços.
+          </p>
+
+          <div class="destaque borda-colorida icone dica">
+            <h4>Algumas práticas para a rastreabilidade da informação documentada: </h4>
+            <ul class="custom-bullet">
+              <li>
+                Implemente métodos para rastrear a origem, a evolução e o uso da informação documentada ao longo do
+                tempo, garantindo que seja possível reconstruir o histórico de um documento, se necessário.
+              </li>
+
+              <li>
+                Mantenha registros detalhados sobre as alterações feitas nos documentos, incluindo datas, responsáveis e
+                justificativas para as mudanças.
+              </li>
+
+              <li>
+                Utilize sistemas de gestão de documentos que permitam rastrear automaticamente o histórico de revisões e
+                alterações, facilitando a auditoria e a conformidade com o SGQ.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p>
+          Certamente você aprendeu bastante com todos os requisitos, as recomendações e as dicas que viu até aqui. Tudo
+          isso é para garantir a integridade, a disponibilidade e a confidencialidade dos documentos, contribuindo para
+          o cumprimento dos requisitos e a eficácia do SGQ. O passo seguinte consiste em conhecer os documentos que
+          precisam ser controlados.
+        </p>
+
+        <p class="no-print">
+          Que tal praticar, por meio desta atividade, o que você aprendeu até agora?
+        </p>
+
+        <div class="box-atividade no-print">
+          <p class="titulo-ativ"><strong>Clique sobre a palavra (na coluna a direita) e clique sobre o conceito que você
+              julga estar relacionado</strong></p>
+
+
+          <div class="game-associar-colunas no-print nao-imprimir">
+            <div class="row">
+              <div class="col-12 col-sm-7 flexs itens">
+                <button data-resp="1" class="item item1">
+                  <p>Pode ser criada uma lista mestra das informações documentadas, para atender a esta diretriz.</p>
+                </button>
+
+                <button data-resp="2" class="item item2">
+                  <p>Estabelece que a informação documentada seja mantida e/ou retida, podendo ser por meio de sistemas
+                    eletrônicos de gerenciamento de documentos.</p>
+                </button>
+
+                <button data-resp="3" class="item item3">
+                  <p>Quando a guarda da informação documentada deve ocorrer por um tempo determinado, podendo ser
+                    utilizados sistemas eletrônicos de gerenciamento de documentos.</p>
+                </button>
+
+                <button data-resp="4" class="item item4">
+                  <p>Quando a guarda da informação documentada deve ocorrer com a finalidade de garantir a confiança de
+                    que os processos são executados conforme o planejado, podendo ser utilizados sistemas eletrônicos de
+                    gerenciamento de documentos.</p>
+                </button>
+
+                <button data-resp="5" class="item item5">
+                  <p>Pode ser estabelecido um processo para revisar os documentos do SGQ, para assegurar que estejam
+                    atualizados e garantir a precisão das práticas e dos procedimentos atuais.</p>
+                </button>
+
+                <button data-resp="6" class="item item6">
+                  <p>Pode ocorrer por meio da realização de treinamentos, a fim de garantir que os colaboradores
+                    compreendam como acessar e utilizar os documentos relevantes.</p>
+                </button>
+
+                <button data-resp="7" class="item item7">
+                  <p>Pode ser utilizada, por exemplo, uma lista mestra para manter registros detalhados sobre as
+                    alterações feitas nos documentos, incluindo datas, responsáveis e justificativas para as mudanças.
+                  </p>
+                </button>
+              </div>
+
+              <div class="col-12 col-sm-5 flexs">
+                <button type="button" data-resp="1" class="resp resp5">
+                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                  <p>Atualização</p>
+                </button>
+
+                <button type="button" data-resp="2" class="resp resp6">
+                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                  <p>Controle</p>
+                </button>
+
+                <button type="button" data-resp="3" class="resp resp7">
+                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                  <p>Disseminação</p>
+                </button>
+
+                <button type="button" data-resp="4" class="resp resp1">
+                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                  <p>Guarda</p>
+                </button>
+
+                <button type="button" data-resp="5" class="resp resp8">
+                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                  <p>Manter</p>
+                </button>
+
+                <button type="button" data-resp="6" class="resp resp4">
+                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                  <p>Rastreabilidade</p>
+                </button>
+
+                <button type="button" data-resp="7" class="resp resp2">
+                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                  <p>Reter</p>
+                </button>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou"
+              tabindex="-1" aria-labelledby="associarColunasErrou" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                        <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg" class="img-fluid" alt="">
+                      </div>
+                      <div class="col-12 col-lg-8">
+                        <p>Nem todas as práticas que podem ser realizadas foram relacionadas adequadamente com as
+                          possibilidades de manutenção da documentação do SGQ: controle, guarda, atualização e
+                          disseminação. Revise o conhecimento e relacione novamente as colunas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_acertou"
+              tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                        <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg" class="img-fluid" alt="">
+                      </div>
+                      <div class="col-12 col-lg-8">
+                        <p>Parabéns, você conseguiu identificar práticas que podem ser realizadas para os principais
+                          pontos relacionados à manutenção da documentação do SGQ: controle, guarda, atualização e
+                          disseminação.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Versão para impressão -->
+          <div class="print-only only-print">
+            <p>Associe a primeira coluna com a segunda.</p>
+            <table class="associe-colunas">
+              <tr>
+                <td>
+                  <p>A) GERMÂNIO</p>
+                  <p>B) TUNGSTÊNIO</p>
+                  <p>C) LÍTIO</p>
+                  <p>D) SÓDIO</p>
+                  <p>E) POTÁSSIO</p>
+                  <p>F) CÁLCIO</p>
+                  <p>G) CLORO</p>
+                  <p>H) CARBONO</p>
+                </td>
+                <td>
+                  <p>(&nbsp;&nbsp;) FRUTAS E VEGETAIS</p>
+                  <p>(&nbsp;&nbsp;) CONCHAS E OSSOS</p>
+                  <p>(&nbsp;&nbsp;) PISCINAS</p>
+                  <p>(&nbsp;&nbsp;) SEMICONDUTORES ELETRÔNICOS</p>
+                  <p>(&nbsp;&nbsp;) BASE DAS MOLÉCULAS DA VIDA</p>
+                  <p>(&nbsp;&nbsp;) SAL</p>
+                  <p>(&nbsp;&nbsp;) FILAMENTO DE LÂMPADAS</p>
+                  <p>(&nbsp;&nbsp;) BATERIAS</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <h4>Documentos do SGQ</h4>
+
+        <p>
+          Considerando tudo que foi visto até o momento, com tantas informações e tantos registros gerados nas
+          organizações, é necessário identificar quais deles precisam ser retidos e/ou mantidos. Saber quais são os
+          documentos necessários para gerenciar é essencial para garantir a conformidade com os requisitos do SGQ e para
+          facilitar a eficácia operacional e a melhoria contínua dentro das organizações.
+        </p>
+
+        <p>
+          Em sua subseção <b>7.5.1 (Generalidades)</b>, a ISO 9001 identifica dois tipos de documentos que devem constar
+          no SGQ: os exigidos pela norma e os determinados pela própria organização. Veja de modo detalhado:
+        </p>
+
+        <div class="no-print" aria-hidden="true">
+
+          <p>Clique ou toque para visualizar o conteúdo.</p>
+
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Os exigidos pela norma
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Cabe registrar que ambas as normas em questão indicam a informação documentada obrigatória como: o
+                    escopo do SGQ, a política da qualidade e os objetivos da qualidade, conforme os itens <b>4.3
+                      (Determinando o escopo do sistema de gestão da qualidade)</b>, <b>5.2.2 (Comunicando a política da
+                      qualidade)</b> e<b> 6.2 (Objetivos da qualidade e planejamento para alcançá-los)</b> da ISO
+                    9001:2015 e o item <b>4.1.3 (Conteúdo)</b> da ISO 10013:2021.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Os determinados pela própria organização
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Na ABNT NBR ISO 10013:2021, há o item <b>4.1.3 (Conteúdo)</b>, o qual orienta as informações que uma
+                    organização pode determinar como necessárias para apoiar a operação do SGQ e seus processos. Já o
+                    item <b>4.2.4 (Informação que a organização determinou como necessária para apoiar a operação do
+                      sistema de gestão da qualidade e seus processos)</b> comenta sobre cada uma delas. Esses
+                    documentos, como sugere o título, são os que respaldam o SGQ, podendo ou não fazer parte das
+                    informações documentadas da organização, desde que sejam suficientes para atender às suas
+                    necessidades. São dez documentos. Veja quais são eles:
+                  </p>
+                  <ol>
+                    <li>Manual da qualidade</li>
+                    <li>Organogramas</li>
+                    <li>Mapas de processos, fluxogramas de processos e/ou descrições de processos</li>
+                    <li>Procedimentos e instruções de trabalho</li>
+                    <li>Fluxos de trabalho automatizados</li>
+                    <li>Especificações de produtos e serviços</li>
+                    <li>Comunicações internas e externas</li>
+                    <li>Planos, cronogramas e listas</li>
+                    <li>Formulários e listas de verificação</li>
+                    <li>Informação documentada de origem externa</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="acessivel print visually-hidden">
+
+          <h4>Os exigidos pela norma</h4>
+
+          <p>
+            Cabe registrar que ambas as normas em questão indicam a informação documentada obrigatória como: o escopo do
+            SGQ, a política da qualidade e os objetivos da qualidade, conforme os itens <b>4.3 (Determinando o escopo do
+              sistema de gestão da qualidade)</b>, <b>5.2.2 (Comunicando a política da qualidade)</b> e<b> 6.2
+              (Objetivos da qualidade e planejamento para alcançá-los)</b> da ISO 9001:2015 e o item <b>4.1.3
+              (Conteúdo)</b> da ISO 10013:2021.
+          </p>
+
+          <h4>Os determinados pela própria organização</h4>
+
+          <p>
+            Na ABNT NBR ISO 10013:2021, há o item <b>4.1.3 (Conteúdo)</b>, o qual orienta as informações que uma
+            organização pode determinar como necessárias para apoiar a operação do SGQ e seus processos. Já o item
+            <b>4.2.4 (Informação que a organização determinou como necessária para apoiar a operação do sistema de
+              gestão da qualidade e seus processos)</b> comenta sobre cada uma delas. Esses documentos, como sugere o
+            título, são os que respaldam o SGQ, podendo ou não fazer parte das informações documentadas da organização,
+            desde que sejam suficientes para atender às suas necessidades. São dez documentos. Veja quais são eles:
+          </p>
+          <ol>
+            <li>Manual da qualidade</li>
+            <li>Organogramas</li>
+            <li>Mapas de processos, fluxogramas de processos e/ou descrições de processos</li>
+            <li>Procedimentos e instruções de trabalho</li>
+            <li>Fluxos de trabalho automatizados</li>
+            <li>Especificações de produtos e serviços</li>
+            <li>Comunicações internas e externas</li>
+            <li>Planos, cronogramas e listas</li>
+            <li>Formulários e listas de verificação</li>
+            <li>Informação documentada de origem externa</li>
+          </ol>
+
+        </div>
+
+        <p class="mt-5">
+          Contudo, uma leitura atenta da norma ABNT NBR ISO 9001:2015 permite construir uma lista bem detalhada de
+          informações documentas pertinentes ao SGQ para serem obrigatoriamente retidas (e recomendavelmente mantidas).
+        </p>
+
+        <p>
+          Veja a tabela que resume os documentos a serem retidos conforme estabelecido pela norma ABNT NBR ISO
+          9001:2015.
+        </p>
+
+
+        <div class="table-responsive">
+          <table class="text-center align-middle">
+            <thead>
+              <tr>
+                <th class="w-50">Informação documentada a ser retida</th>
+                <th class="w-50">Requisito ABNT NBR ISO 9001:2015 </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Materiais como manuais, tutoriais, procedimentos operacionais e instruções de trabalho que servem de
+                  apoio à operação de seus processos </td>
+                <td>4.4.2 a)</td>
+              </tr>
+              <tr>
+                <td>Evidências da realização da operação dos processos conforme o planejado e da conformidade </td>
+                <td>4.4.2 b) e 8.1 e) </td>
+              </tr>
+              <tr>
+                <td>Evidências de recursos de monitoramento e medição apropriados </td>
+                <td>7.1.5.1</td>
+              </tr>
+              <tr>
+                <td>Base de calibração e verificação usada no caso de inexistência de padrões nacionais ou
+                  internacionais </td>
+                <td>7.1.5.2 a)</td>
+              </tr>
+              <tr>
+                <td>Evidência de competência de colaboradores </td>
+                <td>7.2 d) </td>
+              </tr>
+              <tr>
+                <td>Para produtos e serviços, evidências de resultados de análises críticas e de quaisquer mudanças ou
+                  novos requisitos </td>
+                <td>8.2.3.2 a) e b) </td>
+              </tr>
+              <tr>
+                <td>Requisitos de produtos e serviços, bem como de mudanças neles </td>
+                <td>8.2.4</td>
+              </tr>
+              <tr>
+                <td>Projeto e desenvolvimento de produtos e serviços: entradas, controles, saídas, mudanças e evidências
+                  de que os requisitos foram atendidos</td>
+                <td>8.3.2 j)</td>
+              </tr>
+              <tr>
+                <td>Evidência de entradas de projetos e desenvolvimento </td>
+                <td>8.3.3 </td>
+              </tr>
+              <tr>
+                <td>Controles de projetos e desenvolvimento </td>
+                <td>8.3.4 f) </td>
+              </tr>
+              <tr>
+                <td>Saídas de projetos e desenvolvimento </td>
+                <td>8.3.5 </td>
+              </tr>
+              <tr>
+                <td>Mudanças em projetos e desenvolvimento; resultados de análises críticas; autorização das mudanças;
+                  ações tomadas para prevenir impactos adversos </td>
+                <td>8.3.6 a), b), c) e d)</td>
+              </tr>
+              <tr>
+                <td>Processo de avaliação, seleção, monitoramento e reavaliação de fornecedores </td>
+                <td>8.4.1</td>
+              </tr>
+              <tr>
+                <td>Controle de produção e provisão de serviços, bem como de análises críticas, seus responsáveis e
+                  ações oriundas delas</td>
+                <td>8.5.1 a) e 8.5.6 </td>
+              </tr>
+              <tr>
+                <td>Identificação e rastreabilidade de produtos e serviços de única saída </td>
+                <td>8.5.2</td>
+              </tr>
+              <tr>
+                <td>Perda ou dano a propriedade de cliente ou fornecedor externo </td>
+                <td>8.5.3 </td>
+              </tr>
+              <tr>
+                <td>Liberação de produtos e serviços, com evidência de conformidade e rastreabilidade aos responsáveis
+                  pela liberação</td>
+                <td>8.6 a) e b) </td>
+              </tr>
+              <tr>
+                <td>Tratativa de saídas não conformes, incluindo: descrição da não conformidade, ações tomadas,
+                  concessões obtidas e responsável pela liberação </td>
+                <td>8.7.2 a), b), c) e d)</td>
+              </tr>
+              <tr>
+                <td>Evidência de resultados de avaliação de desempenho</td>
+                <td>9.1.1 </td>
+              </tr>
+              <tr>
+                <td>Evidência de implantação de auditoria interna e resultados </td>
+                <td>9.2.2</td>
+              </tr>
+              <tr>
+                <td>Evidência de resultados de análises críticas da direção </td>
+                <td>9.3.3 f)</td>
+              </tr>
+              <tr>
+                <td>Evidência das não conformidades e ações corretivas tomadas e seus resultados</td>
+                <td>10.2.2 a) e b) </td>
+              </tr>
+            </tbody>
+          </table>
+          <figcaption class="figure-caption text-center mt-2 mb-5 no-print">
+            Documentação recomendada e seu respectivo requisito na ABNT NBR ISO 9001:2015<br>
+            Fonte: Adaptado de Carpinetti e Gerolamo (2022) e Sartori (2024)
+          </figcaption>
+        </div>
+
+        <div class="grafismo">
+          <div class="destaque borda-colorida icone importante">
+            <p>Essa tabela fornece uma visão geral das principais informações documentadas recomendadas para retenção
+              pelas normas ISO 9001. É importante consultar a norma completa para obter detalhes específicos sobre cada
+              documento.</p>
+          </div>
+        </div>
+
+        <p>
+          É pertinente comentar que muitas dessas informações podem ser agrupadas. Por exemplo, é possível reunir o
+          escopo, a política e os objetivos da qualidade em um único documento, como um manual da qualidade. Do mesmo
+          modo, um único item pode requerer vários documentos.
+        </p>
+
+        <p>
+          Além disso, a extensão dessa lista de documentos pode ultrapassar os itens mencionados, variando conforme o
+          tamanho, o segmento e as políticas específicas da organização.
+        </p>
+
+        <div class="grafismo">
+          <div class="destaque borda-colorida icone pergunta">
+            <p>Como fazer a manutenção dos documentos na prática? </p>
+          </div>
+        </div>
+
+        <p>
+          Diante de todos esses conhecimentos vistos e das sugestões já apresentadas, mesmo assim uma pergunta pode
+          surgir: “Por onde começar?”. Nem a ISO 9001:2015 nem a ISO 10013:2021 detalham como a organização deve
+          realizar a manutenção da sua informação documentada. <b>Tudo dependerá do porte da organização; da robustez de
+            seus documentos; do quanto a empresa pretende investir para que os controles ocorram</b>.
+        </p>
+
+        <p>
+          Então, veja algumas etapas que podem construir uma boa prática de manutenção da informação documentada.
+        </p>
+
+        <div class="no-print " aria-hidden="true">
+          <ul class="nav nav-tabs" id="myTab2" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#primeiro" type="button"
+                role="tab" aria-controls="1" aria-selected="true">1º</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#segundo" type="button"
+                role="tab" aria-controls="dois" aria-selected="false">2º</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="3-tab" data-bs-toggle="tab" data-bs-target="#terceiro" type="button"
+                role="tab" aria-controls="3" aria-selected="false">3º</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="4-tab" data-bs-toggle="tab" data-bs-target="#quarto" type="button" role="tab"
+                aria-controls="4" aria-selected="false">4º</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="5-tab" data-bs-toggle="tab" data-bs-target="#quinto" type="button" role="tab"
+                aria-controls="5" aria-selected="false">5º</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="6-tab" data-bs-toggle="tab" data-bs-target="#sexto" type="button" role="tab"
+                aria-controls="6" aria-selected="false">6º</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="7-tab" data-bs-toggle="tab" data-bs-target="#setimo" type="button" role="tab"
+                aria-controls="7" aria-selected="false">7º</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="8-tab" data-bs-toggle="tab" data-bs-target="#oitavo" type="button" role="tab"
+                aria-controls="8" aria-selected="false">8º</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="9-tab" data-bs-toggle="tab" data-bs-target="#nono" type="button" role="tab"
+                aria-controls="9" aria-selected="false">9º</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="10-tab" data-bs-toggle="tab" data-bs-target="#decimo" type="button"
+                role="tab" aria-controls="10" aria-selected="false">10º</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent2">
+            <div class="tab-pane fade show active" id="primeiro" role="tabpanel" aria-labelledby="1-tab">
+              <p>Estabelecer quais documentos serão integrados ao SGQ.</p>
+            </div>
+
+            <div class="tab-pane fade" id="segundo" role="tabpanel" aria-labelledby="dois-tab">
+              <p>Estabelecer um ou mais procedimentos, para controlar os documentos, sua criação, revisão, aprovação,
+                distribuição, guarda e seu descarte (quando necessário). </p>
+            </div>
+
+            <div class="tab-pane fade" id="terceiro" role="tabpanel" aria-labelledby="3-tab">
+              <p>Identificar os tipos de documento do SGQ utilizando uma codificação, como já visto anteriormente,
+                inclusive identificar os documentos de origem externa e controlar sua distribuição.</p>
+            </div>
+
+            <div class="tab-pane fade" id="quarto" role="tabpanel" aria-labelledby="4-tab">
+              <p>Estabelecer cronograma e responsáveis por: desenvolvimento, revisão e disponibilização e descarte dos
+                documentos.</p>
+            </div>
+
+            <div class="tab-pane fade" id="quinto" role="tabpanel" aria-labelledby="5-tab">
+              <p>Disponibilizar o documento na área de uso. Em caso de revisão, recolher a versão anterior e realizar o
+                controle do documento disponibilizado. </p>
+            </div>
+
+            <div class="tab-pane fade" id="sexto" role="tabpanel" aria-labelledby="6-tab">
+              <p>Controlar a documentação por meio de uma lista mestra, contendo, no mínimo, informações como: código do
+                documento, identificação, número da revisão, data da revisão, data da próxima revisão, responsável pela
+                revisão, local onde é disponibilizada, número de cópias, entre outras pertinentes.</p>
+            </div>
+
+            <div class="tab-pane fade" id="setimo" role="tabpanel" aria-labelledby="7-tab">
+              <p>Treinar as pessoas envolvidas em todas as etapas da manutenção da documentação nova ou atualizada.</p>
+            </div>
+
+            <div class="tab-pane fade" id="oitavo" role="tabpanel" aria-labelledby="8-tab">
+              <p>Realizar análise crítica não só nas etapas de criação e atualização das informações documentadas, mas
+                também nos processos que estão sendo executados para a manutenção dessas documentações.</p>
+            </div>
+
+            <div class="tab-pane fade" id="nono" role="tabpanel" aria-labelledby="9-tab">
+              <p>Certificar-se de que os procedimentos de guarda segura estão sendo cumpridos.</p>
+            </div>
+
+            <div class="tab-pane fade" id="decimo" role="tabpanel" aria-labelledby="10-tab">
+              <p>Realizar pequenas auditorias para verificar se tudo o que foi determinado nos procedimentos e/ou foi
+                planejado está sendo cumprido.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="print acessivel visually-hidden">
+
+          <p>1º Estabelecer quais documentos serão integrados ao SGQ. </p>
+
+          <p>2º Estabelecer um ou mais procedimentos, para controlar os documentos, sua criação, revisão, aprovação,
+            distribuição, guarda e seu descarte (quando necessário). </p>
+
+          <p>3º Identificar os tipos de documento do SGQ utilizando uma codificação, como já visto anteriormente,
+            inclusive identificar os documentos de origem externa e controlar sua distribuição. </p>
+
+          <p>4º Estabelecer cronograma e responsáveis por: desenvolvimento, revisão e disponibilização e descarte dos
+            documentos. </p>
+
+          <p>5º Disponibilizar o documento na área de uso. Em caso de revisão, recolher a versão anterior e realizar o
+            controle do documento disponibilizado. </p>
+
+          <p>6º Controlar a documentação por meio de uma lista mestra, contendo, no mínimo, informações como: código do
+            documento, identificação, número da revisão, data da revisão, data da próxima revisão, responsável pela
+            revisão, local onde é disponibilizada, número de cópias, entre outras pertinentes. </p>
+
+          <p>7º Treinar as pessoas envolvidas em todas as etapas da manutenção da documentação nova ou atualizada. </p>
+
+          <p>8º Realizar análise crítica não só nas etapas de criação e atualização das informações documentadas, mas
+            também nos processos que estão sendo executados para a manutenção dessas documentações. </p>
+
+          <p>9º Certificar-se de que os procedimentos de guarda segura estão sendo cumpridos. </p>
+
+          <p>10º Realizar pequenas auditorias para verificar se tudo o que foi determinado nos procedimentos e/ou foi
+            planejado está sendo cumprido. </p>
+        </div>
+
+        <h4><i>Softwares</i> para gestão eletrônica</h4>
+
+
+
+        <figure class="my-5">
+          <div class="figure-img  mb-4">
+            <img class="img-fluid mx-auto d-block " src="img/img1.png">
+          </div>
+        </figure>
+
+
+
+        <p>
+          Por vezes, as organizações têm SGQ bastante robustos. Desse modo, controlar somente por uma lista mestra não
+          será a forma mais fácil. Para esses casos, surgiram os meios eletrônicos, como os <i>softwares</i> de gestão
+          eletrônica de documentos (GED). Esses <i>softwares</i> são projetados para simplificar e otimizar o processo
+          de gerenciamento de documentos, permitindo o armazenamento, a organização, o acesso e o controle eficientes da
+          informação documentada.
+        </p>
+
+        <p>
+          Um grande benefício está em gerenciar os níveis de permissão de acesso dos usuários e implementar
+          procedimentos para restringir o acesso a informações confidenciais.
+        </p>
+
+        <p>
+          As próprias normas já contemplam essa forma de gestão. Elas citam, no decorrer de seus textos, sistemas/meios
+          eletrônicos. A ISO 10013, no item <b>4.1.3 (Conteúdo)</b>, por exemplo, descreve as vantagens da utilização
+          das formas de GED (ABNT, 2021, p. 3):
+        </p>
+
+        <div class="grafismo">
+          <div class="destaque borda-colorida icone nota">
+            <p>
+              As vantagens do meio eletrônico são, por exemplo:
+            </p>
+            <ul class="custom-bullet">
+              <li>Acesso facilitado a versões pertinentes, incluindo acesso a partir de locais remotos</li>
+              <li>Controle de mudanças facilitado, incluindo o cancelamento de informação documentada obsoleta</li>
+              <li>Distribuição imediata e controlada</li>
+              <li>Recuperabilidade e retenção <i>versus</i> papel ou outro meio físico</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>
+          De modo geral, ambas as normas orientam que a organização assegure que estejam em vigor sistemas de
+          <i>backup</i> apropriados, acompanhe a versão do <i>software</i> usada, uma vez que é possível que nem todos
+          os usuários tenham acesso à mesma versão, e, por fim, avalie questões de segurança da informação.
+        </p>
+
+        <p>
+          Conforme Carpinetti e Gerolamo (2022, p. 98): “Existem vários <i>softwares</i> de gestão eletrônica de
+          documentos desenvolvidos com o objetivo específico e gerenciar o sistema de documentação da qualidade, de
+          acordo com os requisitos da ISO 9001”.
+        </p>
+
+        <p>
+          Os autores citados estão corretos. Em uma busca rápida na internet, é possível encontrar dezenas de empresas
+          que oferecem <i>softwares</i> para GED, dos mais simples aos mais complexos.
+        </p>
+
+        <p>
+          Por fim, cabe a cada organização avaliar sua necessidade e o investimento que será necessário, tanto
+          financeiro quanto de tempo para a implantação e adaptação das equipes. Sendo assim, são pontos a serem
+          avaliados: necessidades de aquisição de licenças do <i>software</i>; tempo de implantação e parametrização às
+          necessidades da organização; e custos de manutenção, estando claro que todo o investimento na manutenção da
+          informação documentada precisa constar no planejamento da melhoria contínua do SGQ.
+        </p>
+
+        <h3>Encerramento</h3>
+
+        <p>
+          Resumidamente, é fundamental que a organização se dedique em controlar, guardar, atualizar, disseminar e
+          rastrear as suas informações documentadas, como forma de garantir a manutenção e evolução do SGQ. Ainda, a
+          organização precisa determinar quais informações devem ser mantidas e/ou retidas. Além disso, precisa ter
+          procedimentos claros, escolher entre utilizar um GED ou não, determinar os participantes envolvidos, enfim,
+          realizar o que for necessário e recomendado para ter sucesso nesse controle.
+        </p>
+
+        <p>
+          Muitas dessas atividades, sem dúvidas, serão atribuições do profissional da área da qualidade. Por isso,
+          mantenha-se sempre atualizado e seja dedicado a esse tema.
+        </p>
+
+        <img src="img/img3.png" alt="" srcset="" class="img-fluid mx-auto no-print">
+
+        <a href="#" class="voltar-topo no-print" aria-hidden="true"><img src="../assets/images/bt_topo.svg"></a>
+      </div>
     </section>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <!--Jquery-->
-    <script src="../assets/js/jquery-3.6.0.min.js"></script>
-    <!--Áudio customizado-->
-    <script src="../assets/js/audio-player.js"></script>
-    <!--Splide - slideshow-->
-    <script src="../assets/js/splide.min.js"></script>
-    <!--Prog'n'roll - barra de progresso conforme rola a página-->
-    <script src="../assets/js/prognroll.min.js"></script>
-    <!--Scripts gerais-->
-    <script src="../assets/js/geral.js"></script>
-    <!--Atividade de verdadeiro ou falso-->
-    <script src="../assets/atividades/perguntas/perguntas.js"></script>
-     <!--Atividade associar colunas-->
-     <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
+    <!-- Paginação-->
+    <footer class="text-center no-print d-flex justify-content-center mx-auto">
+      <ul class="pagination">
 
-     <script>
-      $(function () {
-          $("body").prognroll();
-      });
+      </ul>
+    </footer>
+  </section>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <!--Jquery-->
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <!--Áudio customizado-->
+  <script src="../assets/js/audio-player.js"></script>
+  <!--Splide - slideshow-->
+  <script src="../assets/js/splide.min.js"></script>
+  <!--Prog'n'roll - barra de progresso conforme rola a página-->
+  <script src="../assets/js/prognroll.min.js"></script>
+  <!--Scripts gerais-->
+  <script src="../assets/js/geral.js"></script>
+  <!--Atividade de verdadeiro ou falso-->
+  <script src="../assets/atividades/perguntas/perguntas.js"></script>
+  <!--Atividade associar colunas-->
+  <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
 
-      $(".btn-tema_pagina").click(function () {
-          console.log($(".btn-tema_pagina"))
-          if ($("body").hasClass('bg-claro')) {
-              console.log("sim");
-              $("body").removeClass('bg-claro')
-              $("body").addClass("bg-escuro");
-          } else if ($("body").hasClass('bg-escuro')) {
-              console.log("não");
-              $("body").removeClass('bg-escuro')
-              $("body").addClass("bg-claro")
-          }
-      });
+  <script>
+    $(function () {
+      $("body").prognroll();
+    });
+
+    $(".btn-tema_pagina").click(function () {
+      console.log($(".btn-tema_pagina"))
+      if ($("body").hasClass('bg-claro')) {
+        console.log("sim");
+        $("body").removeClass('bg-claro')
+        $("body").addClass("bg-escuro");
+      } else if ($("body").hasClass('bg-escuro')) {
+        console.log("não");
+        $("body").removeClass('bg-escuro')
+        $("body").addClass("bg-claro")
+      }
+    });
   </script>
 
-    <!-- Handtalk -->
-    <script>
-      var scriptElem=document.createElement("script");
-      scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
-      scriptElem.charset="UTF-8",
-      scriptElem.onload=function(){
+  <!-- Handtalk -->
+  <script>
+    var scriptElem = document.createElement("script");
+    scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+      scriptElem.charset = "UTF-8",
+      scriptElem.onload = function () {
         window.ht = new HT({
-          token:"bf5b7efb148a829a126a0e0c9fd533bf",
-          align:"top",
+          token: "bf5b7efb148a829a126a0e0c9fd533bf",
+          align: "top",
           videoEnabled: true,
-          ytEmbedReplace: true,           
-          mobileConfig:{align:"right",
-                  actionsAlign:"top",
-                  customButtonStyle:{
-                    borderRadius:"6px",
-                    size:"38px",
-                    horizontalMargin:"13px",
-                    bottomMargin:"140px",
-                    rightMargin:"40px"}
-                  }
-          });        
-        $('.ht-skip').attr("aria-hidden","true")
+          ytEmbedReplace: true,
+          mobileConfig: {
+            align: "right",
+            actionsAlign: "top",
+            customButtonStyle: {
+              borderRadius: "6px",
+              size: "38px",
+              horizontalMargin: "13px",
+              bottomMargin: "140px",
+              rightMargin: "40px"
+            }
+          }
+        });
+        $('.ht-skip').attr("aria-hidden", "true")
       },
-    document.body.appendChild(scriptElem);
-    
-    </script>
-  </body>
+      document.body.appendChild(scriptElem);
+
+  </script>
+</body>
+
 </html>
