@@ -1168,21 +1168,43 @@
                 <p>Que tal praticar o que você aprendeu até agora?</p>
 
                 <style>
-                    a#oda1 img {
+                    #oda1 {
+                        position: relative;
+                        display: block;
+                        width: fit-content;
+                        margin: auto;
+                        transition: transform 0.3s ease;
+                    }
+
+                    #oda1 img {
                         border-radius: 10px;
                         /* Bordas arredondadas */
-                        transition: transform 0.3s ease;
+
                         /* Suaviza a transição do efeito */
                         margin: auto;
                         display: block;
+                        position: relative;
                     }
 
-                    a#oda1:hover img {
+                    #oda1::before {
+                        content: '';
+                        width: 150px;
+                        height: 150px;
+                        display: block;
+                        position: absolute;
+                        top: -25px;
+                        left: -75px;
+                        z-index: 10;
+                        background: url(odas/documentos/selo-03.png) top left / 100% auto no-repeat;
+
+                    }
+
+                    #oda1:hover {
                         transform: scale(1.1);
                         /* Aumenta a imagem ao passar o mouse */
                     }
                 </style>
-                <a id="oda1" href="pdf/pdf02.pdf" target="_blank">
+                <a id="oda1" href="odas/documentos/index.html" target="_blank">
                     <img src="odas/documentos/thumb.png" alt="Descrição da imagem" style="width: 500px;"
                         class="hvr-grow-shadow">
                 </a>
